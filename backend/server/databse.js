@@ -1,5 +1,5 @@
 //connection to database
-import mongoose, { connect } from 'mongoose'
+import mongoose  from 'mongoose'
 
 const connectToDatabase= async()=>{
     console.log((process.env.MONGO_URI))
@@ -9,12 +9,12 @@ const connectToDatabase= async()=>{
             useUnifiedTopology:true, useNewUrlParser:true,
         });
 
-        console.log('Connected : ${connect.connection.host}');
+        console.log(`Connected : ${connect.connection.host}`);
 
     }catch(error){
-        console.log('error')
+        console.log(`error:${error.message}`);
     }
 
-}
+};
 
 export default connectToDatabase;
