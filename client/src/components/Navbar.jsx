@@ -20,7 +20,7 @@ import { useState } from "react";
 
 const links = [
   { linkName: "Books", path: "/books" },
-  { linkName: "Cart", path: "/cart" },
+  { linkName: "Basket", path: "/basket" },
 ];
 
 const NavLink = ({ path, children }) => (
