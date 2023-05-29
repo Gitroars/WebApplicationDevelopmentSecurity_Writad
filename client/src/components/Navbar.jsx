@@ -42,7 +42,7 @@ const Navbar = () => {
   // Manage state for mobile menu toggle
   const { isOpen, onClose, onOpen } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
-  const { isHovering, setIsHovering } = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
   return (
     <Box backgroundColor='gray.150' paddingX={5}>
       <Flex height={35} alignItems='center' justifyContent='space-between'>
