@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import BooksScreen from "./screens/BooksScreen";
 import Footer from "./components/Footer";
+import { PriceScreen } from "./screens/PriceScreen";
+import ReadScreen from "./screens/ReadScreen";
+
 function App() {
   return (
     <ChakraProvider>
@@ -11,6 +14,7 @@ function App() {
         <main>
           <Routes>
             <Route path='/books' element={<BooksScreen />}></Route>
+            <Route path='/vip' element={<PriceScreen />}></Route>
           </Routes>
         </main>
         <Footer />
