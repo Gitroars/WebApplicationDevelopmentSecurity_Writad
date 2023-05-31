@@ -91,7 +91,7 @@ const BookCard = ({ book }) => {
       </Box>
 
       <Flex mt='2' justifyContent='space-between' alignContent='center'>
-        <Link as={ReactLink} to={`/book${book._id}`} pt='2' cursor='pointer'>
+        <Link as={ReactLink} to={`/book/${book._id}`} pt='2' cursor='pointer'>
           <Box fontSize='2x1' fontWeight='semibold' lineHeight='tight'>
             {book.name}
           </Box>
@@ -107,7 +107,7 @@ const BookCard = ({ book }) => {
           <Box as='span' color={"gray.600"} fontSize='lg'>
             $
           </Box>
-          {book.price.toFixed(2)}
+          {Number(book.price).toFixed(2)}
         </Box>
         <Tooltip label='Add to Basket' bg='white' placement='top' color='gray.900' fontSize='1.25em'>
           <Button variant='ghost' display='flex' disabled={book.stock <= 0} onClick={() => addBook(book._id)}>
