@@ -22,11 +22,11 @@ const bookSchema = mongoose.Schema(
     rating: { type: Number, required: true, default: 0 },
     numberOfReviews: { type: String, required: true },
     price: { type: Number, required: true },
-    isNewRelease: { type: Boolean, default: false },
+    productIsNew: { type: Boolean, default: false },
     stock: { type: Number, required: true, default: 0 },
   },
   { timestamps: true }
 );
 
-const Book = mongoose.model("book", bookSchema);
+const Book = mongoose.model("Book", bookSchema);
 export default Book;

@@ -73,7 +73,7 @@ const BookCard = ({ book }) => {
       shadow='lg'
       position='relative'
     >
-      {book.isNewRelease && <Circle size='10px' position='absolute' top={3} right={3} bg='green.300' />}
+      {book.productIsNew && <Circle size='10px' position='absolute' top={3} right={3} bg='green.300' />}
       {book.stock && <Circle size='10px' position='absolute' top={3} right={3} bg='red.300' />}
       <Image src={book.image} alt={book.name} roundedTop='lg' />
 
@@ -83,7 +83,7 @@ const BookCard = ({ book }) => {
             Sold Out
           </Badge>
         )}
-        {book.isNewRelease && (
+        {book.productIsNew && (
           <Badge rounded='full' px='2' fontSize='0.8em' colorScheme='green'>
             New
           </Badge>

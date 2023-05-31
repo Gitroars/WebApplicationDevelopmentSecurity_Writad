@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const initialState = {
   loading: false,
   error: null,
-  books: [],
+  basket: [],
   subtotal: 0,
 };
 

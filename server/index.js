@@ -1,23 +1,21 @@
-import dotenv from 'dotenv'
+import dotenv from "dotenv";
 
-import connectToDatabase from './databse.js'
-import express from 'express'
-
-
+import connectToDatabase from "./databse.js";
+import express from "express";
+import cors from "cors";
 //our routes
-import bookRoutes from './routes/bookRoutes.js'
+import bookRoutes from "./routes/bookRoutes.js";
 
-dotenv.config()
-connectToDatabase()
-const app= express()
+dotenv.config();
+connectToDatabase();
+const app = express();
 
-app.use(express.json())
+app.use(express.json());
+app.use(cors());
+const port = process.env.PORT || 5000;
 
+app.use("/api/books", bookRoutes);
 
-const port =process.env.PORT||5000;
-
-app.use('/api/books',bookRoutes);
-
-app.listen(port,()=>{
-    console.log(`server run on port ${port}`)
+app.listen(port, () => {
+  console.log(`server run on port ${port}`);
 });

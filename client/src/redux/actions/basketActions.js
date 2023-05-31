@@ -1,7 +1,7 @@
 import axios from "axios";
 import { setLoading, setError, basketItemAdd } from "../slices/basket";
 
-export const addBasketItem = (id) => async (dispatch) => {
+export const addBasketItem = (id, qty) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
     const { data } = await axios.get(`/api/books/${id}`);
@@ -11,6 +11,7 @@ export const addBasketItem = (id) => async (dispatch) => {
       image: data.image,
       price: data.price,
       stock: data.stock,
+      qty,
     };
   } catch (error) {
     dispatch(
