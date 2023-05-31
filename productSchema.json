@@ -1,0 +1,131 @@
+[
+    {
+      "_id": "621235e59540445b3sdfe9s0",
+      "name": "The Enchanted Chronicles",
+      "image": "/images/the_enchanted_chronicles.png",
+      "description": "Embark on a magical journey through The Enchanted Chronicles. Discover a world of mythical creatures, epic quests, and breathtaking adventures that will capture your imagination.",
+      "author": "Evelyn Sinclair",
+      "category": "Fantasy",
+      "price": 4.99,
+      "rating": 4.5,
+      "numberOfReviews": 26,
+      "isNew": true,
+      "reviews": [
+        {
+          "name": "Benjamin Fischer",
+          "rating": 5,
+          "comment": "This product is great.",
+          "title": "Awesome Stuff",
+          "user": "6389181f9cb2f071748ff7e1",
+          "_id": "638919379cb2f071748ff7f3",
+          "createdAt": "1669929271767",
+          "updatedAt": "1669929271767"
+        }
+      ],
+      "createdAt": "1669431755845",
+      "updatedAt": "1669431755845",
+      "__v": 0
+    },
+    {
+      "_id": "636985e59540445b3c45e6af",
+      "name": "Digital Destiny",
+      "image": "/images/digital_destiny.png",
+      "description": "Enter the futuristic world of Digital Destiny, where virtual reality becomes a gateway to infinite possibilities. Join our protagonist as they navigate a virtual realm filled with danger, mystery, and unexpected alliances.",
+      "author": "Aiden Brooks",
+      "category": "Science Fiction",
+      "price": 9.99,
+      "rating": 4.2,
+      "numberOfReviews": 10,
+      "isNew": false,
+      "reviews": [
+        {
+          "name": "John Doe",
+          "rating": 4,
+          "comment": "Great book, highly recommended.",
+          "title": "Awesome Read",
+          "user": "6389181f9cb2f071748ff7e2",
+          "_id": "638919379cb2f071748ff7f4",
+          "createdAt": "1669929271767",
+          "updatedAt": "1669929271767"
+        }
+      ],
+      "createdAt": "1669431755845",
+      "updatedAt": "1669431755845",
+      "__v": 0
+    },
+    {
+      "_id": "6369860d9540445b3c45e6b1",
+      "name": "Love in Shadows",
+      "image": "/images/love_in_shadows.png",
+      "description": "Immerse yourself in the captivating world of Love in Shadows, a romantic tale of forbidden love, secret societies, and untold secrets. Follow the intertwined destinies of two souls as they navigate a world shrouded in darkness and intrigue.",
+      "author": "Sophia Parker",
+      "category": "Romance",
+      "price": 6.99,
+      "rating": 4.8,
+      "numberOfReviews": 15,
+      "isNew": false,
+      "reviews": [
+        {
+          "name": "Jane Smith",
+          "rating": 5,
+          "comment": "Absolutely loved it!",
+          "title": "A Beautiful Story",
+          "user": "6389181f9cb2f071748ff7e3",
+          "_id": "638919379cb2f071748ff7f5",
+          "createdAt": "1669929271767",
+          "updatedAt": "1669929271767"
+        },
+        {
+          "name": "Sarah Johnson",
+          "rating": 4,
+          "comment": "Great characters and plot.",
+          "title": "Engaging Read",
+          "user": "6389181f9cb2f071748ff7e4",
+          "_id": "638919379cb2f071748ff7f6",
+          "createdAt": "1669929271767",
+          "updatedAt": "1669929271767"
+        }
+      ],
+      "createdAt": "1669431755845",
+      "updatedAt": "1669431755845",
+      "__v": 0
+    },
+    {
+      "_id": "6369863c9540445b3c45e6b3",
+      "name": "The Lost Kingdom",
+      "image": "/images/lost_kingdom.png",
+      "description": "Step into The Lost Kingdom, a realm filled with ancient mysteries, hidden treasures, and powerful artifacts. Join our young protagonist on a quest to uncover the truth behind a long-forgotten civilization and protect the world from an impending darkness.",
+      "author": "Benjamin Anderson",
+      "category": "Adventure",
+      "price": 7.99,
+      "rating": 4.6,
+      "numberOfReviews": 8,
+      "isNew": true,
+      "reviews": [
+        {
+          "name": "Michael Wilson",
+          "rating": 4,
+          "comment": "Exciting adventure!",
+          "title": "Thrilling Journey",
+          "user": "6389181f9cb2f071748ff7e5",
+          "_id": "638919379cb2f071748ff7f7",
+          "createdAt": "1669929271767",
+          "updatedAt": "1669929271767"
+        },
+        {
+          "name": "Emily Brown",
+          "rating": 5,
+          "comment": "Couldn't put it down.",
+          "title": "Captivating Story",
+          "user": "6389181f9cb2f071748ff7e6",
+          "_id": "638919379cb2f071748ff7f8",
+          "createdAt": "1669929271767",
+          "updatedAt": "1669929271767"
+        }
+      ],
+      "createdAt": "1669431755845",
+      "updatedAt": "1669431755845",
+      "__v": 0
+    }
+  ]
+  
