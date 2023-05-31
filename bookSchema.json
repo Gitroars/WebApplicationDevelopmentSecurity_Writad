@@ -1,0 +1,303 @@
+[{
+  "_id": {
+    "$oid": "636985919540445b3c45e6ac"
+  },
+  "name": "The Enchanted Chronicles",
+  "image": "/images/the_enchanted_chronicles.png",
+  "description": " Embark on a magical journey through The Enchanted Chronicles. Discover a world of mythical creatures, epic quests, and breathtaking adventures that will capture your imagination.",
+  "author": "Evelyn Sinclair",
+  "category": "Fantasy",
+  "price": 599.99,
+  "rating": 5,
+  "numberOfReviews": 1,
+  "productIsNew": true,
+  "__v": 15,
+  "reviews": [
+    {
+      "name": "Benjamin Fischer",
+      "rating": 5,
+      "comment": "This product is great.\n",
+      "title": "Awesome Stuff",
+      "user": {
+        "$oid": "6389181f9cb2f071748ff7e1"
+      },
+      "_id": {
+        "$oid": "638919379cb2f071748ff7f3"
+      },
+      "createdAt": {
+        "$date": {
+          "$numberLong": "1669929271767"
+        }
+      },
+      "updatedAt": {
+        "$date": {
+          "$numberLong": "1669929271767"
+        }
+      }
+    }
+  ],
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669431755845"
+    }
+  },
+  "stock": 7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669431755845"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "636985e59540445b3c45e6af"
+  },
+  "name": "Digital Destiny",
+  "image": "/images/digital_destiny.png",
+  "description": "Enter the futuristic world of Digital Destiny, where virtual reality becomes a gateway to infinite possibilities. Join our protagonist as they navigate a virtual realm filled with danger, mystery, and unexpected alliances",
+  "author": "Aiden Brooks",
+  "category": "Science Fiction",
+  "price": 929.99,
+  "rating": 3,
+  "numberOfReviews": 1,
+  "productIsNew": false,
+  "__v": 14,
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670297934852"
+    }
+  },
+  "reviews": [
+    {
+      "name": "Benjamin Fischer",
+      "rating": 3,
+      "comment": "I was not happy with the Iphone, I did not like the IOS operating system.",
+      "title": "Not satisfied!",
+      "user": {
+        "$oid": "6389181f9cb2f071748ff7e1"
+      },
+      "_id": {
+        "$oid": "638920fe2a3e062504352dd1"
+      },
+      "createdAt": {
+        "$date": {
+          "$numberLong": "1669931262643"
+        }
+      },
+      "updatedAt": {
+        "$date": {
+          "$numberLong": "1669931262643"
+        }
+      }
+    }
+  ],
+  "stock": 5
+},{
+  "_id": {
+    "$oid": "6369860d9540445b3c45e6b1"
+  },
+  "name": "Love in Shadows",
+  "image": "/images/love_in_shadows.png",
+  "description": "Immerse yourself in the captivating world of Love in Shadows, a romantic tale of forbidden love, secret societies, and untold secrets. Follow the intertwined destinies of two souls as they navigate a world shrouded in darkness and intrigue.",
+  "author": "Sophia Parker",
+  "category": "Romance",
+  "price": 399.99,
+  "countInStock": 11,
+  "rating": 5,
+  "numberOfReviews": 0,
+  "productIsNew": false,
+  "__v": 7,
+  "reviews": [],
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670297955426"
+    }
+  },
+  "stock": 0
+},{
+  "_id": {
+    "$oid": "6369863c9540445b3c45e6b3"
+  },
+  "name": "The Lost Kingdom",
+  "image": "/images/lost_kingdom.png",
+  "description": "Step into The Lost Kingdom, a realm filled with ancient mysteries, hidden treasures, and powerful artifacts. Join our young protagonist on a quest to uncover the truth behind a long-forgotten civilization and protect the world from an impending darkness.",
+  "author": "Benjamin Anderson",
+  "category": "Adventure",
+  "price": 299.99,
+  "rating": 5,
+  "numberOfReviews": 0,
+  "productIsNew": false,
+  "__v": 5,
+  "reviews": [],
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669874925863"
+    }
+  },
+  "stock": 7
+},{
+  "_id": {
+    "$oid": "636986579540445b3c45e6b5"
+  },
+  "name": "The Art of Time",
+  "image": "/images/art_of_time.png",
+  "description": "Immerse yourself in The Art of Time, a mesmerizing tale of time travel, destiny, and the power of choices. Join our protagonist as they navigate through different eras, encountering love, loss, and the timeless struggle between fate and free will.",
+  "author": "Gabriel Wells",
+  "category": "Science Fiction",
+  "price": 299.99,
+  "rating": 4,
+  "numberOfReviews": 1,
+  "productIsNew": false,
+  "__v": 1,
+  "reviews": [
+    {
+      "name": "bernie",
+      "rating": 4,
+      "comment": "asdfasfdas",
+      "title": "Highly rec 5",
+      "user": {
+        "$oid": "637c1a2363ed71e16e4aab8a"
+      },
+      "_id": {
+        "$oid": "637d2b3d7ae116b9cf56aac5"
+      },
+      "createdAt": {
+        "$date": {
+          "$numberLong": "1669147453482"
+        }
+      },
+      "updatedAt": {
+        "$date": {
+          "$numberLong": "1669147453482"
+        }
+      }
+    }
+  ],
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669147453482"
+    }
+  },
+  "stock": 1
+},{
+  "_id": {
+    "$oid": "636986749540445b3c45e6b7"
+  },
+  "name": "The Sound of Silence",
+  "image": "/images/sound_of_silence.png",
+  "description": "Experience The Sound of Silence, a poignant tale of love, loss, and the power of music. Follow the journey of a gifted musician as they navigate the complexities of relationships, find solace in their craft, and discover the healing power of sound.",
+  "author": "Julia Hartman",
+  "category": "Drama",
+  "price": 699.99,
+  "rating": 5,
+  "numberOfReviews": 0,
+  "productIsNew": false,
+  "stock": 0,
+  "__v": 1,
+  "reviews": [],
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670298130566"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63804a5079636c2ced47757d"
+  },
+  "name": "Echoes of Eternity",
+  "image": "/images/echoes_of_eternity.png",
+  "author": "Jonathan Reed",
+  "category": "Fantasy",
+  "description": "Enter a world of magic, destiny, and ancient prophecies in Echoes of Eternity. Join our young hero as they embark on a perilous quest to save their realm from an impending darkness that threatens to consume everything they hold dear.",
+  "rating": 0,
+  "numberOfReviews": 0,
+  "price": 699.99,
+  "stock": 5,
+  "productIsNew": true,
+  "reviews": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669352016956"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669352016956"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6381275e8e8648e00b7c82f7"
+  },
+  "name": "Shure MV7",
+  "image": "/images/shure-mv7.jpg",
+  "author": "Shure",
+  "category": "Microphones",
+  "description": "Get a professional podcast sound with audio interfaces, hard disk recorders, or direct to computers and mobile devices with the Shure MV7 Podcasting Microphone (Black). This is a professional-quality, broadcast-style dynamic microphone, one that can has both a conventional XLR connection and a USB port. It also supports a 3.5mm headphone output for direct monitoring.",
+  "rating": 0,
+  "numberOfReviews": 0,
+  "price": 449,
+  "stock": 2,
+  "productIsNew": true,
+  "reviews": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669408606318"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669408606318"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63895d3b2a3e062504353022"
+  },
+  "name": "Whispers in the Dark",
+  "image": "/images/whispers_in_the_dark.png",
+  "author": "Victoria Blackwood",
+  "category": "Horror",
+  "description": "Delve into the haunting world of Whispers in the Dark, a spine-chilling horror novel that will send shivers down your spine. Brace yourself for a sinister journey as you uncover the terrifying secrets lurking within the shadows.",
+  "rating": 5,
+  "numberOfReviews": 1,
+  "price": 899.99,
+  "stock": 49,
+  "productIsNew": true,
+  "reviews": [
+    {
+      "name": "admin",
+      "rating": 5,
+      "comment": "asdfas",
+      "title": "asdfas",
+      "user": {
+        "$oid": "637ea4e9abbb513d7a9dfa1c"
+      },
+      "_id": {
+        "$oid": "63895d5c2a3e062504353038"
+      },
+      "createdAt": {
+        "$date": {
+          "$numberLong": "1669946716055"
+        }
+      },
+      "updatedAt": {
+        "$date": {
+          "$numberLong": "1669946716055"
+        }
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669946683780"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669946683780"
+    }
+  },
+  "__v": 1
+}]
