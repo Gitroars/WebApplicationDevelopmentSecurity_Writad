@@ -15,6 +15,8 @@ import {
 } from "@chakra-ui/react";
 import { Link as ReactLink } from "react-router-dom";
 import { useSelector } from "react-redux";
+import BasketItem from "../components/BasketItem";
+import BasketOrderSummary from "../components/BasketOrderSummary";
 
 const BasketScreen = () => {
   const basketInfo = useSelector((state) => state.basket);
@@ -58,10 +60,14 @@ const BasketScreen = () => {
               <Heading fontSize='2x1' fontWeight='extrabold'>
                 Basket
               </Heading>
-              <Stack spacing='6'>{/*Basket Book */}</Stack>
+              <Stack spacing='6'>
+                {basket.map((basketItem) => (
+                  <BasketItem key={basketItem.id} basketItem={basketItem}></BasketItem>
+                ))}
+              </Stack>
             </Stack>
             <Flex direction='column' align='center' flex='1'>
-              {/*OrderSummary*/}
+              <BasketOrderSummary />
               <HStack mt='6' fontWeight='semibold'>
                 <p>or</p>
                 <Link as={ReactLink} to='/books' color={mode("orange.500", "orange.200")}>

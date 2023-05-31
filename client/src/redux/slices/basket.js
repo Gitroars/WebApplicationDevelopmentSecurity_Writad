@@ -1,10 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const calculateSubtotal = (basketState) => {
+  let result = 0;
+  basketState.map((book) => {
+    result += book.price;
+  });
+  return Number(result).toFixed(2);
+};
+
 export const initialState = {
   loading: false,
   error: null,
-  basket: [],
-  subtotal: 0,
+  basket: JSON.parse(localStorage.getItem("basketItems")) ?? [],
+  subtotal: localStorage.getItem("basketItems")
+    ? calculateSubtotal(JSON.parse(localStorage.getItem("basketItems")))
+    : 0,
+};
+
+const updateLocalStorage = (basket) => {
+  localStorage.setItem("basketItems", JSON.stringify(basket));
+  localStorage.setItem("subtotal", JSON.stringify(calculateSubtotal(basket)));
 };
 
 export const basketSlice = createSlice({
@@ -24,15 +39,24 @@ export const basketSlice = createSlice({
       }
       state.loading = false;
       state.error = null;
+      updateLocalStorage(state.basket);
+      state.subtotal = calculateSubtotal(state.basket);
     },
     setError: (state, { payload }) => {
       state.error = payload;
       state.loading = false;
     },
+    basketItemRemoval: (state, { payload }) => {
+      state.basket = [...state.basket].filter((book) => book.id !== payload);
+      updateLocalStorage(state.basket);
+      state.subtotal = calculateSubtotal(state.basket);
+      state.loading = false;
+      state.error = null;
+    },
   },
 });
 
-export const { setLoading, setError, basketItemAdd } = basketSlice.actions;
+export const { setLoading, setError, basketItemAdd, basketItemRemoval } = basketSlice.actions;
 export default basketSlice.reducer;
 
 export const basketSelector = (state) => state.basket;

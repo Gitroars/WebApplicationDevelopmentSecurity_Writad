@@ -7,6 +7,17 @@ const getBooks = async (req, res) => {
   res.json(books);
 };
 
+const getBook = async (req, res) => {
+  const book = await Book.findById(req.params.id);
+  if (book) {
+    res.json(book);
+  } else {
+    res.status(404);
+    throw new Error("Book not found");
+  }
+};
+
 bookRoutes.route("/").get(getBooks);
+bookRoutes.route("/:id").get(getBook);
 
 export default bookRoutes;

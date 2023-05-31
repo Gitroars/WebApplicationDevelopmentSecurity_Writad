@@ -1,10 +1,10 @@
 import axios from "axios";
-import { setLoading, setError, basketItemAdd } from "../slices/basket";
+import { setLoading, setError, basketItemAdd, basketItemRemoval } from "../slices/basket";
 
 export const addBasketItem = (id, qty) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
-    const { data } = await axios.get(`/api/books/${id}`);
+    const { data } = await axios.get(`http://localhost:5000/api/books/${id}`);
     const bookToAdd = {
       id: data._id,
       name: data.name,
@@ -13,6 +13,7 @@ export const addBasketItem = (id, qty) => async (dispatch) => {
       stock: data.stock,
       qty,
     };
+    dispatch(basketItemAdd(bookToAdd));
   } catch (error) {
     dispatch(
       setError(
@@ -24,4 +25,9 @@ export const addBasketItem = (id, qty) => async (dispatch) => {
       )
     );
   }
+};
+
+export const removeBasketItem = (id) => async (dispatch) => {
+  dispatch(setLoading(true));
+  dispatch(basketItemRemoval(id));
 };
