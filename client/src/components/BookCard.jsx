@@ -21,7 +21,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addBasketItem } from "../redux/actions/basketActions";
 
-const Rating = ({ rating, numReviews }) => {
+const Rating = ({ rating, numberOfReviews }) => {
   const { iconSize, setIconSize } = useState("14px");
   return (
     <Flex>
@@ -33,7 +33,7 @@ const Rating = ({ rating, numReviews }) => {
         <StarIcon size={iconSize} w='14px' color={rating >= 5 ? "orange.500" : "gray.200"} />
       </HStack>
       <Text fontSize='md' fontWeight='bold' ml='4px'>
-        {`${numReviews} ${numReviews === 1 ? "Review" : "Reviews"}`}
+        {`${numberOfReviews} ${numberOfReviews === 1 ? "Review" : "Reviews"}`}
       </Text>
     </Flex>
   );
@@ -73,7 +73,7 @@ const BookCard = ({ book }) => {
       shadow='lg'
       position='relative'
     >
-      {book.isNew && <Circle size='10px' position='absolute' top={3} right={3} bg='green.300' />}
+      {book.isNewRelease && <Circle size='10px' position='absolute' top={3} right={3} bg='green.300' />}
       {book.stock && <Circle size='10px' position='absolute' top={3} right={3} bg='red.300' />}
       <Image src={book.image} alt={book.name} roundedTop='lg' />
 
@@ -83,7 +83,7 @@ const BookCard = ({ book }) => {
             Sold Out
           </Badge>
         )}
-        {book.isNew && (
+        {book.isNewRelease && (
           <Badge rounded='full' px='2' fontSize='0.8em' colorScheme='green'>
             New
           </Badge>
@@ -99,7 +99,7 @@ const BookCard = ({ book }) => {
       </Flex>
 
       <Flex justifyContent='space-between' alignContent='center' py='2'>
-        <Rating rating={book.rating} numReviews={book.numReviews} />
+        <Rating rating={book.rating} numberOfReviews={book.numberOfReviews} />
       </Flex>
 
       <Flex justify='space-between'>
@@ -110,7 +110,7 @@ const BookCard = ({ book }) => {
           {book.price.toFixed(2)}
         </Box>
         <Tooltip label='Add to Basket' bg='white' placement='top' color='gray.900' fontSize='1.25em'>
-          <Button variant='ghost' display='flex' disabled={book.stock <= 0} onClick={() => addBook(book.id)}>
+          <Button variant='ghost' display='flex' disabled={book.stock <= 0} onClick={() => addBook(book._id)}>
             <Icon as={RiShoppingBasket2Line} h={8} w={8} alignSelf='center' />
           </Button>
         </Tooltip>
