@@ -12,11 +12,14 @@ import {
   Link,
   HStack,
   Text,
+  useToast,
 } from "@chakra-ui/react";
 import { RiShoppingBasket2Line } from "react-icons/ri";
 import { Link as ReactLink } from "react-router-dom";
 import { StarIcon } from "@chakra-ui/icons";
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addBasketItem } from "../redux/actions/basketActions";
 
 const Rating = ({ rating, numReviews }) => {
   const { iconSize, setIconSize } = useState("14px");
@@ -37,6 +40,27 @@ const Rating = ({ rating, numReviews }) => {
 };
 
 const BookCard = ({ book }) => {
+  const dispatch = useDispatch();
+  const toast = useToast();
+  const basketInfo = useSelector((state) => state.basket);
+  const { basket } = basketInfo;
+
+  const addBook = (id) => {
+    if (basket.some((basketItem) => basketItem.id === id)) {
+      toast({
+        description: "This book has already been added previously.",
+        status: "error",
+        isClosable: true,
+      });
+    } else {
+      dispatch(addBasketItem(id, 1));
+      toast({
+        description: "This book has successfully been added.",
+        status: "success",
+        isClosable: true,
+      });
+    }
+  };
   return (
     <Stack
       p='2'
@@ -86,7 +110,7 @@ const BookCard = ({ book }) => {
           {book.price.toFixed(2)}
         </Box>
         <Tooltip label='Add to Basket' bg='white' placement='top' color='gray.900' fontSize='1.25em'>
-          <Button variant='ghost' display='flex' disabled={book.stock <= 0}>
+          <Button variant='ghost' display='flex' disabled={book.stock <= 0} onClick={() => addBook(book.id)}>
             <Icon as={RiShoppingBasket2Line} h={8} w={8} alignSelf='center' />
           </Button>
         </Tooltip>

@@ -1,12 +1,12 @@
-import {combineReducers,configureStore} from '@reduxjs/toolkit'
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 
-import books from './slices/books';
-
+import books from "./slices/books";
+import basket from "./slices/basket";
 const reducer = combineReducers({
-    books,
-})
-
-export default configureStore({
-    reducer
+  books,
+  basket,
 });
 
+export default configureStore({
+  reducer,
+});
