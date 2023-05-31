@@ -110,7 +110,7 @@ const BookCard = ({ book }) => {
           {book.price.toFixed(2)}
         </Box>
         <Tooltip label='Add to Basket' bg='white' placement='top' color='gray.900' fontSize='1.25em'>
-          <Button variant='ghost' display='flex' disabled={book.stock <= 0} onClick={() => addBook(book._id)}>
+          <Button variant='ghost' display='flex' disabled={book.stock <= 0} onClick={() => addBook(book.id)}>
             <Icon as={RiShoppingBasket2Line} h={8} w={8} alignSelf='center' />
           </Button>
         </Tooltip>
