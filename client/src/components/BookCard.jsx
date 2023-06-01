@@ -79,11 +79,6 @@ const BookCard = ({ book }) => {
       <Image src={book.image} alt={book.name} roundedTop='lg' />
 
       <Box flex='2' maxH='8' alignItems='baseline'>
-        {book.stock <= 0 && (
-          <Badge rounded='full' px='2' fontSize='0.8em' colorScheme='red'>
-            Sold Out
-          </Badge>
-        )}
         {book.productIsNew && (
           <Badge rounded='full' px='2' fontSize='0.8em' colorScheme='green'>
             New
