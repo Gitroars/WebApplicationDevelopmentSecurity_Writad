@@ -39,6 +39,11 @@ const BookScreen = () => {
     dispatch(getBook(id));
   }, [dispatch, id, basket]);
 
+  const addBook = () => {
+    dispatch(addBasketItem(book._id, 1));
+    toast({ description: "Book added successfully", status: "success", isClosable: true });
+  };
+
   return (
     <Wrap spacing='30px' justify='center' minHeight='100vh'>
       {loading ? (
@@ -91,7 +96,58 @@ const BookScreen = () => {
                     </Flex>
                   </Box>
                   <Text>{book.description}</Text>
+                  <Button colorScheme='orange' onClick={() => addBook()}>
+                    Add to basket
+                  </Button>
+                  <Stack width='270px'>
+                    <Flex alignItems='center'>
+                      <BiPackage size='20px' />
+                      <Text fontWeight='medium' fontSize='sm' ml='2'>
+                        Full Lifetime Access
+                      </Text>
+                    </Flex>
+                    <Flex alignItems='center'>
+                      <BiCheckShield size='20px' />
+                      <Text fontWeight='medium' fontSize='sm' ml='2'>
+                        30-Day Money-Back Guarantee
+                      </Text>
+                    </Flex>
+                    <Flex alignItems='center'>
+                      <BiSupport size='20px' />
+                      <Text fontWeight='medium' fontSize='sm' ml='2'>
+                        24/7 Customer Support
+                      </Text>
+                    </Flex>
+                  </Stack>
                 </Stack>
+              </Stack>
+              <Flex direction='column' align='center' flex='1' _dark={{ bg: "gray.900" }}>
+                <Image mb='30px' src={book.image} alt={book.name}></Image>
+              </Flex>
+              <Stack>
+                <Text fontSize='xl' fontWeight='bold'>
+                  Reviews
+                </Text>
+                <SimpleGrid minChildWidth='300px' spacingX='40px' spacingY='20px'>
+                  {book.reviews.map((review) => (
+                    <Box key={review._id}>
+                      <Flex spacing='2px' alignItems='center'>
+                        <StarIcon color='orange.500' />
+                        <StarIcon color={book.rating >= 2 ? "orange.500" : "gray.200"}></StarIcon>
+                        <StarIcon color={review.rating >= 3 ? "orange.500" : "gray.200"}></StarIcon>
+                        <StarIcon color={review.rating >= 4 ? "orange.500" : "gray.200"}></StarIcon>
+                        <StarIcon color={review.rating >= 5 ? "orange.500" : "gray.200"}></StarIcon>
+                        <Text fontWeight='semibold' ml='4px'>
+                          {review.title && review.title}
+                        </Text>
+                      </Flex>
+                      <Box py='12px'>{review.comment}</Box>
+                      <Text fontSize='sm' color='gray.400'>
+                        by {review.name}, {new Date(review.createdAt).toDateString()}
+                      </Text>
+                    </Box>
+                  ))}
+                </SimpleGrid>
               </Stack>
             </Stack>
           </Box>
