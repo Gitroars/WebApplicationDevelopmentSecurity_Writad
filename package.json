@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Gitroars/DevKnight_Book#readme",
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "bcryptjs": "^2.4.3",
     "concurrently": "^8.0.1",
     "cors": "^2.8.5",

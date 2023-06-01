@@ -1,11 +1,11 @@
 import express from "express";
-import User from "../models/User";
+import User from "../models/User.js";
 import asyncHandler from "express-async-handler";
 import jwt from "jsonwebtoken";
 
-const userRoutes = express.router();
+const userRoutes = express.Router(); // Corrected line
 
-//TODO: redefine expiresIn
+// TODO: redefine expiresIn
 const genToken = (id) => {
   return jwt.sign({ id }, process.env.TOKEN_SECRET, { expiresIn: "60d" });
 };
@@ -42,7 +42,7 @@ const registerUser = asyncHandler(async (req, res) => {
       token: genToken(user._id),
     });
   } else {
-    res.json(400);
+    res.status(400);
     throw new Error("Invalid user data");
   }
 });
