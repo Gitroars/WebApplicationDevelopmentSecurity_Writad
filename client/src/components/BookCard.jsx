@@ -13,6 +13,7 @@ import {
   HStack,
   Text,
   useToast,
+  Heading,
 } from "@chakra-ui/react";
 import { RiShoppingBasket2Line } from "react-icons/ri";
 import { Link as ReactLink } from "react-router-dom";

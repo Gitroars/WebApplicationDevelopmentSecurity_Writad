@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import BooksScreen from "./screens/BooksScreen";
 import BasketScreen from "./screens/BasketScreen";
 import Footer from "./components/Footer";
+import BookScreen from "./screens/BookScreen";
 function App() {
   return (
     <ChakraProvider>
@@ -12,6 +13,7 @@ function App() {
         <main>
           <Routes>
             <Route path='/books' element={<BooksScreen />}></Route>
+            <Route path='/book/:id' element={<BookScreen />}></Route>
             <Route path='/basket' element={<BasketScreen />}></Route>
           </Routes>
         </main>
