@@ -25,4 +25,4 @@ const PasswordTextField = ({ label, type, name, placeholder }) => {
   );
 };
 
-export default TextField;
+export default PasswordTextField;
