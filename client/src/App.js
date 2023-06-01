@@ -6,6 +6,7 @@ import BasketScreen from "./screens/BasketScreen";
 import Footer from "./components/Footer";
 import BookScreen from "./screens/BookScreen";
 import LoginScreen from "./screens/LoginScreen";
+import RegistrationScreen from "./screens/RegistrationScreen";
 function App() {
   return (
     <ChakraProvider>
@@ -17,6 +18,7 @@ function App() {
             <Route path='/book/:id' element={<BookScreen />}></Route>
             <Route path='/basket' element={<BasketScreen />}></Route>
             <Route path='/login' element={<LoginScreen />}></Route>
+            <Route path='/registration' element={<RegistrationScreen />}></Route>
           </Routes>
         </main>
         <Footer />
