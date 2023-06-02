@@ -80,7 +80,7 @@ const Navbar = () => {
 
   return (
     <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
-      <Flex height={35} alignItems='center' justifyContent='space-between'>
+      <Flex height={50} alignItems='center' justifyContent='space-between'>
         {/* Mobile menu toggle button */}
         <IconButton
           size='md'
