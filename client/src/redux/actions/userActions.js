@@ -61,11 +61,11 @@ export const updateProfile = (id, name, email, password) => async (dispatch, get
   try {
     const config = {
       headers: {
-        Authroization: `Bearer ${userInfo.token}`,
+        Authorization: `Bearer ${userInfo.token}`,
         "Content-Type": "application/json",
       },
     };
-    const { data } = await axios.get(
+    const { data } = await axios.put(
       `http://localhost:5000/api/users/profile/${id}`,
       { _id: id, name, email, password },
       config

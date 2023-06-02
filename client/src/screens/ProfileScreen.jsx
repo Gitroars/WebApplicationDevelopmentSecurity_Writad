@@ -35,15 +35,12 @@ const ProfileScreen = () => {
   const location = useLocation();
   const toast = useToast();
 
-  useEffect(
-    () => {
-      if (updateSuccess) {
-        toast({ description: "Profile saved", status: "success", isClosable: true });
-        dispatch(resetUpdateSuccess());
-      }
-    },
-    { toast, updateSuccess }
-  );
+  useEffect(() => {
+    if (updateSuccess) {
+      toast({ description: "Profile saved", status: "success", isClosable: true });
+      dispatch(resetUpdateSuccess());
+    }
+  }, [toast, updateSuccess]);
 
   return userInfo ? (
     <Formik
