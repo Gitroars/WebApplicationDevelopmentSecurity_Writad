@@ -74,7 +74,7 @@ const ProfileScreen = () => {
                 Profile
               </Heading>
               <Stack spacing='6'>
-                <Stack spacing='6' as='form' onSubmit={formik.handleSubmit}></Stack>
+                <Stack spacing='6' as='form' onSubmit={formik.handleSubmit}>
                 {error && (
                   <Alert
                     status='error'
@@ -112,6 +112,7 @@ const ProfileScreen = () => {
                   </Button>
                 </Stack>
               </Stack>
+            </Stack>
             </Stack>
             <Flex direction='column' align='center' flex='1' _dark={{ bg: "gray.900" }}>
               <Card>
