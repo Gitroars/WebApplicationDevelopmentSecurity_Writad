@@ -70,6 +70,7 @@ export const updateProfile = (id, name, email, password) => async (dispatch, get
       { _id: id, name, email, password },
       config
     );
+    localStorage.setItem("userInfo", JSON.stringify(data));
     dispatch(updateUserProfile(data));
   } catch (error) {
     dispatch(

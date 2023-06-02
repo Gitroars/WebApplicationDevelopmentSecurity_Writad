@@ -79,8 +79,11 @@ const BookScreen = () => {
                 <Heading fontSize='2x1' fontWeight='extrabold'>
                   {book.name}
                 </Heading>
+
                 <Stack spacing='5'>
+                  <Flex direction='column' align='center' flex='1' _dark={{ bg: "gray.900" }}></Flex>
                   <Box>
+                    <Image mb='30px' src={book.image} alt={book.name}></Image>
                     <Text fontSize='x1'>${book.price}</Text>
                     <Flex>
                       <HStack spacing='2px'>
@@ -121,9 +124,7 @@ const BookScreen = () => {
                   </Stack>
                 </Stack>
               </Stack>
-              <Flex direction='column' align='center' flex='1' _dark={{ bg: "gray.900" }}>
-                <Image mb='30px' src={book.image} alt={book.name}></Image>
-              </Flex>
+
               <Stack>
                 <Text fontSize='xl' fontWeight='bold'>
                   Reviews

@@ -16,12 +16,13 @@ const loginUser = asyncHandler(async (req, res) => {
   const user = await User.findOne({ email });
   if (user && (await user.matchPassword(password))) {
     res.json({
-       _id: user._id, 
-      name: user.name, 
+      _id: user._id,
+      name: user.name,
       email: user.email,
-      isAdmin: user.isAdmin, 
+      isAdmin: user.isAdmin,
       token: genToken(user._id),
-      createdAt:user.createdAt,});
+      createdAt: user.createdAt,
+    });
   } else {
     res.status(401);
     throw new Error("Invalid email or password");
@@ -54,35 +55,33 @@ const registerUser = asyncHandler(async (req, res) => {
   }
 });
 
-const updatedUserProfile=asyncHandler(async(req,res)=>{
-  const user=await User.findById(req.params.id);
+const updateUserProfile = asyncHandler(async (req, res) => {
+  const user = await User.findById(req.params.id);
 
-  if(user){
-    user.name=req.body.name || user.name;
-    user.email=req.body.email|| user.email;
-    if (req.body.password){
-      user.password=req.body.password;
+  if (user) {
+    user.name = req.body.name || user.name;
+    user.email = req.body.email || user.email;
+    if (req.body.password) {
+      user.password = req.body.password;
     }
-  
 
-    const updatedUser=await user.save();
+    const updatedUser = await user.save();
 
     res.json({
-      _id:updatedUser._id,
-      name:updatedUser.name,
-      email:updatedUser.email,
-      isAdmin:updatedUser.isAdmin,
-      token:genToken(updatedUser._id),
-      createdAt:updatedUser.createdAt,
-    })
-  }else{
+      _id: updatedUser._id,
+      name: updatedUser.name,
+      email: updatedUser.email,
+      isAdmin: updatedUser.isAdmin,
+      token: genToken(updatedUser._id),
+      createdAt: updatedUser.createdAt,
+    });
+  } else {
     res.status(404);
-    throw new Error('User not found')
+    throw new Error("User not found");
   }
-
-})
+});
 
 userRoutes.route("/login").post(loginUser);
 userRoutes.route("/register").post(registerUser);
-userRoutes.route('/profile/:id').put(protectRoute,updatedUserProfile);
+userRoutes.route("/profile/:id").put(protectRoute, updateUserProfile);
 export default userRoutes;
