@@ -113,6 +113,8 @@ const Navbar = () => {
         <Flex alignItems='center'>
           <NavLink>
             <Icon
+              cursor='pointer'
+              mr='3'
               as={colorMode === "light" ? MoonIcon : SunIcon}
               alignSelf='center'
               onClick={() => toggleColorMode()}
