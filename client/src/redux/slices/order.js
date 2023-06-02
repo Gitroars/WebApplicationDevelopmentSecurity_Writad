@@ -3,11 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 export const initialState = {
   loading: false,
   error: null,
-  shippingAddress:null,
-  orderInfo:null,
+  shippingAddress: null,
+  orderInfo: null,
 };
 
-export const userSlice = createSlice({
+export const orderSlice = createSlice({
   name: "order",
   initialState,
   reducers: {
@@ -24,10 +24,10 @@ export const userSlice = createSlice({
       state.error = payload;
       state.loading = false;
     },
-    shippingAddressAdd:(state, { payload })=>{
-        state.shippingAddress=payload;
-        state.loading=false;
-    }
+    shippingAddressAdd: (state, { payload }) => {
+      state.shippingAddress = payload;
+      state.loading = false;
+    },
   },
 });
 
