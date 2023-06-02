@@ -18,21 +18,25 @@ import { BiBookHeart } from "react-icons/bi";
 import { useColorMode } from "@chakra-ui/react";
 import { useState } from "react";
 import { useSelector } from "react-redux";
-import {FiShoppingCart} from "react-icons/gi"
+import { FiShoppingCart } from "react-icons/fi";
 
-const ShoppingCartIcon=()=>{
-  const cartInfo=useSelector((state)=>state.cart);
-  const {cart}=cartInfo
-  return <Flex>
-    <Text fontStyle='italic' as='sub' fontSize='xs'>{cart.length}</Text>
-    <Icon ml='-1.5' as={FiShoppingCart} h='4' w='7'alignSelf='center'/>
-    Basket
-  </Flex>
-}
+const ShoppingCartIcon = () => {
+  const basketInfo = useSelector((state) => state.basket);
+  const { basket } = basketInfo;
+  return (
+    <Flex>
+      <Text fontStyle='italic' as='sub' fontSize='xs'>
+        {basket.length}
+      </Text>
+      <Icon ml='-1.5' as={FiShoppingCart} h='4' w='7' alignSelf='center' />
+      Basket
+    </Flex>
+  );
+};
 
 const links = [
   { linkName: "Books", path: "/books" },
-  { linkName: <ShoppingCartIcon/>, path: "/basket" },
+  { linkName: <ShoppingCartIcon />, path: "/basket" },
 ];
 
 const NavLink = ({ path, children }) => (
