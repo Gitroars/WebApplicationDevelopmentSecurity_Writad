@@ -2,7 +2,7 @@ import  Jwt  from 'jsonwebtoken';
 import asyncHandler from 'express-async-handler';
 import User from '../models/User.js';
 
-const protectRoute =asyncHandler(async(req,res,nect)=>{
+const protectRoute =asyncHandler(async(req,res,next)=>{
     let token;
     if (req.headers.authorization&&req.headers.authorization.startsWith('Bearer')){
         try{
