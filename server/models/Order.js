@@ -23,7 +23,7 @@ const orderSchema= new mongoose.Schema(
             quantity:{type:Number,required:true},
             image:{type:String,required:true},
             price:{type:Number,required:true},
-            name:{type:mongoose.Schema.Types.ObjectId,required:true,ref:'books'},
+            id:{type:mongoose.Schema.Types.ObjectId,required:true,ref:'books'},
         },
         shippingAddress:{
             address:{type:String,required:true},

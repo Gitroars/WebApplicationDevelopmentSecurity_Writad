@@ -3,8 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 export const initialState = {
   loading: false,
   error: null,
-  shippingAddress: null,
-  orderInfo: null,
+  shippingAddress:null,
+  orderInfo:null,
 };
 
 export const orderSlice = createSlice({
@@ -24,14 +24,17 @@ export const orderSlice = createSlice({
       state.error = payload;
       state.loading = false;
     },
-    shippingAddressAdd: (state, { payload }) => {
-      state.shippingAddress = payload;
-      state.loading = false;
+    shippingAddressAdd:(state, { payload })=>{
+        state.shippingAddress=payload;
+        state.loading=false;
     },
+    clearOrder:(state)=>{
+      state=initialState;
+    }
   },
 });
 
-export const { setLoading, setError, shippingAddressAdd } = orderSlice.actions;
+export const { setLoading, setError, shippingAddressAdd ,clearOrder } = orderSlice.actions;
 export default orderSlice.reducer;
 
 export const orderSelector = (state) => state.order;

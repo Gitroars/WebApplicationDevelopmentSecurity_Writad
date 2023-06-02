@@ -1,13 +1,16 @@
 import { useEffect,useState,useCallback } from "react";
-import { Flex, Heading ,Stack,Text,useColorModeValue as mode,Badge,Box,Link,Divider,useDisclosure} from "@chakra-ui/react";
+import { Flex, Heading ,Stack,Text,useColorModeValue as mode,Badge,Box,Link,Divider,useToast,} from "@chakra-ui/react";
 import { useDispatch,useSelector } from "react-redux";
-import { Link as ReactLink } from "react-router-dom";
+import { Link as ReactLink ,useNavigate} from "react-router-dom";
 import { PhoneIcon, EmailIcon,ChatIcon} from '@chakra-ui/icons'
-import { createOrder } from "../redux/actions/orderActions";
+import { createOrder, resetOrder } from "../redux/actions/orderActions";
 import CheckoutItem from "./CheckoutItem";
-import { number } from "yup";
+import PayPalButton from './PayPalButton'
+import { resetBasket } from "../redux/actions/basketActions";
+
 
 const CheckoutOrderSummary=()=>{
+
     const colorMode=mode('gray.600','gray.400');
     const basketItems=useSelector((state)=> state.basket);
     const {basket, subtotal,expressShipping}=basketItems;
@@ -16,12 +19,13 @@ const CheckoutOrderSummary=()=>{
     const {userInfo}=user;
     
     const shippingInfo=useSelector((state)=> state.basket);
-    const {error, shippingAddress}=basketItems;
+    const {error, shippingAddress}=shippingInfo;
 
     //paypal pay button
     const {buttonDisabled, setButtonDisabled}=useState(false)
-    const dispacth=useDispatch();
-
+    const dispatch=useDispatch();
+    const navigate=useNavigate();
+    const toast=useToast();
     const shipping=useCallback(
         ()=>(expressShipping==='true'? 14.99:subtotal<=1000? 4.99:0),
         [expressShipping,subtotal]
@@ -29,15 +33,39 @@ const CheckoutOrderSummary=()=>{
 
     const total=useCallback(
         ()=>Number(shipping()===0?Number(subtotal):Number(subtotal)+shipping()).toFixed(2),
-        [(shipping,subtotal)]
+        [shipping,subtotal]
     );
 
+    useEffect(()=>{
+        if(!error){
+            setButtonDisabled(false)
+        }else{
+            setButtonDisabled(false)
+        }
+    },[error,shippingAddress,total,expressShipping,shipping,dispatch])
+
     const onPaymentSuccess=()=>{
-        alert('order success')
+        dispatch(createOrder({
+            orderItems: basket,
+            shippingAddress,
+            paymentMethod:data.paymentSource,
+            paymentDetails:data,
+            shippingPrice:shipping(),
+            totalPrice:total(),
+            userInfo,
+        }));
+        dispatch(resetOrder());
+        dispatch(resetBasket());
+        navigate('/order-success')
     };
 
-    const onPaymenctError=()=>{
-        alert('order error')
+    const onPaymentError=()=>{
+        toast({
+            description:'something went wront during the payment process. Please try again or make sure that your PayPal account balance is enough for this purchase'
+            ,status:'error',
+            duration:'600000',
+            isClosable:true,
+        })
     };
 
     return <Stack spacing='8' rounded='xl' padding='8' width='full'>
@@ -76,6 +104,8 @@ const CheckoutOrderSummary=()=>{
                 </Text>
             </Flex>
         </Stack>
+        <PayPalButton total={total} onPaymentSuccess={onPaymentSuccess} onPaymentError={onPaymentError} disabled={buttonDisabled}/>
+
         <Box align='center'>
             <Text fontSize='sm'> Have questions? or need help to complete your order?</Text>
             <Flex justifyContent='center' color={mode('orange.500','orange.100')}>
@@ -95,10 +125,11 @@ const CheckoutOrderSummary=()=>{
         </Box>
         <Divider bg={mode('gray.400','gray.800')}/>
         <Flex justifyContent='center' my='6' fontWeight='semibold'>
-            <p>or</p></Flex>
+            <p>or</p>
             <Link as={ReactLink} to='/products' ml='1'>
             Continue Shopping</Link>
-    </Stack>
+        </Flex>
+        </Stack>
 }
 
 export default CheckoutOrderSummary;
