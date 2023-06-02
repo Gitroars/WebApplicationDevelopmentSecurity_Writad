@@ -45,4 +45,4 @@ export const userSlice = createSlice({
 export const { setLoading, setError, userLogin, userLogout ,updateUserProfile ,resetUpdate } = userSlice.actions;
 export default userSlice.reducer;
 
-export const userSelector = (state) => state.users;
+export const userSelector = (state) => state.user;
