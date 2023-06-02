@@ -18,7 +18,7 @@ import { BiBookHeart } from "react-icons/bi";
 import { useColorMode } from "@chakra-ui/react";
 import { useState } from "react";
 import { useSelector } from "react-redux";
-import { FiShoppingCart } from "react-icons/fi";
+import { RiShoppingBasket2Line } from "react-icons/ri";
 
 const ShoppingCartIcon = () => {
   const basketInfo = useSelector((state) => state.basket);
@@ -28,7 +28,7 @@ const ShoppingCartIcon = () => {
       <Text fontStyle='italic' as='sub' fontSize='xs'>
         {basket.length}
       </Text>
-      <Icon ml='-1.5' as={FiShoppingCart} h='4' w='7' alignSelf='center' />
+      <Icon ml='-1.5' as={RiShoppingBasket2Line} h='4' w='7' alignSelf='center' />
       Basket
     </Flex>
   );
