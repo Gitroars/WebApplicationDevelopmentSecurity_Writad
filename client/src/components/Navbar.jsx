@@ -133,6 +133,16 @@ const Navbar = () => {
                     <MdLocalShipping />
                     <Text ml='2'>Purchase history</Text>
                   </MenuItem>
+                  {userInfo.isAdmin === 'true' && (
+                    <>
+                      <MenuDivider/>
+                      <MenuItem as={ReactLink}to={'/admin-console'}>
+                        <MdOutlineAdminPanelSettings/>
+                        <Text ml='2'>Admin Console</Text>
+                      </MenuItem>
+                    </>
+                  )}
+
                   <MenuDivider />
                   <MenuItem onClick={logoutHandler}>
                     <MdLogout />

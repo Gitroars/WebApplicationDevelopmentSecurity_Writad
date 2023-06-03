@@ -11,6 +11,8 @@ import ProfileScreen from "./screens/ProfileScreen";
 import CheckoutScreen from "./screens/CheckoutScreen";
 import OrderSuccessScreen from "./screens/OrderSuccessScreen";
 import UserOrdersScreen from "./screens/UserOrdersScreen";
+import AdminConsoleScreen from "./screens/AdminConsoleScreen";
+
 function App() {
   return (
     <ChakraProvider>
@@ -27,6 +29,7 @@ function App() {
             <Route path='/checkout' element={<CheckoutScreen />}></Route>
             <Route path='/order-success' element={<OrderSuccessScreen />}></Route>
             <Route path='/your-orders' element={<UserOrdersScreen />}></Route>
+            <Route path='/admin-console' element={<AdminConsoleScreen />}></Route>
           </Routes>
         </main>
         <Footer />
