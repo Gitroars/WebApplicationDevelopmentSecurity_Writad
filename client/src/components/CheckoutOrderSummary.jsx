@@ -31,7 +31,7 @@ const CheckoutOrderSummary = () => {
   const { error, shippingAddress } = shippingInfo;
 
   //paypal pay button
-  const { buttonDisabled, setButtonDisabled } = useState(false);
+  const [buttonDisabled, setButtonDisabled] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const toast = useToast();

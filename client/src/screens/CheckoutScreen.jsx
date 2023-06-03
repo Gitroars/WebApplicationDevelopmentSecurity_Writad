@@ -8,8 +8,7 @@ const CheckoutScreen = () => {
   const user = useSelector((state) => state.user);
   const { userInfo } = user;
   const location = useLocation();
-  return;
-  userInfo ? (
+  return userInfo ? (
     <Box
       minH='100vh'
       maxW={{ base: "3xl", lg: "7xl" }}
