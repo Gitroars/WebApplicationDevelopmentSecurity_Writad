@@ -10,7 +10,7 @@ const OrderSuccessScreen = () => {
   const logoutHandler = () => {
     dispatch(logout());
     toast({ description: "you have been logged out.", status: "success", isClosable: true });
-    navigate("/products");
+    navigate("/books");
   };
 
   return (
