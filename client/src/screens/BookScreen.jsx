@@ -22,7 +22,9 @@ import {
   Textarea,
 } from "@chakra-ui/react";
 import { MinusIcon, StarIcon, SmallAddIcon } from "@chakra-ui/icons";
-import { BiPackage, BiCheckShield, BiSupport } from "react-icons/bi";
+import { BiCheckShield } from "react-icons/bi";
+import { FaInfinity } from "react-icons/fa";
+import { FiAward } from "react-icons/fi";
 import { useDispatch, useSelector } from "react-redux";
 import { createBookReview, getBook, resetBookError } from "../redux/actions/bookActions";
 import { addBasketItem } from "../redux/actions/basketActions";
@@ -88,6 +90,9 @@ const BookScreen = () => {
             py={{ base: "6", md: "8", lg: "12" }}
           >
             <Stack Stack direction={{ base: "column", lg: "row" }} align={{ lg: "flex-start" }}>
+              <Flex direction='column' align='center' flex='1' _dark={{ bg: "gray.900" }}>
+                <Image mb='30px' src={book.image} alt={book.name} />
+              </Flex>
               <Stack
                 pr={{ base: "0", md: "12" }}
                 spacing={{ base: "8", md: "4" }}
@@ -126,7 +131,7 @@ const BookScreen = () => {
                   </Button>
                   <Stack width='270px'>
                     <Flex alignItems='center'>
-                      <BiPackage size='20px' />
+                      <FaInfinity size='20px' />
                       <Text fontWeight='medium' fontSize='sm' ml='2'>
                         Full Lifetime Access
                       </Text>
@@ -134,21 +139,18 @@ const BookScreen = () => {
                     <Flex alignItems='center'>
                       <BiCheckShield size='20px' />
                       <Text fontWeight='medium' fontSize='sm' ml='2'>
-                        30-Day Money-Back Guarantee
+                        7-Day Money-Back Guarantee
                       </Text>
                     </Flex>
                     <Flex alignItems='center'>
-                      <BiSupport size='20px' />
+                      <FiAward size='20px' />
                       <Text fontWeight='medium' fontSize='sm' ml='2'>
-                        24/7 Customer Support
+                        Original Content
                       </Text>
                     </Flex>
                   </Stack>
                 </Stack>
               </Stack>
-              <Flex direction='column' align='center' flex='1' _dark={{ bg: "gray.900" }}>
-                <Image mb='30px' src={book.image} alt={book.name} />
-              </Flex>
             </Stack>
 
             {userInfo && (
@@ -205,11 +207,11 @@ const BookScreen = () => {
               </>
             )}
 
-            <Stack>
+            <Stack my='20'>
               <Text fontSize='xl' fontWeight='bold'>
                 Reviews
               </Text>
-              <SimpleGrid minChildWidth='300px' spacingX='40px' spacingY='20px'>
+              <SimpleGrid minChildWidth='100%' spacingX='40px' spacingY='20px'>
                 {book.reviews.map((review) => (
                   <Box key={review._id}>
                     <Flex spacing='2px' alignItems='center'>
