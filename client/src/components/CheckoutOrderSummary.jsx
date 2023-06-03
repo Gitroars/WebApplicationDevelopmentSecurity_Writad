@@ -49,7 +49,7 @@ const CheckoutOrderSummary = () => {
     if (!error) {
       setButtonDisabled(false);
     } else {
-      setButtonDisabled(false);
+      setButtonDisabled(true);
     }
   }, [error, shippingAddress, total, expressShipping, shipping, dispatch]);
 
@@ -70,7 +70,7 @@ const CheckoutOrderSummary = () => {
     navigate("/order-success");
   };
 
-  const onPaymentError = () => {
+  const onPaymentError = (error) => {
     toast({
       description:
         "something went wront during the payment process. Please try again or make sure that your PayPal account balance is enough for this purchase",
