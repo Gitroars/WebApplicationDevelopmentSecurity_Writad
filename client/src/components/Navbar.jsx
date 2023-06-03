@@ -24,7 +24,7 @@ import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon, ChevronDownIcon } from "@c
 import { BiBookHeart } from "react-icons/bi";
 import { useState } from "react";
 import { CgProfile } from "react-icons/cg";
-import { MdLocalShipping, MdLogout } from "react-icons/md";
+import { MdLocalShipping, MdLogout, MdOutlineAdminPanelSettings } from "react-icons/md";
 import { RiShoppingBasket2Line } from "react-icons/ri";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../redux/actions/userActions";
@@ -133,11 +133,11 @@ const Navbar = () => {
                     <MdLocalShipping />
                     <Text ml='2'>Purchase history</Text>
                   </MenuItem>
-                  {userInfo.isAdmin === 'true' && (
+                  {userInfo.isAdmin === "true" && (
                     <>
-                      <MenuDivider/>
-                      <MenuItem as={ReactLink}to={'/admin-console'}>
-                        <MdOutlineAdminPanelSettings/>
+                      <MenuDivider />
+                      <MenuItem as={ReactLink} to={"/admin-console"}>
+                        <MdOutlineAdminPanelSettings />
                         <Text ml='2'>Admin Console</Text>
                       </MenuItem>
                     </>
