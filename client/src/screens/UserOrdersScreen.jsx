@@ -34,7 +34,65 @@ const UserOrdersScreen = () => {
       dispatch(getUserOrders());
     }
   }, []);
-  return userInfo ? <p>Orders</p> : <Navigate to='/login' replace={true} state={{ from: location }} />;
+
+  return userInfo ? (
+    <>
+      {loading ? (
+        <Wrap justify='center' direction='column' align='center' mt='20px' minH='100vh'>
+          <Stack direction='row' spacing={4}>
+            <Spinner mt={20} thickness='2px' speed='0.65s' emptyColor='gray.200' color='orange.500' size='xl' />
+          </Stack>
+        </Wrap>
+      ) : error ? (
+        <Alert status='error'>
+          <AlertIcon />
+          <AlertTitle>We are sorry!</AlertTitle>
+          <AlertDescription>{error}</AlertDescription>
+        </Alert>
+      ) : (
+        orders && (
+          <TableContainer minHeight='100vh'>
+            <Table variant='striped'>
+              <Thead>
+                <Tr>
+                  <Th>Purchase Id</Th>
+                  <Th>Purchase Date</Th>
+                  <Th>Paid Total</Th>
+                  <Th>Books</Th>
+                  <Th>Print Receipt</Th>
+                </Tr>
+              </Thead>
+              <Tbody>
+                {orders.map((order) => (
+                  <Tr key={order._id}>
+                    <Td>{order._id}</Td>
+                    <Td>{new Date(order.createdAt).toDateString()}</Td>
+                    <Td>
+                      ${order.totalPrice} via {order.paymentMethod}
+                    </Td>
+                    <Td>
+                      {order.orderItems.map((book) => (
+                        <UnorderedList key={book._id}>
+                          <ListItem>
+                            {book.qty} x {book.name} (${book.price} ech)
+                          </ListItem>
+                        </UnorderedList>
+                      ))}
+                    </Td>
+                    <Td>
+                      <Button variant='outline'>Receipt</Button>
+                    </Td>
+                  </Tr>
+                ))}
+              </Tbody>
+            </Table>
+          </TableContainer>
+        )
+      )}
+    </>
+  ) : (
+    <Navigate to='/login' replace={true} state={{ from: location }} />
+  );
 };
 
 export default UserOrdersScreen;
