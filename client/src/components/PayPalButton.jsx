@@ -9,7 +9,7 @@ const PayPalButton = ({ total, onPaymentSuccess, onPaymentError, disabled }) => 
 
   useEffect(() => {
     const paypalkey = async () => {
-      const { data: clientId } = await axios.get("http://localhost:5000/api/config/paypal");
+      const { data: clientId } = await axios.get("/api/config/paypal");
       setPayPalClient(clientId);
     };
     paypalkey();
