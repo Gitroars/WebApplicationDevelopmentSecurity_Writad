@@ -46,7 +46,7 @@ export const register = (name, email, password) => async (dispatch) => {
         "Content-Type": "application/json",
       },
     };
-    const { data } = await axios.post("http://localhost:5000/api/users/register", { name, email, password }, config);
+    const { data } = await axios.post("/api/users/register", { name, email, password }, config);
     dispatch(userLogin(data));
     localStorage.setItem("userInfo", JSON.stringify(data));
   } catch (error) {
@@ -74,7 +74,7 @@ export const updateProfile = (id, name, email, password) => async (dispatch, get
       },
     };
     const { data } = await axios.put(
-      `http://localhost:5000/api/users/profile/${id}`,
+      `/api/users/profile/${id}`,
       { _id: id, name, email, password },
       config
     );
@@ -109,7 +109,7 @@ export const getUserOrders = () => async (dispatch, getState) => {
         "Content-Type": "application/json",
       },
     };
-    const { data } = await axios.get(`http://localhost:5000/api/users/${userInfo._id}`, config);
+    const { data } = await axios.get(`/api/users/${userInfo._id}`, config);
     dispatch(setUserOrders(data));
   } catch (error) {
     dispatch(
