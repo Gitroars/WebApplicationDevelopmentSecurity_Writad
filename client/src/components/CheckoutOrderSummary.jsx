@@ -24,10 +24,10 @@ const CheckoutOrderSummary = () => {
   const basketItems = useSelector((state) => state.basket);
   const { basket, subtotal, expressShipping } = basketItems;
 
-  const user = useSelector((state) => state.basket);
+  const user = useSelector((state) => state.user);
   const { userInfo } = user;
 
-  const shippingInfo = useSelector((state) => state.basket);
+  const shippingInfo = useSelector((state) => state.order);
   const { error, shippingAddress } = shippingInfo;
 
   //paypal pay button
