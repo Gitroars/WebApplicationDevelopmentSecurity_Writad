@@ -107,6 +107,7 @@ const BookScreen = () => {
                 <Heading fontSize='2x1' fontWeight='extrabold'>
                   {book.name}
                 </Heading>
+                <Text>Author: {book.author}</Text>
 
                 <Stack spacing='5'>
                   <Flex direction='column' align='center' flex='1' _dark={{ bg: "gray.900" }}></Flex>
@@ -120,8 +121,11 @@ const BookScreen = () => {
                         <StarIcon color={book.rating >= 4 ? "orange.500" : "gray.200"}></StarIcon>
                         <StarIcon color={book.rating >= 5 ? "orange.500" : "gray.200"}></StarIcon>
                       </HStack>
-                      <Text fontSize='md' fontWeight='bold' ml='4px'>
-                        {book.numberOfReviews} Reviews
+                      <Text fontSize='lg' ml='4px'>
+                        {book.rating}
+                      </Text>
+                      <Text fontSize='md' ml='4px'>
+                        ({book.numberOfReviews} Reviews)
                       </Text>
                     </Flex>
                   </Box>
