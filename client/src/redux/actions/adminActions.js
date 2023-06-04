@@ -40,7 +40,7 @@ export const deleteUser = (id) => async (dispatch, getState) => {
         "Content-Type": "application/json",
       },
     };
-    const { data } = await axios.delete(`http://localhost:5000/api/users/${id}`, config);
+    const { data } = await axios.delete(`/api/users/${id}`, config);
     dispatch(userDelete(data));
   } catch (error) {
     dispatch(
