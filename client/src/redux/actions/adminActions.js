@@ -13,7 +13,7 @@ export const getAllUsers = () => async (dispatch, getState) => {
         "Content-Type": "application/json",
       },
     };
-    const { data } = await axios.get("http://localhost:5000/api/users", config);
+    const { data } = await axios.get("/api/users", config);
     dispatch(getUsers(data));
   } catch (error) {
     dispatch(
