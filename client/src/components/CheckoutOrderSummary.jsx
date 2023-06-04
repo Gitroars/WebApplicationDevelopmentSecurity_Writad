@@ -36,7 +36,7 @@ const CheckoutOrderSummary = () => {
   const navigate = useNavigate();
   const toast = useToast();
   const shipping = useCallback(
-    () => (expressShipping === "true" ? 14.99 : subtotal <= 1000 ? 4.99 : 0),
+    () => (expressShipping === "true" ? 14.99 : subtotal <= 50 ? 4.99 : 0),
     [expressShipping, subtotal]
   );
 

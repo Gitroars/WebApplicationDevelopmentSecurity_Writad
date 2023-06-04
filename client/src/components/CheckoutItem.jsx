@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { addBasketItem } from "../redux/actions/basketActions";
 
 const CheckoutItem = ({ basketItem }) => {
-  const { name, image, price, stock, qty, id } = basketItem;
+  const { name, image, price, stock, quantity, id } = basketItem;
   const dispatch = useDispatch();
   return (
     <>
@@ -22,7 +22,7 @@ const CheckoutItem = ({ basketItem }) => {
           <Text noOfLines='2' maxW='150px'>
             {name}
           </Text>
-          <Text>{qty}</Text>
+
           <Spacer />
         </Flex>
         <Box>

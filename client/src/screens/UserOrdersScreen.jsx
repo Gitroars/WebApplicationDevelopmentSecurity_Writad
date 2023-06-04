@@ -74,7 +74,7 @@ const UserOrdersScreen = () => {
                       {order.orderItems.map((book) => (
                         <UnorderedList key={book._id}>
                           <ListItem>
-                            {book.qty} x {book.name} (${book.price} ech)
+                            {book.quantity} x {book.name} (${book.price} ech)
                           </ListItem>
                         </UnorderedList>
                       ))}
