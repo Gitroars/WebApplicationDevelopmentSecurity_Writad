@@ -5,7 +5,7 @@ import { setBooks, setLoading, setError, setBook, bookReviewed, resetError } fro
 export const getBooks = () => async (dispatch) => {
   dispatch(setLoading(true));
   try {
-    const { data } = await axios.get("http://localhost:5000/api/books");
+    const { data } = await axios.get("/api/books");
     dispatch(setBooks(data));
   } catch (error) {
     dispatch(
