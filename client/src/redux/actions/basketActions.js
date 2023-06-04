@@ -11,7 +11,7 @@ import {
 export const addBasketItem = (id, quantity) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
-    const { data } = await axios.get(`http://localhost:5000/api/books/${id}`);
+    const { data } = await axios.get(`/api/books/${id}`);
     const bookToAdd = {
       id: data._id,
       name: data.name,
