@@ -8,3 +8,6 @@ This project was created by a group of three computer science students. The proj
 
 ## Running the Application</br>
 Open https://writad.onrender.com/ at your browser</br>
+
+## License</br>
+This project is licensed under the [MIT License](LICENSE).</br>
