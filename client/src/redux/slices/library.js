@@ -10,29 +10,23 @@ const librarySlice = createSlice({
   name: "library",
   initialState,
   reducers: {
-    fetchPurchasedBooksRequest: (state) => {
+    setLoading: (state) => {
       state.loading = true;
-      state.error = null;
     },
-    getBooks: (state, { payload }) => {
-      state.books = false;
+    setBooks: (state, { payload }) => {
       state.error = null;
       state.books = payload;
+      state.loading = false;
     },
 
-    fetchPurchasedBooksSuccess: (state, action) => {
+    setError: (state, { payload }) => {
+      state.error = payload;
       state.loading = false;
-      state.books = action.payload;
-    },
-    fetchPurchasedBooksFailure: (state, action) => {
-      state.loading = false;
-      state.error = action.payload;
     },
   },
 });
 
-export const { fetchPurchasedBooksRequest, getBooks, fetchPurchasedBooksSuccess, fetchPurchasedBooksFailure } =
-  librarySlice.actions;
+export const { setLoading, setBooks, setError } = librarySlice.actions;
 
 export default librarySlice.reducer;
 

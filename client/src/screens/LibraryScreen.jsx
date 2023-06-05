@@ -1,15 +1,16 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchPurchasedBooks } from "../redux/actions/libraryActions";
+import { getBooks } from "../redux/actions/libraryActions";
 import { Box, Heading, Stack, Text, VStack } from "@chakra-ui/react";
 import BookCard from "../components/BookCard";
 
 const LibraryScreen = () => {
   const dispatch = useDispatch();
   const library = useSelector((state) => state.library);
-
+  const { loading, error, books } = library;
   useEffect(() => {
-    dispatch(fetchPurchasedBooks());
+    console.log("Dispatching getBooks action");
+    dispatch(getBooks());
   }, [dispatch]);
 
   return (

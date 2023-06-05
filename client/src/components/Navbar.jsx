@@ -89,21 +89,21 @@ const Navbar = () => {
           display={{ md: "none" }}
           onClick={isOpen ? onClose : onOpen}
         />
-        <HStack
-          as='nav'
-          spacing={5}
-          display={{ base: "none", md: "flex" }}
-          onMouseEnter={() => setIsHovering(true)}
-          onMouseLeave={() => setIsHovering(false)}
-        >
-          {/* Logo and navigation link */}
-          <Link as={ReactLink} to='/' style={{ textDecoration: "none" }}>
+
+        <HStack>
+          <Link
+            as={ReactLink}
+            to='/'
+            style={{ textDecoration: "none" }}
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+          >
             <Flex alignItems='center'>
-              <Icon as={BiBookHeart} height={8} width={8} color={isHovering ? "cyan.400" : "orange.400"} />
-              <Text fontWeight='extrabold'>WRITAD</Text>
+              <Icon as={BiBookHeart} h={6} w={6} color={isHovering ? "cyan.400" : "orange.400"} />
+              <Text fontWeight='extrabold'>Writad</Text>
             </Flex>
           </Link>
-          <HStack>
+          <HStack as='nav' spacing={4} display={{ base: "none", md: "flex" }}>
             {links.map((link) => (
               <NavLink key={link.linkName} path={link.path}>
                 {link.linkName}

@@ -7,17 +7,16 @@ import Order from "../models/Order.js";
 const libraryRoutes = express.Router();
 
 const getLibrary = asyncHandler(async (req, res) => {
-  try {
-    const user = req.user;
-    const library = await Order.find({ user: user._id });
+  const orders = await Order.find({ user: req.params.id });
+  if (orders) {
     const bookIds = orders.flatMap((order) => order.orderItems.map((item) => item.id));
     const purchasedBooks = await Book.find({ _id: { $in: bookIds } });
     res.json(purchasedBooks);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
+  } else {
+    throw new Error("No purchased books found");
   }
 });
 
-libraryRoutes.route("/").get(protectRoute, getLibrary);
+libraryRoutes.route("/:id").get(protectRoute, getLibrary);
 
 export default libraryRoutes;
