@@ -27,7 +27,7 @@ const Rating = ({ rating, numberOfReviews }) => {
   return (
     <Flex>
       <HStack spacing='2px'>
-        <StarIcon size={iconSize} w='14px' color='orange.500' />
+        <StarIcon size={iconSize} w='14px' color={rating >= 1 ? "orange.500" : "gray.200"} />
         <StarIcon size={iconSize} w='14px' color={rating >= 2 ? "orange.500" : "gray.200"} />
         <StarIcon size={iconSize} w='14px' color={rating >= 3 ? "orange.500" : "gray.200"} />
         <StarIcon size={iconSize} w='14px' color={rating >= 4 ? "orange.500" : "gray.200"} />

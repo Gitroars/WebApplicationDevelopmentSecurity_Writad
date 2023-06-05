@@ -125,7 +125,7 @@ const BookScreen = () => {
 
                     <Flex>
                       <HStack spacing='2px'>
-                        <StarIcon color='orange.500'></StarIcon>
+                        <StarIcon color={book.rating >= 1 ? "orange.500" : "gray.200"}></StarIcon>
                         <StarIcon color={book.rating >= 2 ? "orange.500" : "gray.200"}></StarIcon>
                         <StarIcon color={book.rating >= 3 ? "orange.500" : "gray.200"}></StarIcon>
                         <StarIcon color={book.rating >= 4 ? "orange.500" : "gray.200"}></StarIcon>
