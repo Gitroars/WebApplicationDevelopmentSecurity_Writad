@@ -40,7 +40,7 @@ const Rating = ({ rating, numberOfReviews }) => {
   );
 };
 
-const BookCard = ({ book, isBooks = true, showRating = true }) => {
+const BookCard = ({ book, isBooks: isOwned = true, showRating = true }) => {
   const dispatch = useDispatch();
   const toast = useToast();
   const basketInfo = useSelector((state) => state.basket);
@@ -88,15 +88,19 @@ const BookCard = ({ book, isBooks = true, showRating = true }) => {
       </Box>
 
       <Flex mt='2' justifyContent='space-between' alignContent='center'>
-        <Link as={ReactLink} to={`/book/${book._id}`} pt='2' cursor='pointer'>
-          <Box fontSize='2x1' fontWeight='semibold' lineHeight='tight'>
-            {book.name}
-          </Box>
-        </Link>
+        {!isOwned && (
+          <>
+            <Link as={ReactLink} to={`/book/${book._id}`} pt='2' cursor='pointer'>
+              <Box fontSize='2x1' fontWeight='semibold' lineHeight='tight'>
+                {book.name}
+              </Box>
+            </Link>
+          </>
+        )}
       </Flex>
 
       <Flex justify='space-between'>
-        {isBooks && (
+        {isOwned && (
           <Box fontSize='2x1'>
             <Box as='span' color={"gray.600"} fontSize='lg'>
               $
@@ -105,7 +109,7 @@ const BookCard = ({ book, isBooks = true, showRating = true }) => {
           </Box>
         )}
 
-        {isBooks && (
+        {isOwned && (
           <Tooltip label='Add to Basket' bg='white' placement='top' color='gray.900' fontSize='1.25em'>
             <Button variant='ghost' display='flex' disabled={book.stock <= 0} onClick={() => addBook(book._id)}>
               <Icon as={RiShoppingBasket2Line} h={8} w={8} alignSelf='center' />

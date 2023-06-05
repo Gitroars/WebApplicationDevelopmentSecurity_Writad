@@ -29,15 +29,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { createBookReview, getBook, resetBookError } from "../redux/actions/bookActions";
 import { addBasketItem } from "../redux/actions/basketActions";
 import { useEffect, useState } from "react";
-import { getBooks } from "../redux/actions/libraryActions";
+import { getBooks } from "../redux/actions/bookActions";
 
-const BookScreen = () => {
+const UserBookScreen = () => {
   const [comment, setComment] = useState("");
   const [rating, setRating] = useState(1);
   const [title, setTitle] = useState("");
   const [reviewBoxOpen, setReviewBoxOpen] = useState(false);
-  const library = useSelector((state) => state.library);
-  const { loading: libraryLoading, error: libraryError, books: libraryBooks } = library;
+
   let { id } = useParams();
   const dispatch = useDispatch();
 
@@ -52,7 +51,6 @@ const BookScreen = () => {
   const { userInfo } = user;
 
   useEffect(() => {
-    dispatch(getBooks); // for library
     dispatch(getBook(id));
     if (reviewSend) {
       toast({ description: "Book review uploaded", status: "success", isClosable: true });
@@ -62,9 +60,7 @@ const BookScreen = () => {
   }, [dispatch, id, basket, reviewSend]);
 
   const hasUserReviewed = () => book.reviews.some((book) => book.user === userInfo._id);
-  const hasUserPurchased = () => {
-    return libraryBooks.some((book) => book._id === id);
-  };
+
   const onSubmit = () => {
     dispatch(createBookReview(book._id, userInfo._id, comment, rating, title));
   };
@@ -117,12 +113,7 @@ const BookScreen = () => {
                 <Stack spacing='5'>
                   <Flex direction='column' align='center' flex='1' _dark={{ bg: "gray.900" }}></Flex>
                   <Box>
-                    {!hasUserPurchased() && (
-                      <>
-                        <Text fontSize='x1'>${book.price}</Text>
-                      </>
-                    )}
-
+                    <Text fontSize='x1'>${book.price}</Text>
                     <Flex>
                       <HStack spacing='2px'>
                         <StarIcon color='orange.500'></StarIcon>
@@ -140,19 +131,7 @@ const BookScreen = () => {
                     </Flex>
                   </Box>
                   <Text>{book.description}</Text>
-                  {!hasUserPurchased() && (
-                    <>
-                      <Button colorScheme='orange' onClick={() => addBook()}>
-                        Add to basket
-                      </Button>
-                    </>
-                  )}
-                  {hasUserPurchased() && (
-                    <>
-                      <Button colorScheme='orange'>Read</Button>
-                    </>
-                  )}
-
+                  <Button colorScheme='orange'>Read</Button>
                   <Stack width='270px'>
                     <Flex alignItems='center'>
                       <FaInfinity size='20px' />
@@ -263,4 +242,4 @@ const BookScreen = () => {
   );
 };
 
-export default BookScreen;
+export default UserBookScreen;
