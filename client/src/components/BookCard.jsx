@@ -96,12 +96,15 @@ const BookCard = ({ book, isBooks = true }) => {
       </Flex>
 
       <Flex justify='space-between'>
-        <Box fontSize='2x1' color={useColorModeValue("gray.800", "white")}>
-          <Box as='span' color={"gray.600"} fontSize='lg'>
-            $
+        {isBooks && (
+          <Box fontSize='2x1'>
+            <Box as='span' color={"gray.600"} fontSize='lg'>
+              $
+            </Box>
+            {Number(book.price).toFixed(2)}
           </Box>
-          {Number(book.price).toFixed(2)}
-        </Box>
+        )}
+
         {isBooks && (
           <Tooltip label='Add to Basket' bg='white' placement='top' color='gray.900' fontSize='1.25em'>
             <Button variant='ghost' display='flex' disabled={book.stock <= 0} onClick={() => addBook(book._id)}>
