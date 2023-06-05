@@ -40,7 +40,7 @@ const BooksScreen = () => {
         books.map((book) => (
           <WrapItem key={book._id}>
             <Center w='250px' h='550px'>
-              <BookCard book={book} />
+              <BookCard book={book} isBooks={false} />
             </Center>
           </WrapItem>
         ))

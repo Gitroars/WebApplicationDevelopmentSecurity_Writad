@@ -40,7 +40,7 @@ const Rating = ({ rating, numberOfReviews }) => {
   );
 };
 
-const BookCard = ({ book, isBooks = true }) => {
+const BookCard = ({ book, isBooks = true, showRating = true }) => {
   const dispatch = useDispatch();
   const toast = useToast();
   const basketInfo = useSelector((state) => state.basket);
@@ -114,7 +114,7 @@ const BookCard = ({ book, isBooks = true }) => {
         )}
       </Flex>
 
-      {isBooks && (
+      {showRating && (
         <Flex justifyContent='space-between' alignContent='center' py='2'>
           <Rating rating={book.rating} numberOfReviews={book.numberOfReviews} />
         </Flex>
