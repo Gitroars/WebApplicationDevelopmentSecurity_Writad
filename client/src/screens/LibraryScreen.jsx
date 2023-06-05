@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getBooks } from "../redux/actions/libraryActions";
-import { Box, Heading, Stack, Text, VStack } from "@chakra-ui/react";
+import { Box, Heading, Stack, Text, VStack, WrapItem } from "@chakra-ui/react";
 import BookCard from "../components/BookCard";
 
 const LibraryScreen = () => {
@@ -24,11 +24,11 @@ const LibraryScreen = () => {
         ) : library.error ? (
           <Text>Error: {library.error}</Text>
         ) : (
-          <VStack spacing='4' align='start'>
+          <WrapItem spacing='4' align='start'>
             {library.books.map((book) => (
               <BookCard key={book.id} book={book} />
             ))}
-          </VStack>
+          </WrapItem>
         )}
       </Stack>
     </Box>
