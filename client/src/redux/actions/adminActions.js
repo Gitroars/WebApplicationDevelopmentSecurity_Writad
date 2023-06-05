@@ -13,7 +13,7 @@ export const getAllUsers = () => async (dispatch, getState) => {
         "Content-Type": "application/json",
       },
     };
-    const { data } = await axios.get("/api/users", config);
+    const { data } = await axios.get("http://localhost:5000/api/users", config);
     dispatch(getUsers(data));
   } catch (error) {
     dispatch(
@@ -40,7 +40,7 @@ export const deleteUser = (id) => async (dispatch, getState) => {
         "Content-Type": "application/json",
       },
     };
-    const { data } = await axios.delete(`/api/users/${id}`, config);
+    const { data } = await axios.delete(`http://localhost:5000/api/users/${id}`, config);
     dispatch(userDelete(data));
   } catch (error) {
     dispatch(

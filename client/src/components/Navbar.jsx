@@ -46,6 +46,7 @@ const BasketIcon = () => {
 const links = [
   { linkName: "Books", path: "/books" },
   { linkName: <BasketIcon />, path: "/basket" },
+  { linkName: "Library", path: "/library" },
 ];
 
 const NavLink = ({ path, children }) => (

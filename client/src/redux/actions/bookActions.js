@@ -5,7 +5,7 @@ import { setBooks, setLoading, setError, setBook, bookReviewed, resetError } fro
 export const getBooks = () => async (dispatch) => {
   dispatch(setLoading(true));
   try {
-    const { data } = await axios.get("/api/books");
+    const { data } = await axios.get("http://localhost:5000/api/books");
     dispatch(setBooks(data));
   } catch (error) {
     dispatch(
@@ -23,7 +23,7 @@ export const getBooks = () => async (dispatch) => {
 export const getBook = (id) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
-    const { data } = await axios.get(`/api/books/${id}`);
+    const { data } = await axios.get(`http://localhost:5000/api/books/${id}`);
     dispatch(setBook(data));
   } catch (error) {
     dispatch(
@@ -51,7 +51,7 @@ export const createBookReview = (bookId, userId, comment, rating, title) => asyn
       },
     };
     const { data } = await axios.post(
-      `/api/books/reviews/${bookId}`,
+      `http://localhost:5000/api/books/reviews/${bookId}`,
       { comment, userId, rating, title },
       config
     );

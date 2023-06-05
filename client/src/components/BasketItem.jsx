@@ -4,7 +4,7 @@ import { addBasketItem, removeBasketItem } from "../redux/actions/basketActions"
 import { useDispatch } from "react-redux";
 
 const BasketItem = ({ basketItem }) => {
-  const { name, image, price, stock, qty, id } = basketItem;
+  const { name, image, price, stock, quantity, id } = basketItem;
   const dispatch = useDispatch();
   return (
     <Flex direction={{ base: "column", md: "row" }} justify='space-between' align='center'>
