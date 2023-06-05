@@ -24,7 +24,8 @@ import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon, ChevronDownIcon } from "@c
 import { BiBookHeart } from "react-icons/bi";
 import { useState } from "react";
 import { CgProfile } from "react-icons/cg";
-import { MdLocalShipping, MdLogout, MdOutlineAdminPanelSettings } from "react-icons/md";
+import { MdLogout, MdOutlineAdminPanelSettings } from "react-icons/md";
+import { FaReceipt } from "react-icons/fa";
 import { RiShoppingBasket2Line } from "react-icons/ri";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../redux/actions/userActions";
@@ -131,7 +132,7 @@ const Navbar = () => {
                     <Text ml='2'>Profile</Text>
                   </MenuItem>
                   <MenuItem as={ReactLink} to='/your-orders'>
-                    <MdLocalShipping />
+                    <FaReceipt />
                     <Text ml='2'>Purchase history</Text>
                   </MenuItem>
                   {userInfo.isAdmin && (
