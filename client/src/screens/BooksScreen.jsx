@@ -1,18 +1,9 @@
-import {
-  Center,
-  Wrap,
-  WrapItem,
-  Spinner,
-  Stack,
-  Alert,
-  AlertIcon,
-  AlertDescription,
-  AlertTitle,
-} from "@chakra-ui/react";
+import { Center, Wrap, WrapItem, Spinner, Stack, Alert, AlertIcon, AlertDescription, AlertTitle } from "@chakra-ui/react";
 import BookCard from "../components/BookCard";
 import { useDispatch, useSelector } from "react-redux";
 import { getBooks } from "../redux/actions/bookActions";
 import { useEffect } from "react";
+import CaptionCarousel from "../components/CaptionCarousel";
 
 const BooksScreen = () => {
   const dispatch = useDispatch();
@@ -25,7 +16,8 @@ const BooksScreen = () => {
   }, [dispatch]);
 
   return (
-    <Wrap spacing='30px' justify='center' minHeight='100vh'>
+    <>
+      <CaptionCarousel />
       {loading ? (
         <Stack direction='row' spacing={4}>
           <Spinner mt={20} thickness='2px' speed='0.65s' emptyColor='gray.200' color='orange.500' size='xl' />
@@ -37,15 +29,17 @@ const BooksScreen = () => {
           <AlertDescription>{error}</AlertDescription>
         </Alert>
       ) : (
-        books.map((book) => (
-          <WrapItem key={book._id}>
-            <Center w='250px' h='550px'>
-              <BookCard book={book} isBooks={false} />
-            </Center>
-          </WrapItem>
-        ))
+        <Wrap spacing='30px' justify='center' minHeight='100vh'>
+          {books.map((book) => (
+            <WrapItem key={book._id}>
+              <Center w='250px' h='550px'>
+                <BookCard book={book} isBooks={false} />
+              </Center>
+            </WrapItem>
+          ))}
+        </Wrap>
       )}
-    </Wrap>
+    </>
   );
 };
 
