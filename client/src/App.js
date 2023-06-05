@@ -20,6 +20,7 @@ function App() {
         <Navbar />
         <main>
           <Routes>
+            <Route path='/' element={<BooksScreen />}></Route>
             <Route path='/books' element={<BooksScreen />}></Route>
             <Route path='/book/:id' element={<BookScreen />}></Route>
             <Route path='/basket' element={<BasketScreen />}></Route>
