@@ -5,4 +5,6 @@ This project was created by a group of three computer science students. The proj
  Arvin Yuwono</br>
  Kenneth Samuel Djasmin</br>
  Kevin Matthew Tanuwijaya</br>
- 
+
+## Running the Application</br>
+Open https://writad.onrender.com/ at your browser</br>
