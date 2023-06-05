@@ -26,7 +26,7 @@ const LibraryScreen = () => {
         ) : (
           <WrapItem spacing='4' align='start'>
             {library.books.map((book) => (
-              <BookCard key={book.id} book={book} isBooks={false} />
+              <BookCard key={book.id} book={book} isBooks={false} showRating={false} />
             ))}
           </WrapItem>
         )}
