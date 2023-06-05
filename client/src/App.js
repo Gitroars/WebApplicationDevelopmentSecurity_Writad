@@ -13,7 +13,7 @@ import OrderSuccessScreen from "./screens/OrderSuccessScreen";
 import UserOrdersScreen from "./screens/UserOrdersScreen";
 import AdminConsoleScreen from "./screens/AdminConsoleScreen";
 import LibraryScreen from "./screens/LibraryScreen";
-import UserBookScreen from "./screens/UserBookScreen";
+import ReadScreen from "./screens/ReadScreen";
 function App() {
   return (
     <ChakraProvider>
@@ -33,7 +33,7 @@ function App() {
             <Route path='/your-orders' element={<UserOrdersScreen />}></Route>
             <Route path='/admin-console' element={<AdminConsoleScreen />}></Route>
             <Route path='/library' element={<LibraryScreen />}></Route>
-            <Route path='/userbook/:id' element={<UserBookScreen />}></Route>
+            <Route path='/read/:id' element={<ReadScreen />}></Route>
           </Routes>
         </main>
         <Footer />

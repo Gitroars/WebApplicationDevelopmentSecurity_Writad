@@ -7,7 +7,7 @@
   "description": " Embark on a magical journey through The Enchanted Chronicles. Discover a world of mythical creatures, epic quests, and breathtaking adventures that will capture your imagination.",
   "author": "Evelyn Sinclair",
   "category": "Fantasy",
-  "price": 599.99,
+  "price": 9.99,
   "rating": 5,
   "numberOfReviews": 1,
   "productIsNew": true,
@@ -42,6 +42,23 @@
     }
   },
   "stock": 7,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Chapter 1 Title",
+      "content": "Chapter 1 Content"
+    },
+    {
+      "number": 2,
+      "title": "Chapter 2 Title",
+      "content": "Chapter 2 Content"
+    },
+    {
+      "number": 3,
+      "title": "Chapter 3 Title",
+      "content": "Chapter 3 Content"
+    }
+  ],
   "createdAt": {
     "$date": {
       "$numberLong": "1669431755845"
@@ -56,7 +73,7 @@
   "description": "Enter the futuristic world of Digital Destiny, where virtual reality becomes a gateway to infinite possibilities. Join our protagonist as they navigate a virtual realm filled with danger, mystery, and unexpected alliances",
   "author": "Aiden Brooks",
   "category": "Science Fiction",
-  "price": 929.99,
+  "price": 9.99,
   "rating": 3,
   "numberOfReviews": 1,
   "productIsNew": false,
@@ -100,7 +117,7 @@
   "description": "Immerse yourself in the captivating world of Love in Shadows, a romantic tale of forbidden love, secret societies, and untold secrets. Follow the intertwined destinies of two souls as they navigate a world shrouded in darkness and intrigue.",
   "author": "Sophia Parker",
   "category": "Romance",
-  "price": 399.99,
+  "price": 9.99,
   "countInStock": 11,
   "rating": 5,
   "numberOfReviews": 0,
@@ -122,7 +139,7 @@
   "description": "Step into The Lost Kingdom, a realm filled with ancient mysteries, hidden treasures, and powerful artifacts. Join our young protagonist on a quest to uncover the truth behind a long-forgotten civilization and protect the world from an impending darkness.",
   "author": "Benjamin Anderson",
   "category": "Adventure",
-  "price": 299.99,
+  "price": 9.99,
   "rating": 5,
   "numberOfReviews": 0,
   "productIsNew": false,
@@ -143,7 +160,7 @@
   "description": "Immerse yourself in The Art of Time, a mesmerizing tale of time travel, destiny, and the power of choices. Join our protagonist as they navigate through different eras, encountering love, loss, and the timeless struggle between fate and free will.",
   "author": "Gabriel Wells",
   "category": "Science Fiction",
-  "price": 299.99,
+  "price": 9.99,
   "rating": 4,
   "numberOfReviews": 1,
   "productIsNew": false,
@@ -187,7 +204,7 @@
   "description": "Experience The Sound of Silence, a poignant tale of love, loss, and the power of music. Follow the journey of a gifted musician as they navigate the complexities of relationships, find solace in their craft, and discover the healing power of sound.",
   "author": "Julia Hartman",
   "category": "Drama",
-  "price": 699.99,
+  "price": 9.99,
   "rating": 5,
   "numberOfReviews": 0,
   "productIsNew": false,
@@ -210,7 +227,7 @@
   "description": "Enter a world of magic, destiny, and ancient prophecies in Echoes of Eternity. Join our young hero as they embark on a perilous quest to save their realm from an impending darkness that threatens to consume everything they hold dear.",
   "rating": 0,
   "numberOfReviews": 0,
-  "price": 699.99,
+  "price": 9.99,
   "stock": 5,
   "productIsNew": true,
   "reviews": [],
@@ -236,7 +253,7 @@
   "description": "Get a professional podcast sound with audio interfaces, hard disk recorders, or direct to computers and mobile devices with the Shure MV7 Podcasting Microphone (Black). This is a professional-quality, broadcast-style dynamic microphone, one that can has both a conventional XLR connection and a USB port. It also supports a 3.5mm headphone output for direct monitoring.",
   "rating": 0,
   "numberOfReviews": 0,
-  "price": 449,
+  "price": 9.99,
   "stock": 2,
   "productIsNew": true,
   "reviews": [],
@@ -262,7 +279,7 @@
   "description": "Delve into the haunting world of Whispers in the Dark, a spine-chilling horror novel that will send shivers down your spine. Brace yourself for a sinister journey as you uncover the terrifying secrets lurking within the shadows.",
   "rating": 5,
   "numberOfReviews": 1,
-  "price": 899.99,
+  "price": 9.99,
   "stock": 49,
   "productIsNew": true,
   "reviews": [

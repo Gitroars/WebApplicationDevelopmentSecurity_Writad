@@ -27,12 +27,7 @@ const orderSchema = new mongoose.Schema(
         id: { type: mongoose.Schema.Types.ObjectId, required: true, ref: "Book" },
       },
     ],
-    shippingAddress: {
-      address: { type: String, required: true },
-      city: { type: String, required: true },
-      postalCode: { type: String, required: true },
-      country: { type: String, required: true },
-    },
+
     paymentMethod: {
       type: String,
       default: false,
@@ -41,24 +36,12 @@ const orderSchema = new mongoose.Schema(
       orderId: { type: String },
       payerId: { type: String },
     },
-    shippingPrice: {
-      type: Number,
-      default: 0.0,
-    },
+
     totalPrice: {
       type: Number,
       default: 0.0,
     },
     paidAt: {
-      type: Date,
-    },
-    //for admin perms
-    isDelivered: {
-      type: Boolean,
-      required: true,
-      default: false,
-    },
-    deliveredAt: {
       type: Date,
     },
   },

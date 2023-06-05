@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const chapterSchema = new Mongoose.Schema({
+const chapterSchema = new mongoose.Schema({
   number: { type: Number, required: true },
   title: { type: String, required: true },
   content: { type: String, required: true },

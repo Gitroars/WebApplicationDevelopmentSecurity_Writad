@@ -12,7 +12,6 @@ export const initialState = {
   loading: false,
   error: null,
   basket: JSON.parse(localStorage.getItem("basketItems")) ?? [],
-  expressShipping:JSON.parse(localStorage.getItem("expressShipping"))?? false,
   subtotal: localStorage.getItem("basketItems")
     ? calculateSubtotal(JSON.parse(localStorage.getItem("basketItems")))
     : 0,
@@ -54,18 +53,15 @@ export const basketSlice = createSlice({
       state.loading = false;
       state.error = null;
     },
-    setExpressShipping:(state,{payload})=>{
-      state.expressShipping=payload;
-      localStorage.setItem('expressShipping',payload)
+
+    clearBasket: (state) => {
+      localStorage.removeItem("basketItems");
+      state.basket = [];
     },
-    clearBasket:(state)=>{
-      localStorage.removeItem('basketItems');
-      state.basket=[];
-    }
   },
 });
 
-export const { setLoading, setError, basketItemAdd, basketItemRemoval ,setExpressShipping,clearBasket} = basketSlice.actions;
+export const { setLoading, setError, basketItemAdd, basketItemRemoval, clearBasket } = basketSlice.actions;
 export default basketSlice.reducer;
 
 export const basketSelector = (state) => state.basket;

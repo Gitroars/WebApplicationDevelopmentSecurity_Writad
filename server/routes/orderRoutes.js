@@ -6,7 +6,7 @@ import { admin, protectRoute } from "../middleware/authMiddleware.js";
 const orderRoutes = express.Router();
 
 const createOrder = asyncHandler(async (req, res) => {
-  const { orderItems, shippingAddress, paymentMethod, shippingPrice, totalPrice, paymentDetails, userInfo } = req.body;
+  const { orderItems, paymentMethod, totalPrice, paymentDetails, userInfo } = req.body;
 
   if (orderItems && orderItems.length === 0) {
     res.status(400);
@@ -17,10 +17,10 @@ const createOrder = asyncHandler(async (req, res) => {
       user: userInfo._id,
       username: userInfo.name,
       email: userInfo.email,
-      shippingAddress,
+
       paymentMethod,
       paymentDetails,
-      shippingPrice,
+
       totalPrice,
     });
 
@@ -49,7 +49,6 @@ const setDelivered = asyncHandler(async (req, res) => {
   const order = await Order.findById(req.params.id);
 
   if (order) {
-    order.isDelivered = true;
     const updatedOrder = await order.save();
     res.json(updatedOrder);
   } else {

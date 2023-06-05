@@ -22,42 +22,25 @@ import { resetBasket } from "../redux/actions/basketActions";
 const CheckoutOrderSummary = () => {
   const colorMode = mode("gray.600", "gray.400");
   const basketItems = useSelector((state) => state.basket);
-  const { basket, subtotal, expressShipping } = basketItems;
+  const { basket, subtotal } = basketItems;
 
   const user = useSelector((state) => state.user);
   const { userInfo } = user;
-
-  const shippingInfo = useSelector((state) => state.order);
-  const { error, shippingAddress } = shippingInfo;
 
   //paypal pay button
   const [buttonDisabled, setButtonDisabled] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const toast = useToast();
-  const shipping = useCallback(
-    () => (expressShipping === "true" ? 14.99 : subtotal <= 50 ? 4.99 : 0),
-    [expressShipping, subtotal]
-  );
 
-  const total = useCallback(() => Number(Number(subtotal)).toFixed(2), [shipping, subtotal]);
-
-  useEffect(() => {
-    if (!error) {
-      setButtonDisabled(false);
-    } else {
-      setButtonDisabled(true);
-    }
-  }, [error, shippingAddress, total, expressShipping, shipping, dispatch]);
+  const total = useCallback(() => Number(Number(subtotal)).toFixed(2), [subtotal]);
 
   const onPaymentSuccess = async (data) => {
     dispatch(
       createOrder({
         orderItems: basket,
-        shippingAddress,
         paymentMethod: data.paymentSource,
         paymentDetails: data,
-        shippingPrice: shipping(),
         totalPrice: total(),
         userInfo,
       })

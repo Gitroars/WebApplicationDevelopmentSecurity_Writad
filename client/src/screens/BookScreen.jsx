@@ -20,6 +20,7 @@ import {
   Tooltip,
   Input,
   Textarea,
+  Link,
 } from "@chakra-ui/react";
 import { MinusIcon, StarIcon, SmallAddIcon } from "@chakra-ui/icons";
 import { BiCheckShield } from "react-icons/bi";
@@ -29,6 +30,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { createBookReview, getBook, resetBookError } from "../redux/actions/bookActions";
 import { addBasketItem } from "../redux/actions/basketActions";
 import { useEffect, useState } from "react";
+import { Link as ReactLink } from "react-router-dom";
 import { getBooks } from "../redux/actions/libraryActions";
 
 const BookScreen = () => {
@@ -36,6 +38,8 @@ const BookScreen = () => {
   const [rating, setRating] = useState(1);
   const [title, setTitle] = useState("");
   const [reviewBoxOpen, setReviewBoxOpen] = useState(false);
+  const [isOwned, setIsOwned] = useState(false);
+
   const library = useSelector((state) => state.library);
   const { loading: libraryLoading, error: libraryError, books: libraryBooks } = library;
   let { id } = useParams();
@@ -59,6 +63,11 @@ const BookScreen = () => {
       dispatch(resetBookError());
       setReviewBoxOpen(false);
     }
+    const checkUserOwnership = async () => {
+      const result = await hasUserPurchased();
+      setIsOwned(true);
+    };
+    checkUserOwnership();
   }, [dispatch, id, basket, reviewSend]);
 
   const hasUserReviewed = () => book.reviews.some((book) => book.user === userInfo._id);
@@ -148,9 +157,9 @@ const BookScreen = () => {
                     </>
                   )}
                   {hasUserPurchased() && (
-                    <>
+                    <Link to={`/read/${id}`} style={{ paddingTop: "2", cursor: "pointer" }}>
                       <Button colorScheme='orange'>Read</Button>
-                    </>
+                    </Link>
                   )}
 
                   <Stack width='270px'>

@@ -17,6 +17,6 @@ const getLibrary = asyncHandler(async (req, res) => {
   }
 });
 
-libraryRoutes.route("/").get(protectRoute, getLibrary);
+libraryRoutes.route("/:id").get(protectRoute, getLibrary);
 
 export default libraryRoutes;

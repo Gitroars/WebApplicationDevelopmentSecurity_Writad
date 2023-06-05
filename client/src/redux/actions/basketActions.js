@@ -1,12 +1,5 @@
 import axios from "axios";
-import {
-  setLoading,
-  setError,
-  basketItemAdd,
-  basketItemRemoval,
-  setExpressShipping,
-  clearBasket,
-} from "../slices/basket";
+import { setLoading, setError, basketItemAdd, basketItemRemoval, clearBasket } from "../slices/basket";
 
 export const addBasketItem = (id, quantity) => async (dispatch) => {
   dispatch(setLoading(true));
@@ -39,9 +32,6 @@ export const removeBasketItem = (id) => async (dispatch) => {
   dispatch(basketItemRemoval(id));
 };
 
-export const setExpress = (value) => async (dispatch) => {
-  dispatch(setExpressShipping(value));
-};
 export const resetBasket = () => (dispatch) => {
   dispatch(clearBasket());
 };
