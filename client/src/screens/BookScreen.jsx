@@ -118,7 +118,7 @@ const BookScreen = () => {
                     New
                   </Badge>
                 )}
-                <Heading fontSize='2x1' fontWeight='extrabold'>
+                <Heading fontSize='3x2' fontWeight='extrabold'>
                   {book.name}
                 </Heading>
                 <Text>Author: {book.author}</Text>
