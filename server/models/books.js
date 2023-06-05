@@ -1,5 +1,11 @@
 import mongoose from "mongoose";
 
+const chapterSchema = new Mongoose.Schema({
+  number: { type: Number, required: true },
+  title: { type: String, required: true },
+  content: { type: String, required: true },
+});
+
 const reviewSchema = new mongoose.Schema(
   {
     name: { type: String, required: true },
@@ -27,6 +33,10 @@ const bookSchema = mongoose.Schema(
   },
   { timestamps: true }
 );
+
+bookSchema.add({
+  chapters: [chapterSchema],
+});
 
 const Book = mongoose.model("Book", bookSchema);
 export default Book;

@@ -40,10 +40,7 @@ const CheckoutOrderSummary = () => {
     [expressShipping, subtotal]
   );
 
-  const total = useCallback(
-    () => Number(shipping() === 0 ? Number(subtotal) : Number(subtotal) + shipping()).toFixed(2),
-    [shipping, subtotal]
-  );
+  const total = useCallback(() => Number(Number(subtotal)).toFixed(2), [shipping, subtotal]);
 
   useEffect(() => {
     if (!error) {
@@ -96,7 +93,7 @@ const CheckoutOrderSummary = () => {
             {subtotal}
           </Text>
         </Flex>
-        <Flex justify='space-between'>
+        {/* <Flex justify='space-between'>
           <Text fontWeight='medium' color={colorMode}>
             Shipping
           </Text>
@@ -109,7 +106,7 @@ const CheckoutOrderSummary = () => {
               `$${shipping()}`
             )}
           </Text>
-        </Flex>
+        </Flex> */}
         <Flex justify='space-between'>
           <Text fontWeight='semibold' fontSize='lg'>
             Total

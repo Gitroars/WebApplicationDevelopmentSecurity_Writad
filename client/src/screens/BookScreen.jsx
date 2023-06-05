@@ -29,6 +29,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { createBookReview, getBook, resetBookError } from "../redux/actions/bookActions";
 import { addBasketItem } from "../redux/actions/basketActions";
 import { useEffect, useState } from "react";
+import { getBooks } from "../redux/actions/bookActions";
 
 const BookScreen = () => {
   const [comment, setComment] = useState("");
