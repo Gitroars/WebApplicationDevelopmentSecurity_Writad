@@ -22,15 +22,16 @@ import {
   Textarea,
   Link,
 } from "@chakra-ui/react";
+import { Link as ReactLink } from "react-router-dom";
 import { MinusIcon, StarIcon, SmallAddIcon } from "@chakra-ui/icons";
 import { BiCheckShield } from "react-icons/bi";
 import { FaInfinity } from "react-icons/fa";
 import { FiAward } from "react-icons/fi";
 import { useDispatch, useSelector } from "react-redux";
+
 import { createBookReview, getBook, resetBookError } from "../redux/actions/bookActions";
 import { addBasketItem } from "../redux/actions/basketActions";
 import { useEffect, useState } from "react";
-import { Link as ReactLink } from "react-router-dom";
 import { getBooks } from "../redux/actions/libraryActions";
 
 const BookScreen = () => {
@@ -157,7 +158,7 @@ const BookScreen = () => {
                     </>
                   )}
                   {hasUserPurchased() && (
-                    <Link to={`/read/${id}`} style={{ paddingTop: "2", cursor: "pointer" }}>
+                    <Link as={ReactLink} to={`/read/${id}`} style={{ paddingTop: "2", cursor: "pointer" }}>
                       <Button colorScheme='purple'>Read</Button>
                     </Link>
                   )}

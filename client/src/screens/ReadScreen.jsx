@@ -8,42 +8,37 @@ const ReadingScreen = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
 
-  const books = useSelector((state) => state.books);
-  const { loading, error, book } = books;
-
   const [currentChapter, setCurrentChapter] = useState(0);
 
   useEffect(() => {
     dispatch(getBook(id));
   }, [dispatch, id]);
 
+  const books = useSelector((state) => state.books);
+  const { loading, error, book } = books;
+
   const handleNextChapter = () => {
-    setCurrentChapter((prevChapter) => prevChapter + 1);
+    if (!isLastChapter) {
+      setCurrentChapter((prevChapter) => prevChapter + 1);
+    }
   };
 
   const handlePreviousChapter = () => {
-    setCurrentChapter((prevChapter) => prevChapter - 1);
+    if (!isFirstChapter) {
+      setCurrentChapter((prevChapter) => prevChapter - 1);
+    }
   };
 
-  if (loading) {
-    return <Text>Loading...</Text>;
-  }
-
-  if (error) {
-    return <Text>Error: {error}</Text>;
-  }
-
-  if (!book) {
-    return <Text>Book not found.</Text>;
+  if (!book || !book.chapters || book.chapters.length === 0) {
+    return <Text>No chapters available.</Text>;
   }
 
   const { chapters } = book;
 
-  if (!chapters || chapters.length === 0) {
-    return <Text>No chapters available.</Text>;
-  }
+  const isLastChapter = currentChapter === chapters.length - 1;
+  const isFirstChapter = currentChapter === 0;
 
-  const currentChapterContent = chapters[currentChapter];
+  const currentChapterContent = chapters[currentChapter].content;
 
   return (
     <Box>
@@ -60,10 +55,10 @@ const ReadingScreen = () => {
         <Text>{currentChapterContent}</Text>
       </Box>
       <Box>
-        <Button onClick={handlePreviousChapter} disabled={currentChapter === 0}>
+        <Button onClick={handlePreviousChapter} disabled={isFirstChapter}>
           Previous Chapter
         </Button>
-        <Button onClick={handleNextChapter} disabled={currentChapter === chapters.length - 1}>
+        <Button onClick={handleNextChapter} disabled={isLastChapter}>
           Next Chapter
         </Button>
       </Box>
