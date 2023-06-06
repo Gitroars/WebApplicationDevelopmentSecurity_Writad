@@ -151,14 +151,14 @@ const BookScreen = () => {
                   <Text>{book.description}</Text>
                   {!hasUserPurchased() && (
                     <>
-                      <Button colorScheme='orange' onClick={() => addBook()}>
+                      <Button colorScheme='purple' onClick={() => addBook()}>
                         Add to basket
                       </Button>
                     </>
                   )}
                   {hasUserPurchased() && (
                     <Link to={`/read/${id}`} style={{ paddingTop: "2", cursor: "pointer" }}>
-                      <Button colorScheme='orange'>Read</Button>
+                      <Button colorScheme='purple'>Read</Button>
                     </Link>
                   )}
 
@@ -193,7 +193,7 @@ const BookScreen = () => {
                     isDisabled={hasUserReviewed()}
                     my='20px'
                     w='140px'
-                    colorScheme='orange'
+                    colorScheme='purple'
                     onClick={() => setReviewBoxOpen(!reviewBoxOpen)}
                   >
                     Write a review
