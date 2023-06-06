@@ -13,7 +13,7 @@ export const getBooks = () => async (dispatch, getState) => {
         "Content-Type": "application/json",
       },
     };
-    const { data } = await axios.get(`/api/library/${userInfo._id}`, config);
+    const { data } = await axios.get(`http://localhost:5000/api/library/${userInfo._id}`, config);
 
     dispatch(setBooks(data));
   } catch (error) {
