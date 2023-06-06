@@ -24,7 +24,7 @@ const CheckoutOrderSummary = () => {
   const basketItems = useSelector((state) => state.basket);
   const { basket, subtotal } = basketItems;
 
-  const user = useSelector((state) => state.user);
+  const user = useSelector((state) => state.basket);
   const { userInfo } = user;
 
   //paypal pay button
@@ -50,7 +50,7 @@ const CheckoutOrderSummary = () => {
     navigate("/order-success");
   };
 
-  const onPaymentError = (error) => {
+  const onPaymentError = () => {
     toast({
       description:
         "something went wront during the payment process. Please try again or make sure that your PayPal account balance is enough for this purchase",
@@ -108,7 +108,7 @@ const CheckoutOrderSummary = () => {
 
       <Box align='center'>
         <Text fontSize='sm'> Have questions? or need help to complete your order?</Text>
-        <Flex justifyContent='center' color={mode("orange.500", "orange.100")}>
+        <Flex justifyContent='center' color={mode("purple.500", "purple.100")}>
           <Flex align='center'>
             <ChatIcon />
             <Text m='2'>Live Chat</Text>

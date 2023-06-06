@@ -75,44 +75,44 @@ const ProfileScreen = () => {
               </Heading>
               <Stack spacing='6'>
                 <Stack spacing='6' as='form' onSubmit={formik.handleSubmit}>
-                {error && (
-                  <Alert
-                    status='error'
-                    flexDirection='column'
-                    alignItems='center'
-                    justifyContent='center'
-                    textAlign='center'
-                  >
-                    <AlertIcon />
-                    <AlertTitle>We are sorry!</AlertTitle>
-                    <AlertDescription>{error}</AlertDescription>
-                  </Alert>
-                )}
-                <Stack spacing='5'>
-                  <FormControl>
-                    <TextField
-                      type='text'
-                      name='name'
-                      placeholder='Your first and last name'
-                      label='full name'
-                    ></TextField>
-                    <TextField type='text' name='email' placeholder='you@example.com' label='email' />
-                    <PasswordTextField type='password' name='password' placeholder='your password' label='password' />
-                    <PasswordTextField
-                      type='password'
-                      name='confirmPassword'
-                      placeholder='confirm your password'
-                      label='confirmPassword'
-                    />
-                  </FormControl>
-                </Stack>
-                <Stack spacing='6'>
-                  <Button colorScheme='orange' size='lg' isLoading={loading} type='submit'>
-                    Save
-                  </Button>
+                  {error && (
+                    <Alert
+                      status='error'
+                      flexDirection='column'
+                      alignItems='center'
+                      justifyContent='center'
+                      textAlign='center'
+                    >
+                      <AlertIcon />
+                      <AlertTitle>We are sorry!</AlertTitle>
+                      <AlertDescription>{error}</AlertDescription>
+                    </Alert>
+                  )}
+                  <Stack spacing='5'>
+                    <FormControl>
+                      <TextField
+                        type='text'
+                        name='name'
+                        placeholder='Your first and last name'
+                        label='full name'
+                      ></TextField>
+                      <TextField type='text' name='email' placeholder='you@example.com' label='email' />
+                      <PasswordTextField type='password' name='password' placeholder='your password' label='password' />
+                      <PasswordTextField
+                        type='password'
+                        name='confirmPassword'
+                        placeholder='confirm your password'
+                        label='confirmPassword'
+                      />
+                    </FormControl>
+                  </Stack>
+                  <Stack spacing='6'>
+                    <Button colorScheme='purple' size='lg' isLoading={loading} type='submit'>
+                      Save
+                    </Button>
+                  </Stack>
                 </Stack>
               </Stack>
-            </Stack>
             </Stack>
             <Flex direction='column' align='center' flex='1' _dark={{ bg: "gray.900" }}>
               <Card>

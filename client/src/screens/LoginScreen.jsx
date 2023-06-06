@@ -69,7 +69,7 @@ const LoginScreen = () => {
                 <Heading size={{ headingBR }}>Login</Heading>
                 <HStack spacing='1' justify='center'>
                   <Text color='muted'>Don't have an account?</Text>
-                  <Button as={ReactLink} to='/registration' variant='link' colorScheme='orange'>
+                  <Button as={ReactLink} to='/registration' variant='link' colorScheme='purple'>
                     Register
                   </Button>
                 </HStack>
@@ -102,7 +102,7 @@ const LoginScreen = () => {
                   </FormControl>
                 </Stack>
                 <Stack spacing='6'>
-                  <Button colorScheme='orange' size='lg' fontSize='md' isLoading={loading} type='submit'>
+                  <Button colorScheme='purple' size='lg' fontSize='md' isLoading={loading} type='submit'>
                     Login
                   </Button>
                 </Stack>

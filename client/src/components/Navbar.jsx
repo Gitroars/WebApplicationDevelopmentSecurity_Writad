@@ -164,8 +164,8 @@ const Navbar = () => {
                   display={{ base: "none", md: "inline-flex" }}
                   fontSize='sm'
                   fontWeight={600}
-                  _hover={{ bg: "orange.400" }}
-                  bg='orange.500'
+                  _hover={{ bg: "purple.400" }}
+                  bg='purple.500'
                   color='white'
                 >
                   Register
