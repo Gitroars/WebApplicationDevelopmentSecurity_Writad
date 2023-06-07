@@ -52,6 +52,15 @@ const ReadingScreen = () => {
         </Text>
       </Flex>
 
+      <Flex direction='row' align='center' justify='center'>
+        <Button onClick={handlePreviousChapter} disabled={isFirstChapter} m='30'>
+          Previous Chapter
+        </Button>
+        <Button onClick={handleNextChapter} disabled={isLastChapter} m='30'>
+          Next Chapter
+        </Button>
+      </Flex>
+
       <Box mb={4}>
         <Flex direction='column' align='center' px='10%'>
           <Text whitespace='pre-wrap'>{currentChapterContent}</Text>
@@ -59,10 +68,10 @@ const ReadingScreen = () => {
       </Box>
 
       <Flex direction='row' align='center' justify='center'>
-        <Button onClick={handlePreviousChapter} disabled={isFirstChapter} margin='5'>
+        <Button onClick={handlePreviousChapter} disabled={isFirstChapter} m='30'>
           Previous Chapter
         </Button>
-        <Button onClick={handleNextChapter} disabled={isLastChapter}>
+        <Button onClick={handleNextChapter} disabled={isLastChapter} m='30'>
           Next Chapter
         </Button>
       </Flex>
