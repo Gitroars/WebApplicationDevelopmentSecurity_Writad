@@ -33,7 +33,7 @@ function App() {
             <Route path='/your-orders' element={<UserOrdersScreen />}></Route>
             <Route path='/admin-console' element={<AdminConsoleScreen />}></Route>
             <Route path='/library' element={<LibraryScreen />}></Route>
-            <Route path='/read/:id' element={<ReadScreen />}></Route>
+            <Route path='/book/:id/chapter' element={<ReadScreen />}></Route>
           </Routes>
         </main>
         <Footer />

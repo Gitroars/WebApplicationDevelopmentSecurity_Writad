@@ -158,7 +158,7 @@ const BookScreen = () => {
                     </>
                   )}
                   {hasUserPurchased() && (
-                    <Link as={ReactLink} to={`/read/${id}`} style={{ paddingTop: "2", cursor: "pointer" }}>
+                    <Link as={ReactLink} to={`/book/${id}/chapter`} style={{ paddingTop: "2", cursor: "pointer" }}>
                       <Button colorScheme='purple'>Read</Button>
                     </Link>
                   )}

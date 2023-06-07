@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { getBook } from "../redux/actions/bookActions";
-import { Box, Text, Button } from "@chakra-ui/react";
+import { Box, Text, Button, Flex } from "@chakra-ui/react";
 
 const ReadingScreen = () => {
   const { id } = useParams();
@@ -42,26 +42,30 @@ const ReadingScreen = () => {
 
   return (
     <Box>
-      <Box mb={4}>
+      <Flex direction='column' align='center' mb={4}>
         <Text fontSize='2xl' fontWeight='bold'>
-          {book.title}
+          {book.name}
         </Text>
         <Text fontSize='lg'>Author: {book.author}</Text>
-      </Box>
-      <Box mb={4}>
         <Text fontSize='xl' fontWeight='bold'>
           Chapter {currentChapter + 1}
         </Text>
-        <Text>{currentChapterContent}</Text>
+      </Flex>
+
+      <Box mb={4}>
+        <Flex direction='column' align='center' px='10%'>
+          <Text whitespace='pre-wrap'>{currentChapterContent}</Text>
+        </Flex>
       </Box>
-      <Box>
-        <Button onClick={handlePreviousChapter} disabled={isFirstChapter}>
+
+      <Flex direction='row' align='center' justify='center'>
+        <Button onClick={handlePreviousChapter} disabled={isFirstChapter} margin='5'>
           Previous Chapter
         </Button>
         <Button onClick={handleNextChapter} disabled={isLastChapter}>
           Next Chapter
         </Button>
-      </Box>
+      </Flex>
     </Box>
   );
 };
