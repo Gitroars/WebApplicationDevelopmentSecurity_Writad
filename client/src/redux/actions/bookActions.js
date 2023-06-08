@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { setBooks, setLoading, setError, setBook, bookReviewed, resetError } from "../slices/books";
+import { setBooks, setLoading, setError, setBook, bookReviewed, resetError, setChapters } from "../slices/books";
 
 export const getBooks = () => async (dispatch) => {
   dispatch(setLoading(true));
@@ -25,6 +25,37 @@ export const getBook = (id) => async (dispatch) => {
   try {
     const { data } = await axios.get(`http://localhost:5000/api/books/${id}`);
     dispatch(setBook(data));
+  } catch (error) {
+    dispatch(
+      setError(
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message
+          ? error.message
+          : "An unexpected error has occured. Please try again later"
+      )
+    );
+  }
+};
+
+export const getBookChapters = (id, ch) => async (dispatch, getState) => {
+  dispatch(setLoading(true));
+  const {
+    user: { userInfo },
+  } = getState();
+  try {
+    const config = {
+      headers: {
+        Authorization: `Bearer ${userInfo.token}`,
+        "Content-Type": "application/json",
+      },
+    };
+    const { data } = await axios.get(`http://localhost:5000/api/books/${id}/${ch}`, {
+      headers: {
+        Authorization: `Bearer ${userInfo.token}`,
+      },
+    });
+    dispatch(setChapters(data));
   } catch (error) {
     dispatch(
       setError(

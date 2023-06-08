@@ -22,7 +22,7 @@ import {
   Textarea,
   Link,
 } from "@chakra-ui/react";
-import { Link as ReactLink } from "react-router-dom";
+import { Link as ReactLink, useNavigate } from "react-router-dom";
 import { MinusIcon, StarIcon, SmallAddIcon } from "@chakra-ui/icons";
 import { BiCheckShield } from "react-icons/bi";
 import { FaInfinity } from "react-icons/fa";
@@ -33,6 +33,7 @@ import { createBookReview, getBook, resetBookError } from "../redux/actions/book
 import { addBasketItem } from "../redux/actions/basketActions";
 import { useEffect, useState } from "react";
 import { getBooks } from "../redux/actions/libraryActions";
+import TableOfContents from "../components/TableOfContents";
 
 const BookScreen = () => {
   const [comment, setComment] = useState("");
@@ -55,6 +56,17 @@ const BookScreen = () => {
 
   const user = useSelector((state) => state.user);
   const { userInfo } = user;
+
+  const [selectedChapter, setSelectedChapter] = useState("");
+
+  const navigate = useNavigate();
+
+  const handleChapterClick = (chapterNumber) => {
+    const chapters = book.chapters;
+    if (chapters) {
+      navigate(`/book/${id}/${chapterNumber}`);
+    }
+  };
 
   useEffect(() => {
     dispatch(getBooks); // for library
@@ -158,34 +170,38 @@ const BookScreen = () => {
                     </>
                   )}
                   {hasUserPurchased() && (
-                    <Link as={ReactLink} to={`/book/${id}/chapter`} style={{ paddingTop: "2", cursor: "pointer" }}>
+                    <Link as={ReactLink} to={`/book/${id}/0`} style={{ paddingTop: "2", cursor: "pointer" }}>
                       <Button colorScheme='purple'>Read</Button>
                     </Link>
                   )}
 
-                  <Stack width='270px'>
-                    <Flex alignItems='center'>
-                      <FaInfinity size='20px' />
-                      <Text fontWeight='medium' fontSize='sm' ml='2'>
-                        Full Lifetime Access
-                      </Text>
-                    </Flex>
-                    <Flex alignItems='center'>
-                      <BiCheckShield size='20px' />
-                      <Text fontWeight='medium' fontSize='sm' ml='2'>
-                        7-Day Money-Back Guarantee
-                      </Text>
-                    </Flex>
-                    <Flex alignItems='center'>
-                      <FiAward size='20px' />
-                      <Text fontWeight='medium' fontSize='sm' ml='2'>
-                        Original Content
-                      </Text>
-                    </Flex>
-                  </Stack>
+                  {!hasUserPurchased() && (
+                    <Stack width='270px'>
+                      <Flex alignItems='center'>
+                        <FaInfinity size='20px' />
+                        <Text fontWeight='medium' fontSize='sm' ml='2'>
+                          Full Lifetime Access
+                        </Text>
+                      </Flex>
+                      <Flex alignItems='center'>
+                        <BiCheckShield size='20px' />
+                        <Text fontWeight='medium' fontSize='sm' ml='2'>
+                          7-Day Money-Back Guarantee
+                        </Text>
+                      </Flex>
+                      <Flex alignItems='center'>
+                        <FiAward size='20px' />
+                        <Text fontWeight='medium' fontSize='sm' ml='2'>
+                          Original Content
+                        </Text>
+                      </Flex>
+                    </Stack>
+                  )}
                 </Stack>
               </Stack>
             </Stack>
+
+            {hasUserPurchased && <TableOfContents chapters={book.chapters} onChapterClick={handleChapterClick} />}
 
             {userInfo && (
               <>

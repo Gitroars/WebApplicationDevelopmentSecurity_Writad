@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { getBook } from "../redux/actions/bookActions";
 import { Box, Text, Button, Flex } from "@chakra-ui/react";
+import ChapterBar from "../components/ChapterBar";
 
 const ReadingScreen = () => {
-  const { id } = useParams();
+  const { id, chapter } = useParams();
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  const [currentChapter, setCurrentChapter] = useState(0);
+  const [currentChapter, setCurrentChapter] = useState(Number(chapter) || 0);
 
   useEffect(() => {
     dispatch(getBook(id));
@@ -19,13 +21,17 @@ const ReadingScreen = () => {
 
   const handleNextChapter = () => {
     if (!isLastChapter) {
-      setCurrentChapter((prevChapter) => prevChapter + 1);
+      const nextChapter = currentChapter + 1;
+      setCurrentChapter(nextChapter);
+      navigate(`/book/${id}/${nextChapter}`);
     }
   };
 
   const handlePreviousChapter = () => {
     if (!isFirstChapter) {
-      setCurrentChapter((prevChapter) => prevChapter - 1);
+      const previousChapter = currentChapter - 1;
+      setCurrentChapter(previousChapter);
+      navigate(`/book/${id}/${previousChapter}`);
     }
   };
 

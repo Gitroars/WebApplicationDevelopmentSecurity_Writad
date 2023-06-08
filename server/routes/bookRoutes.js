@@ -3,6 +3,7 @@ import Book from "../models/books.js";
 import asyncHandler from "express-async-handler";
 import User from "../models/User.js";
 import { protectRoute } from "../middleware/authMiddleware.js";
+import Order from "../models/Order.js";
 
 const bookRoutes = express.Router();
 
@@ -19,6 +20,22 @@ const getBook = async (req, res) => {
     res.status(404);
     throw new Error("Book not found");
   }
+};
+
+const getBookChapters = async (req, res) => {
+  const book = await Book.findById(req.params.id);
+  const user = req.user;
+  if (!book) {
+    res.status(404);
+    throw new Error("Book not found");
+  }
+  const order = await Order.findOne({ user: user._id, "orderItems.id": book._id });
+  const hasPurchased = order !== null;
+  if (!hasPurchased) {
+    res.status(403);
+    throw new Error("Access denied. You need to purchase the book to access the chapters.");
+  }
+  res.json(book.chapters);
 };
 
 const createBookReview = asyncHandler(async (req, res) => {
@@ -52,6 +69,7 @@ const createBookReview = asyncHandler(async (req, res) => {
 
 bookRoutes.route("/").get(getBooks);
 bookRoutes.route("/:id").get(getBook);
+bookRoutes.route("/:id/:ch").get(protectRoute, getBookChapters);
 bookRoutes.route("/reviews/:id").post(protectRoute, createBookReview);
 
 export default bookRoutes;
