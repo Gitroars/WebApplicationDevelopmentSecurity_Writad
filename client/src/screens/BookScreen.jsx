@@ -29,7 +29,7 @@ import { FaInfinity } from "react-icons/fa";
 import { FiAward } from "react-icons/fi";
 import { useDispatch, useSelector } from "react-redux";
 
-import { createBookReview, getBook, resetBookError } from "../redux/actions/bookActions";
+import { createBookReview, getBook, getBookChapter, resetBookError } from "../redux/actions/bookActions";
 import { addBasketItem } from "../redux/actions/basketActions";
 import { useEffect, useState } from "react";
 import { getBooks } from "../redux/actions/libraryActions";
@@ -49,7 +49,7 @@ const BookScreen = () => {
 
   const toast = useToast();
   const books = useSelector((state) => state.books);
-  const { loading, error, book, reviewSend } = books;
+  const { loading, error, book, reviewSend, chapterNumber } = books;
 
   const basketContent = useSelector((state) => state.basket);
   const { basket } = basketContent;
@@ -57,20 +57,16 @@ const BookScreen = () => {
   const user = useSelector((state) => state.user);
   const { userInfo } = user;
 
-  const [selectedChapter, setSelectedChapter] = useState("");
-
   const navigate = useNavigate();
 
   const handleChapterClick = (chapterNumber) => {
-    const chapters = book.chapters;
-    if (chapters) {
-      navigate(`/book/${id}/${chapterNumber}`);
-    }
+    navigate(`/book/${id}/${chapterNumber}`);
   };
 
   useEffect(() => {
     dispatch(getBooks); // for library
     dispatch(getBook(id));
+
     if (reviewSend) {
       toast({ description: "Book review uploaded", status: "success", isClosable: true });
       dispatch(resetBookError());
@@ -201,7 +197,9 @@ const BookScreen = () => {
               </Stack>
             </Stack>
 
-            {hasUserPurchased && <TableOfContents chapters={book.chapters} onChapterClick={handleChapterClick} />}
+            {hasUserPurchased && (
+              <TableOfContents id={id} chapters={book.chapters} onChapterClick={handleChapterClick} />
+            )}
 
             {userInfo && (
               <>

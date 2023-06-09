@@ -22,7 +22,9 @@ const AdminConsoleScreen = () => {
               <Tab>Orders</Tab>
             </TabList>
             <TabPanels>
-              <TabPanel>{/* <UsersTab /> */}</TabPanel>
+              <TabPanel>
+                <UsersTab />
+              </TabPanel>
             </TabPanels>
           </Tabs>
         </Stack>

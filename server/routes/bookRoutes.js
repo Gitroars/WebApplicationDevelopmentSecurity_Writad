@@ -22,7 +22,7 @@ const getBook = async (req, res) => {
   }
 };
 
-const getBookChapters = async (req, res) => {
+const getBookChapter = async (req, res) => {
   const book = await Book.findById(req.params.id);
   const user = req.user;
   if (!book) {
@@ -35,7 +35,19 @@ const getBookChapters = async (req, res) => {
     res.status(403);
     throw new Error("Access denied. You need to purchase the book to access the chapters.");
   }
-  res.json(book.chapters);
+
+  // Retrieve the chapter number from the request parameters
+  const chapterNumber = req.params.chapterNumber;
+
+  // Validate the chapter number to ensure it's within the valid range
+  if (chapterNumber < 1 || chapterNumber > book.chapters.length) {
+    res.status(404);
+    throw new Error("Invalid chapter number");
+  }
+
+  // Retrieve the specified chapter
+  const chapter = book.chapters[chapterNumber - 1];
+  res.json(chapter);
 };
 
 const createBookReview = asyncHandler(async (req, res) => {
@@ -69,7 +81,7 @@ const createBookReview = asyncHandler(async (req, res) => {
 
 bookRoutes.route("/").get(getBooks);
 bookRoutes.route("/:id").get(getBook);
-bookRoutes.route("/:id/:ch").get(protectRoute, getBookChapters);
+bookRoutes.route("/:id/:ch").get(getBook);
 bookRoutes.route("/reviews/:id").post(protectRoute, createBookReview);
 
 export default bookRoutes;

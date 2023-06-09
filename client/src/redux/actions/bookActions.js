@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { setBooks, setLoading, setError, setBook, bookReviewed, resetError, setChapters } from "../slices/books";
+import { setBooks, setLoading, setError, setBook, bookReviewed, resetError, setChapter } from "../slices/books";
 
 export const getBooks = () => async (dispatch) => {
   dispatch(setLoading(true));
@@ -38,7 +38,7 @@ export const getBook = (id) => async (dispatch) => {
   }
 };
 
-export const getBookChapters = (id, ch) => async (dispatch, getState) => {
+export const getBookChapter = (id, ch) => async (dispatch, getState) => {
   dispatch(setLoading(true));
   const {
     user: { userInfo },
@@ -55,7 +55,7 @@ export const getBookChapters = (id, ch) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     });
-    dispatch(setChapters(data));
+    dispatch(setChapter(data));
   } catch (error) {
     dispatch(
       setError(

@@ -5,7 +5,7 @@ export const initialState = {
   error: null,
   books: [],
   book: null,
-  chapters: [],
+  chapter: [],
   reviewSend: false,
 };
 
@@ -26,8 +26,8 @@ export const booksSlice = createSlice({
       state.loading = false;
       state.error = null;
     },
-    setChapters: (state, { payload }) => {
-      state.chapters = payload;
+    setChapter: (state, { payload }) => {
+      state.chapter = payload;
       state.loading = false;
       state.error = null;
     },
@@ -48,7 +48,7 @@ export const booksSlice = createSlice({
   },
 });
 
-export const { setLoading, setError, setBooks, setBook, bookReviewed, resetError, setChapters } = booksSlice.actions;
+export const { setLoading, setError, setBooks, setBook, bookReviewed, resetError, setChapter } = booksSlice.actions;
 export default booksSlice.reducer;
 
 export const bookSelector = (state) => state.books;
