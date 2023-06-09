@@ -6,11 +6,13 @@ import { Box, Text, Button, Flex } from "@chakra-ui/react";
 import ChapterBar from "../components/ChapterBar";
 
 const ReadingScreen = () => {
-  const { id, chapter } = useParams();
+  const { id, ch } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const [currentChapter, setCurrentChapter] = useState(Number(chapter) || 0);
+  const [currentChapter, setCurrentChapter] = useState(parseInt(ch, 10) || 0);
+  console.log("Chapter type:", typeof ch);
+  console.log("Chapter value:", ch);
 
   useEffect(() => {
     dispatch(getBook(id));

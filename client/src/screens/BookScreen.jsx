@@ -59,10 +59,6 @@ const BookScreen = () => {
 
   const navigate = useNavigate();
 
-  const handleChapterClick = (chapterNumber) => {
-    navigate(`/book/${id}/${chapterNumber}`);
-  };
-
   useEffect(() => {
     dispatch(getBooks); // for library
     dispatch(getBook(id));
@@ -197,9 +193,7 @@ const BookScreen = () => {
               </Stack>
             </Stack>
 
-            {hasUserPurchased && (
-              <TableOfContents id={id} chapters={book.chapters} onChapterClick={handleChapterClick} />
-            )}
+            {hasUserPurchased && <TableOfContents margin='10' id={id} chapters={book.chapters} />}
 
             {userInfo && (
               <>
