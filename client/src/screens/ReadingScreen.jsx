@@ -105,6 +105,13 @@ const ReadingScreen = () => {
         <Button onClick={handlePreviousChapter} disabled={isFirstChapter} m={2}>
           Previous Chapter
         </Button>
+        <Select value={currentChapter} onChange={handleChapterSelection} maxWidth='200px' mt={2}>
+          {chapterOptions.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </Select>
         <Button onClick={handleNextChapter} disabled={isLastChapter} m={2}>
           Next Chapter
         </Button>
