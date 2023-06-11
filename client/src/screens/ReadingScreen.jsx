@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { getBook } from "../redux/actions/bookActions";
-import { Box, Text, Button, Flex } from "@chakra-ui/react";
+import { Box, Text, Button, Flex, Select } from "@chakra-ui/react";
 import ChapterBar from "../components/ChapterBar";
 
 const ReadingScreen = () => {
@@ -11,8 +11,6 @@ const ReadingScreen = () => {
   const navigate = useNavigate();
 
   const [currentChapter, setCurrentChapter] = useState(parseInt(ch, 10) || 0);
-  console.log("Chapter type:", typeof ch);
-  console.log("Chapter value:", ch);
 
   useEffect(() => {
     dispatch(getBook(id));
@@ -25,6 +23,7 @@ const ReadingScreen = () => {
     if (!isLastChapter) {
       const nextChapter = currentChapter + 1;
       setCurrentChapter(nextChapter);
+
       navigate(`/book/${id}/${nextChapter}`);
     }
   };
@@ -33,9 +32,18 @@ const ReadingScreen = () => {
     if (!isFirstChapter) {
       const previousChapter = currentChapter - 1;
       setCurrentChapter(previousChapter);
+
       navigate(`/book/${id}/${previousChapter}`);
     }
   };
+
+  if (loading) {
+    return <Text>Loading...</Text>;
+  }
+
+  if (error) {
+    return <Text>Error: {error}</Text>;
+  }
 
   if (!book || !book.chapters || book.chapters.length === 0) {
     return <Text>No chapters available.</Text>;
@@ -47,6 +55,17 @@ const ReadingScreen = () => {
   const isFirstChapter = currentChapter === 0;
 
   const currentChapterContent = chapters[currentChapter].content;
+
+  const chapterOptions = chapters.map((chapter, index) => ({
+    value: index,
+    label: `Chapter ${index + 1}`,
+  }));
+
+  const handleChapterSelection = (e) => {
+    const currentChapter = parseInt(e.target.value, 10);
+    setCurrentChapter(currentChapter);
+    navigate(`/book/${id}/${currentChapter}`);
+  };
 
   return (
     <Box>
@@ -61,10 +80,17 @@ const ReadingScreen = () => {
       </Flex>
 
       <Flex direction='row' align='center' justify='center'>
-        <Button onClick={handlePreviousChapter} disabled={isFirstChapter} m='30'>
+        <Button onClick={handlePreviousChapter} disabled={isFirstChapter} m={2}>
           Previous Chapter
         </Button>
-        <Button onClick={handleNextChapter} disabled={isLastChapter} m='30'>
+        <Select value={currentChapter} onChange={handleChapterSelection} maxWidth='200px' mt={2}>
+          {chapterOptions.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </Select>
+        <Button onClick={handleNextChapter} disabled={isLastChapter} m={2}>
           Next Chapter
         </Button>
       </Flex>
@@ -76,10 +102,10 @@ const ReadingScreen = () => {
       </Box>
 
       <Flex direction='row' align='center' justify='center'>
-        <Button onClick={handlePreviousChapter} disabled={isFirstChapter} m='30'>
+        <Button onClick={handlePreviousChapter} disabled={isFirstChapter} m={2}>
           Previous Chapter
         </Button>
-        <Button onClick={handleNextChapter} disabled={isLastChapter} m='30'>
+        <Button onClick={handleNextChapter} disabled={isLastChapter} m={2}>
           Next Chapter
         </Button>
       </Flex>
