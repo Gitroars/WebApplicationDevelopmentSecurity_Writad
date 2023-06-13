@@ -22,6 +22,7 @@ const bookSchema = mongoose.Schema(
     name: { type: String, required: true },
     image: { type: String, required: true },
     author: { type: String, required: true },
+    authorId: { type: ObjectId, ref: "User", required: true },
     category: { type: String, required: true },
     description: { type: String, required: true },
     reviews: [reviewSchema],

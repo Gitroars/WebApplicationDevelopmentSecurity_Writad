@@ -19,7 +19,7 @@ import {
   MenuList,
   MenuItem,
 } from "@chakra-ui/react";
-import { Link as ReactLink } from "react-router-dom";
+import { Link as ReactLink, useNavigate } from "react-router-dom";
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import { BiBookHeart } from "react-icons/bi";
 import { useState } from "react";
@@ -74,10 +74,12 @@ const Navbar = () => {
   const { userInfo } = user;
   const dispatch = useDispatch();
   const toast = useToast();
+  const navigate = useNavigate();
 
   const logoutHandler = () => {
     dispatch(logout());
     toast({ description: "Logged out successfully.", status: "success", isClosable: true });
+    navigate("/");
   };
 
   return (

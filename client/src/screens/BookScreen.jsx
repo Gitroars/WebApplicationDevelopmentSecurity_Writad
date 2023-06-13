@@ -193,7 +193,7 @@ const BookScreen = () => {
               </Stack>
             </Stack>
 
-            {hasUserPurchased && <TableOfContents margin='10' id={id} chapters={book.chapters} />}
+            {hasUserPurchased() && <TableOfContents margin='10' id={id} chapters={book.chapters} />}
 
             {userInfo && (
               <>
