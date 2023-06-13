@@ -91,6 +91,7 @@ const createBook = asyncHandler(async (req, res) => {
     name,
     image,
     author,
+    authorId,
     category,
     description,
     price,
@@ -105,7 +106,8 @@ const createBook = asyncHandler(async (req, res) => {
 bookRoutes.route("/").get(getBooks);
 bookRoutes.route("/:id").get(getBook);
 bookRoutes.route("/:id/:ch").get(getBook);
-bookRoutes.route("/reviews/:id").post(protectRoute, createBookReview);
-bookRoutes.route("/submissions").get(protectRoute, getBooksByAuthor);
+bookRoutes.route("/reviews/chapter:id").post(protectRoute, createBookReview);
+bookRoutes.route("/author/submissions/:id").get(protectRoute, getBooksByAuthor);
+bookRoutes.route("/author/submit/:id").post(protectRoute, createBook);
 
 export default bookRoutes;
