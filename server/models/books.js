@@ -26,11 +26,11 @@ const bookSchema = mongoose.Schema(
     category: { type: String, required: true },
     description: { type: String, required: true },
     reviews: [reviewSchema],
-    rating: { type: Number, required: true, default: 0 },
-    numberOfReviews: { type: String, required: true },
+    rating: { type: Number, required: false, default: 0 },
+    numberOfReviews: { type: String, required: false },
     price: { type: Number, required: true },
     productIsNew: { type: Boolean, default: false },
-    stock: { type: Number, required: true, default: 0 },
+    stock: { type: Number, required: false, default: 1 },
   },
   { timestamps: true }
 );

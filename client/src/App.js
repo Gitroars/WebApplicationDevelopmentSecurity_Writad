@@ -15,6 +15,8 @@ import AdminConsoleScreen from "./screens/AdminConsoleScreen";
 import LibraryScreen from "./screens/LibraryScreen";
 import ReadingScreen from "./screens/ReadingScreen";
 import AuthorDashboard from "./screens/AuthorDashboard";
+import WritingScreen from "./screens/CreateBookScreen";
+import CreateBookScreen from "./screens/CreateBookScreen";
 function App() {
   return (
     <ChakraProvider>
@@ -36,6 +38,7 @@ function App() {
             <Route path='/library' element={<LibraryScreen />}></Route>
             <Route path='/book/:id/:ch' element={<ReadingScreen />}></Route>
             <Route path='/author' element={<AuthorDashboard />}></Route>
+            <Route path='/create' element={<CreateBookScreen />}></Route>
           </Routes>
         </main>
         <Footer />

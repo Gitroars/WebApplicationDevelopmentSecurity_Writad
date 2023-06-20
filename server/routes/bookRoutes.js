@@ -79,9 +79,33 @@ const createBookReview = asyncHandler(async (req, res) => {
   }
 });
 
+const createBook = asyncHandler(async (req, res) => {
+  const { title, description, genre, chapterName, chapterContent } = req.body;
+
+  const book = new Book({
+    name: title,
+    author: req.user_name,
+    authorId: new mongoose.Types.ObjectId(req.user_id),
+
+    category: genre,
+    description,
+    chapters: [
+      {
+        number: 1,
+        name: chapterName,
+        content: chapterContent,
+      },
+    ],
+  });
+
+  const createdBook = await book.save();
+  res.status(201).json(createdBook);
+});
+
 bookRoutes.route("/").get(getBooks);
 bookRoutes.route("/:id").get(getBook);
 bookRoutes.route("/:id/:ch").get(getBook);
 bookRoutes.route("/reviews/chapter:id").post(protectRoute, createBookReview);
+bookRoutes.route("/").post(protectRoute, createBook);
 
 export default bookRoutes;

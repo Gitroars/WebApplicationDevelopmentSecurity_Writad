@@ -44,7 +44,7 @@ const updateBookChapter = asyncHandler(async (req, res) => {
 });
 
 authorRoutes.route("/:id").get(protectRoute, getBooksByAuthor);
-authorRoutes.route("/submit/:id").post(protectRoute, createBook);
-authorRoutes.route("/update/:id").put(protectRoute, updateBookChapter);
+authorRoutes.route("/:id/submit").post(protectRoute, createBook);
+authorRoutes.route("/:id/update").put(protectRoute, updateBookChapter);
 
 export default authorRoutes;
