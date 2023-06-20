@@ -25,33 +25,6 @@ const BooksScreen = () => {
   
 const [category,setCategory]= useState('')
   
- const Display=()=>{
-  if (category=='') {
-    return(
-      <Wrap spacing='30px' justify='center' minHeight='100vh'>
-        {books.map((book) => (
-          <WrapItem key={book._id}>
-            <Center w='250px' h='550px'>
-              <BookCard book={book} isBooks={false} />
-            </Center>
-          </WrapItem>
-        ))}
-      </Wrap>)
-  }else{
-    if (category==books.category){
-      return(
-        <Wrap spacing='30px' justify='center' minHeight='100vh'>
-        {books.map((book) => (
-          <WrapItem key={book._id}>
-            <Center w='250px' h='550px'>
-              <BookCard book={book} isBooks={false} />
-            </Center>
-          </WrapItem>
-        ))}
-      </Wrap>)}
-  }
-  
-}
 
 
 const sorting=()=>{
@@ -97,7 +70,17 @@ const sorting=()=>{
         </Alert>
       ) 
       : (
-        Display()
+        <Wrap spacing='30px' justify='center' minHeight='100vh'>
+        {books.filter((book)=>{
+          return category===""? book: book.category.includes(category)
+        }).map((book) => (
+          <WrapItem key={book._id}>
+            <Center w='250px' h='550px'>
+              <BookCard book={book} isBooks={false} />
+            </Center>
+          </WrapItem>
+        ))}
+      </Wrap>
       )}
       
     </>
