@@ -123,6 +123,18 @@ const BookCard = ({ book, isBooks: isOwned = true, showRating = true }) => {
           <Rating rating={book.rating} numberOfReviews={book.numberOfReviews} />
         </Flex>
       )}
+
+      <Flex mt='2' justifyContent='space-between' alignContent='center'>
+        {!isOwned && (
+          <>
+              <Box fontSize='1x1' fontWeight='semibold' lineHeight='tight'>
+                Genre: <Badge rounded='full' px='2' fontSize='0.8em' colorScheme='green'>
+                {book.category}
+          </Badge>
+              </Box>
+          </>
+        )}
+      </Flex>
     </Stack>
   );
 };
