@@ -7,6 +7,7 @@ import {
   Heading,
   Text,
   Container,
+  Badge
 } from '@chakra-ui/react';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import Slider from 'react-slick';
@@ -44,6 +45,7 @@ export default function CaptionCarousel() {
     title: book.name,
     text: book.description,
     imageURL: book.image,
+    genre:book.category
   }));
 
   return (
@@ -105,10 +107,18 @@ export default function CaptionCarousel() {
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
             backgroundSize={'cover'} // Maintain aspect ratio of the image
-            backgroundImage={`url(${book.imageURL})`}
             borderRadius={'20px'} // Add a smooth curved edge
+            backgroundColor={"blackAlpha.700"}
           >
-            <Container size="container.lg" height="600px" position="relative">
+            <Box 
+            backgroundImage={`url(${book.imageURL})`}
+            height={'700px'}
+            width={'60%'} 
+            backgroundRepeat={'no-repeat'}
+            marginTop={'16%'}
+            marginLeft={'14%'}></Box>
+            <Container size="container.lg" height="600px" marginLeft={'40%'}>
+            
               <Stack
                 spacing={6}
                 w={'full'}
@@ -119,11 +129,15 @@ export default function CaptionCarousel() {
               >
                 <Heading
                   fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
-                  color="white"
+                  color="White"
                 >
                   {book.title}
                 </Heading>
-                <Text fontSize={{ base: 'md', lg: 'lg' }} color="white">
+                <Box fontSize='1x1' fontWeight='semibold' lineHeight='tight' color='white'>
+                Genre: <Badge rounded='80%' px='2' fontSize='0.8em' colorScheme='gray'>
+                {book.genre}
+                </Badge>
+              </Box><Text fontSize={{ base: 'md', lg: 'lg' }} color="white" >      
                   {book.text}
                 </Text>
               </Stack>
