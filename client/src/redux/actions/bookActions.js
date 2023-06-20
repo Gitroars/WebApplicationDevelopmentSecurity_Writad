@@ -119,6 +119,7 @@ export const createBook = (bookData) => async (dispatch, getState) => {
     formData.append("genre", bookData.genre);
     formData.append("chapterName", bookData.chapterName);
     formData.append("chapterContent", bookData.chapterContent);
+    formData.append("price", bookData.price);
     const { data } = await axios.post(`http://localhost:5000/api/books/create`, formData, config);
   } catch (error) {
     dispatch(

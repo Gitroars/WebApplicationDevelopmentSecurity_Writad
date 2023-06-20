@@ -1,19 +1,10 @@
 import React, { useState } from "react";
-import {
-  useToast,
-  Box,
-  FormControl,
-  FormLabel,
-  Input,
-  Textarea,
-  Button,
-  Checkbox,
-  CheckboxGroup,
-} from "@chakra-ui/react";
+import { useToast, Box, FormControl, FormLabel, Input, Textarea, Button, Select } from "@chakra-ui/react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { createBook } from "../redux/actions/bookActions";
 import { useDispatch, useSelector } from "react-redux";
+
 const validationSchema = Yup.object().shape({
   title: Yup.string().required("Book Title is required"),
   description: Yup.string().required("Book Description is required"),
@@ -37,18 +28,17 @@ const CreateBookScreen = ({ onSave }) => {
     price: "",
   };
 
-  const [selectedCategory, setSelectedCategory] = useState("");
-
   const handleSave = (values) => {
-    const { image, title, description, genre, chapterName, chapterContent } = values;
+    const { image, title, description, category, chapterTitle, chapterContent, price } = values;
 
     const bookData = {
       image,
       title,
       description,
-      genre,
-      chapterName,
+      genre: category,
+      chapterName: chapterTitle,
       chapterContent,
+      price,
     };
 
     dispatch(createBook(bookData));
@@ -91,47 +81,14 @@ const CreateBookScreen = ({ onSave }) => {
           <Field name='category'>
             {({ field, form }) => (
               <FormControl mb='4' isInvalid={form.errors.category && form.touched.category}>
-                <FormLabel>Book Category</FormLabel>
-                <Checkbox
-                  m='3'
-                  value='adventure'
-                  isChecked={selectedCategory === "adventure"}
-                  onChange={() => setSelectedCategory("adventure")}
-                >
-                  Adventure
-                </Checkbox>
-                <Checkbox
-                  m='3'
-                  value='drama'
-                  isChecked={selectedCategory === "drama"}
-                  onChange={() => setSelectedCategory("drama")}
-                >
-                  Drama
-                </Checkbox>
-                <Checkbox
-                  m='3'
-                  value='romance'
-                  isChecked={selectedCategory === "romance"}
-                  onChange={() => setSelectedCategory("romance")}
-                >
-                  Romance
-                </Checkbox>
-                <Checkbox
-                  m='3'
-                  value='science-fiction'
-                  isChecked={selectedCategory === "science-fiction"}
-                  onChange={() => setSelectedCategory("science-fiction")}
-                >
-                  Science Fiction
-                </Checkbox>
-                <Checkbox
-                  m='3'
-                  value='horror'
-                  isChecked={selectedCategory === "horror"}
-                  onChange={() => setSelectedCategory("horror")}
-                >
-                  Horror
-                </Checkbox>
+                <FormLabel>Genre</FormLabel>
+                <Select {...field}>
+                  <option value='adventure'>Adventure</option>
+                  <option value='drama'>Drama</option>
+                  <option value='romance'>Romance</option>
+                  <option value='science-fiction'>Science Fiction</option>
+                  <option value='horror'>Horror</option>
+                </Select>
                 <ErrorMessage name='category' component='div' color='red' />
               </FormControl>
             )}
