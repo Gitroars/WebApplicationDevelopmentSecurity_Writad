@@ -103,6 +103,7 @@ const createBook = asyncHandler(async (req, res) => {
         content: chapterContent,
       },
     ],
+    productIsNew: true,
   });
   console.log(user.name);
   console.log(new mongoose.Types.ObjectId(user._id));
