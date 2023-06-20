@@ -36,8 +36,7 @@ const createBook = asyncHandler(async (req, res) => {
   res.status(201).json(createdBook);
 });
 
-const updateBookChapter = asyncHandler(async (req, res) => {\
-  
+const updateBookChapter = asyncHandler(async (req, res) => {
   const book = await Book.findById(req.params.id);
   if (book) {
     book.chapters = req.body.chapters;
