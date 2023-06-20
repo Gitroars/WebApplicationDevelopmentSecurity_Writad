@@ -88,11 +88,12 @@ const CreateBookScreen = ({ onSave }) => {
               <FormControl mb='4' isInvalid={form.errors.category && form.touched.category}>
                 <FormLabel>Genre</FormLabel>
                 <Select {...field}>
-                  <option value='adventure'>Adventure</option>
-                  <option value='drama'>Drama</option>
-                  <option value='romance'>Romance</option>
-                  <option value='science-fiction'>Science Fiction</option>
-                  <option value='horror'>Horror</option>
+                  <option value='Adventure'>Adventure</option>
+                  <option value='Drama'>Drama</option>
+                  <option value='Romance'>Romance</option>
+                  <option value='Science Fiction'>Science Fiction</option>
+                  <option value='Horror'>Horror</option>
+                  <option value='Fantasy'>Fantasy</option>
                 </Select>
                 <ErrorMessage name='category' component='div' color='red' />
               </FormControl>
