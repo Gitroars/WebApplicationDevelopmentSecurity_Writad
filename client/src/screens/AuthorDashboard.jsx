@@ -27,7 +27,7 @@ const AuthorDashboard = () => {
         ) : (
           <WrapItem spacing='4' align='start'>
             {books.map((book) => (
-              <BookCard key={book.id} book={book} isBooks={false} showRating={false} />
+              <BookCard key={book.id} book={book} isBooks={false} showRating={false} isAuthor={true} />
             ))}
           </WrapItem>
         )}

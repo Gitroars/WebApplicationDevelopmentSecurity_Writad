@@ -40,7 +40,7 @@ const Rating = ({ rating, numberOfReviews }) => {
   );
 };
 
-const BookCard = ({ book, isBooks: isOwned = true, showRating = true }) => {
+const BookCard = ({ book, isBooks: isOwned = true, showRating = true, isAuthor = false }) => {
   const dispatch = useDispatch();
   const toast = useToast();
   const basketInfo = useSelector((state) => state.basket);
@@ -90,11 +90,22 @@ const BookCard = ({ book, isBooks: isOwned = true, showRating = true }) => {
       <Flex mt='2' justifyContent='space-between' alignContent='center'>
         {!isOwned && (
           <>
-            <Link as={ReactLink} to={`/book/${book._id}`} pt='2' cursor='pointer'>
-              <Box fontSize='2x1' fontWeight='semibold' lineHeight='tight'>
-                {book.name}
-              </Box>
-            </Link>
+            {!isAuthor && (
+              <>
+                <Link as={ReactLink} to={`/book/${book._id}`} pt='2' cursor='pointer'>
+                  <Box fontSize='2x1' fontWeight='semibold' lineHeight='tight'>
+                    {book.name}
+                  </Box>
+                </Link>
+              </>
+            )}
+            {isAuthor && (
+              <>
+                <Box fontSize='2x1' fontWeight='semibold' lineHeight='tight'>
+                  {book.name}
+                </Box>
+              </>
+            )}
           </>
         )}
       </Flex>
@@ -127,11 +138,12 @@ const BookCard = ({ book, isBooks: isOwned = true, showRating = true }) => {
       <Flex mt='2' justifyContent='space-between' alignContent='center'>
         {!isOwned && (
           <>
-              <Box fontSize='1x1' fontWeight='semibold' lineHeight='tight'>
-                Genre: <Badge rounded='full' px='2' fontSize='0.8em' colorScheme='green'>
+            <Box fontSize='1x1' fontWeight='semibold' lineHeight='tight'>
+              Genre:{" "}
+              <Badge rounded='full' px='2' fontSize='0.8em' colorScheme='green'>
                 {book.category}
-          </Badge>
-              </Box>
+              </Badge>
+            </Box>
           </>
         )}
       </Flex>
