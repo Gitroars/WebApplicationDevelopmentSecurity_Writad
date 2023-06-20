@@ -1,8 +1,19 @@
 import React, { useState } from "react";
-import { Box, FormControl, FormLabel, Input, Textarea, Button, Checkbox, CheckboxGroup } from "@chakra-ui/react";
+import {
+  useToast,
+  Box,
+  FormControl,
+  FormLabel,
+  Input,
+  Textarea,
+  Button,
+  Checkbox,
+  CheckboxGroup,
+} from "@chakra-ui/react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
-
+import { createBook } from "../redux/actions/bookActions";
+import { useDispatch, useSelector } from "react-redux";
 const validationSchema = Yup.object().shape({
   title: Yup.string().required("Book Title is required"),
   description: Yup.string().required("Book Description is required"),
@@ -14,6 +25,8 @@ const validationSchema = Yup.object().shape({
 });
 
 const CreateBookScreen = ({ onSave }) => {
+  const dispatch = useDispatch();
+  const toast = useToast();
   const initialValues = {
     title: "",
     description: "",
@@ -27,7 +40,19 @@ const CreateBookScreen = ({ onSave }) => {
   const [selectedCategory, setSelectedCategory] = useState("");
 
   const handleSave = (values) => {
-    onSave(values);
+    const { image, title, description, genre, chapterName, chapterContent } = values;
+
+    const bookData = {
+      image,
+      title,
+      description,
+      genre,
+      chapterName,
+      chapterContent,
+    };
+
+    dispatch(createBook(bookData));
+    toast({ description: "Created new book", status: "success", isClosable: true });
   };
 
   return (

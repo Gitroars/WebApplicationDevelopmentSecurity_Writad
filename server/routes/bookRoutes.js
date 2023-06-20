@@ -4,7 +4,7 @@ import asyncHandler from "express-async-handler";
 import User from "../models/User.js";
 import { protectRoute } from "../middleware/authMiddleware.js";
 import Order from "../models/Order.js";
-
+import mongoose from "mongoose";
 const bookRoutes = express.Router();
 
 const getBooks = async (req, res) => {
@@ -80,15 +80,16 @@ const createBookReview = asyncHandler(async (req, res) => {
 });
 
 const createBook = asyncHandler(async (req, res) => {
-  const { title, description, genre, chapterName, chapterContent } = req.body;
-
+  const { image, title, description, genre, chapterName, chapterContent } = req.body;
+  const user = req.params.id;
   const book = new Book({
     name: title,
-    author: req.user_name,
+    image,
+    author: user.name,
     authorId: new mongoose.Types.ObjectId(req.user_id),
-
     category: genre,
     description,
+    price,
     chapters: [
       {
         number: 1,
@@ -106,6 +107,6 @@ bookRoutes.route("/").get(getBooks);
 bookRoutes.route("/:id").get(getBook);
 bookRoutes.route("/:id/:ch").get(getBook);
 bookRoutes.route("/reviews/chapter:id").post(protectRoute, createBookReview);
-bookRoutes.route("/").post(protectRoute, createBook);
+bookRoutes.route("/create").post(protectRoute, createBook);
 
 export default bookRoutes;
