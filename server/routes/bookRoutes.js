@@ -94,6 +94,7 @@ const createBook = asyncHandler(async (req, res) => {
     authorId: new mongoose.Types.ObjectId(user._id),
     category,
     description,
+    numberOfReviews: 0,
     price,
     chapters: [
       {
