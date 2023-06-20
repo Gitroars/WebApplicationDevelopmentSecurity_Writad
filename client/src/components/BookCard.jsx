@@ -140,7 +140,7 @@ const BookCard = ({ book, isBooks: isOwned = true, showRating = true, isAuthor =
           <>
             <Box fontSize='1x1' fontWeight='semibold' lineHeight='tight'>
               Genre:{" "}
-              <Badge rounded='full' px='2' fontSize='0.8em' colorScheme='green'>
+              <Badge rounded='full' px='2' fontSize='0.8em' colorScheme='blue'>
                 {book.category}
               </Badge>
             </Box>
