@@ -16,6 +16,8 @@ const validationSchema = Yup.object().shape({
 });
 
 const CreateBookScreen = ({ onSave }) => {
+  const user = useSelector((state) => state.user);
+  const { userInfo } = user;
   const dispatch = useDispatch();
   const toast = useToast();
   const initialValues = {
@@ -29,20 +31,23 @@ const CreateBookScreen = ({ onSave }) => {
   };
 
   const handleSave = (values) => {
-    const { image, title, description, category, chapterTitle, chapterContent, price } = values;
-
-    const bookData = {
-      image,
-      title,
-      description,
-      genre: category,
-      chapterName: chapterTitle,
-      chapterContent,
-      price,
-    };
-
-    dispatch(createBook(bookData));
-    toast({ description: "Created new book", status: "success", isClosable: true });
+    try {
+      dispatch(
+        createBook(
+          userInfo._id,
+          values.title,
+          values.image,
+          values.category,
+          values.description,
+          values.price,
+          values.chapterTitle,
+          values.chapterContent
+        )
+      );
+      toast({ description: "Created new book", status: "success", isClosable: true });
+    } catch (err) {
+      console.log("Failed to upload new book: " + err);
+    }
   };
 
   return (

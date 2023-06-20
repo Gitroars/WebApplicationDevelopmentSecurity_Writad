@@ -101,38 +101,36 @@ export const createBookReview = (bookId, userId, comment, rating, title) => asyn
   }
 };
 
-export const createBook = (bookData) => async (dispatch, getState) => {
-  const {
-    user: { userInfo },
-  } = getState();
-  try {
-    const config = {
-      headers: {
-        Authorization: `Bearer ${userInfo.token}`,
-        "Content-Type": "application/json",
-      },
-    };
-    const formData = new formData();
-    formData.append("image", bookData.image);
-    formData.append("title", bookData.title);
-    formData.append("description", bookData.description);
-    formData.append("genre", bookData.genre);
-    formData.append("chapterName", bookData.chapterName);
-    formData.append("chapterContent", bookData.chapterContent);
-    formData.append("price", bookData.price);
-    const { data } = await axios.post(`http://localhost:5000/api/books/create`, formData, config);
-  } catch (error) {
-    dispatch(
-      setError(
-        error.response && error.response.data.message
-          ? error.response.data.message
-          : error.message
-          ? error.message
-          : "An unexpected error has occured. Please try again later"
-      )
-    );
-  }
-};
+export const createBook =
+  (id, title, image, category, description, price, chapterTitle, chapterContent) => async (dispatch, getState) => {
+    const {
+      user: { userInfo },
+    } = getState();
+    try {
+      const config = {
+        headers: {
+          Authorization: `Bearer ${userInfo.token}`,
+          "Content-Type": "application/json",
+        },
+      };
+
+      const { data } = await axios.post(
+        `http://localhost:5000/api/books/create`,
+        { _id: id, title, image, category, description, price, chapterTitle, chapterContent },
+        config
+      );
+    } catch (error) {
+      dispatch(
+        setError(
+          error.response && error.response.data.message
+            ? error.response.data.message
+            : error.message
+            ? error.message
+            : "An unexpected error has occured. Please try again later"
+        )
+      );
+    }
+  };
 
 export const resetBookError = () => async (dispatch) => {
   dispatch(resetError());

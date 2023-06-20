@@ -80,24 +80,31 @@ const createBookReview = asyncHandler(async (req, res) => {
 });
 
 const createBook = asyncHandler(async (req, res) => {
-  const { image, title, description, genre, chapterName, chapterContent } = req.body;
-  const user = req.params.id;
+  const user = await User.findById(req.body._id);
+  const { image, title, description, price, category, chapterTitle, chapterContent } = req.body;
+  console.log("new title" + title);
+  console.log(typeof title);
+
+  console.log(user);
+
   const book = new Book({
     name: title,
     image,
     author: user.name,
-    authorId: new mongoose.Types.ObjectId(req.user_id),
-    category: genre,
+    authorId: new mongoose.Types.ObjectId(user._id),
+    category,
     description,
     price,
     chapters: [
       {
         number: 1,
-        name: chapterName,
+        title: chapterTitle,
         content: chapterContent,
       },
     ],
   });
+  console.log(user.name);
+  console.log(new mongoose.Types.ObjectId(user._id));
 
   const createdBook = await book.save();
   res.status(201).json(createdBook);
