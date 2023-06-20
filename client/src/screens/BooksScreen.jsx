@@ -2,7 +2,7 @@ import { Center, Wrap, WrapItem, Spinner, Stack, Alert, AlertIcon, AlertDescript
   MenuDivider,
   Menu,
   MenuList,
-  MenuItem,Text,UnorderedList,ListItem ,List} from "@chakra-ui/react";
+  MenuItem,Text,UnorderedList,ListItem ,List, Box} from "@chakra-ui/react";
 import BookCard from "../components/BookCard";
 import { useDispatch, useSelector } from "react-redux";
 import { getBooks } from "../redux/actions/bookActions";
@@ -30,10 +30,10 @@ const [category,setCategory]= useState('')
 const sorting=()=>{
   return(
   <Menu >
-    <MenuButton px='4' py='2' transition='all 0.3s' as={Button} >
-          Sorting <ChevronDownIcon />
+    <MenuButton px='4' py='2' transition='all 0.3s' as={Button} backgroundColor={'gray.300'}>
+          Sorting 
       </MenuButton>
-      <MenuList >
+      <MenuList marginLeft={'-40%'}>
       <MenuItem onClick={()=>setCategory('')}>
           <Text ml='2'>All genre</Text>  
           </MenuItem><MenuItem onClick={()=>setCategory('Adventure')}>
@@ -57,7 +57,8 @@ const sorting=()=>{
   return (
     <>
       <CaptionCarousel />
-        {sorting()}
+      <Box marginLeft={'47%'} marginTop={'15px'}>
+        {sorting()}</Box>
       {loading ? (
         <Stack direction='row' spacing={4}>
           <Spinner mt={20} thickness='2px' speed='0.65s' emptyColor='gray.200' color='orange.500' size='xl' />
