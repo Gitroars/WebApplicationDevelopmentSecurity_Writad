@@ -5,7 +5,7 @@ import { setBooks, setLoading, setError, setBook, bookReviewed, resetError, setC
 export const getBooks = () => async (dispatch) => {
   dispatch(setLoading(true));
   try {
-    const { data } = await axios.get("http://localhost:5000/api/books");
+    const { data } = await axios.get("/api/books");
     dispatch(setBooks(data));
   } catch (error) {
     dispatch(
@@ -23,7 +23,7 @@ export const getBooks = () => async (dispatch) => {
 export const getBook = (id) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
-    const { data } = await axios.get(`http://localhost:5000/api/books/${id}`);
+    const { data } = await axios.get(`/api/books/${id}`);
     dispatch(setBook(data));
   } catch (error) {
     dispatch(
@@ -50,7 +50,7 @@ export const getBookChapter = (id, ch) => async (dispatch, getState) => {
         "Content-Type": "application/json",
       },
     };
-    const { data } = await axios.get(`http://localhost:5000/api/books/${id}/${ch}`, {
+    const { data } = await axios.get(`/api/books/${id}/${ch}`, {
       headers: {
         Authorization: `Bearer ${userInfo.token}`,
       },
@@ -81,11 +81,7 @@ export const createBookReview = (bookId, userId, comment, rating, title) => asyn
         "Content-Type": "application/json",
       },
     };
-    const { data } = await axios.post(
-      `http://localhost:5000/api/books/reviews/${bookId}`,
-      { comment, userId, rating, title },
-      config
-    );
+    const { data } = await axios.post(`/api/books/reviews/${bookId}`, { comment, userId, rating, title }, config);
     localStorage.setItem("userInfo", JSON.stringify(data));
     dispatch(bookReviewed());
   } catch (error) {
@@ -115,7 +111,7 @@ export const createBook =
       };
 
       const { data } = await axios.post(
-        `http://localhost:5000/api/books/create`,
+        `/api/books/create`,
         { _id: id, title, image, category, description, price, chapterTitle, chapterContent },
         config
       );
