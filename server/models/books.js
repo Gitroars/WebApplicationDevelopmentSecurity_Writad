@@ -12,7 +12,7 @@ const reviewSchema = new mongoose.Schema(
     rating: { type: String, required: true },
     comment: { type: String, required: true },
     title: { type: String, required: true },
-    user: { type: mongoose.Schema.Types.ObjectId, required: true, ref: "user" },
+    user: { type: mongoose.Schema.Types.ObjectId, required: true, ref: "User" },
   },
   { timestamps: true }
 );

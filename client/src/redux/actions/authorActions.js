@@ -1,8 +1,8 @@
 import axios from "axios";
-import { getAuthorBooksRequest } from "../slices/author";
-import { setLoading } from "../slices/user";
+import { setLoading, setBooks, setError } from "../slices/author";
 
-export const fetchAuthorBooks = () => async (dispatch, getState) => {
+export const getBooks = () => async (dispatch, getState) => {
+  dispatch(setLoading(true));
   const {
     user: { userInfo },
   } = getState();
@@ -13,8 +13,8 @@ export const fetchAuthorBooks = () => async (dispatch, getState) => {
         "Content-Type": "application/json",
       },
     };
-    const { data } = await axios.get(`http://localhost:5000/api/books/submissions/${userInfo._id}`, config);
-    dispatch(getAuthorBooksRequest(data));
+    const { data } = await axios.get(`http://localhost:5000/api/author/${userInfo._id}`, config);
+    dispatch(setBooks(data));
   } catch (error) {
     dispatch(
       setError(
@@ -28,7 +28,7 @@ export const fetchAuthorBooks = () => async (dispatch, getState) => {
   }
 };
 
-export const createBook = (name, image, category, description, price) => async (dispatch) => {
+export const createBook = (name, image, category, description, price) => async (dispatch, getState) => {
   const {
     user: { userInfo },
   } = getState();
@@ -41,10 +41,9 @@ export const createBook = (name, image, category, description, price) => async (
     };
     const { data } = await axios.post(
       `http://localhost:5000/api/books/author/submit/${userInfo._id}`,
-      { authorId: id, name, image, category, description, price },
+      { authorId: userInfo._id, name, image, category, description, price },
       config
     );
-    dispatch(create);
   } catch (error) {
     dispatch(
       setError(

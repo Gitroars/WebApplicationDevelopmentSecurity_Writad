@@ -6,7 +6,9 @@
   "image": "/images/lost_kingdom.png",
   "description": "Step into The Lost Kingdom, a realm filled with ancient mysteries, hidden treasures, and powerful artifacts. Join our young protagonist on a quest to uncover the truth behind a long-forgotten civilization and protect the world from an impending darkness.",
   "author": "Benjamin Anderson",
-  "authorId":"647b1b46bf7b199ab5ccfa62",
+  "authorId": {
+    "$oid": "647b1b46bf7b199ab5ccfa62"
+  },
   "category": "Adventure",
   "price": 3.99,
   "rating": 0,
@@ -45,7 +47,9 @@
   "image": "/images/the_enchanted_chronicles.png",
   "description": " Embark on a magical journey through The Enchanted Chronicles. Discover a world of mythical creatures, epic quests, and breathtaking adventures that will capture your imagination.",
   "author": "Evelyn Sinclair",
-  "authorId":"647b1b46bf7b199ab5ccfa62",
+  "authorId": {
+    "$oid": "647b1b46bf7b199ab5ccfa62"
+  },
   "category": "Fantasy",
   "price": 3.99,
   "rating": 5,
@@ -122,7 +126,9 @@
   "name": "Echoes of Eternity",
   "image": "/images/echoes_of_eternity.png",
   "author": "Jonathan Reed",
-  "authorId":"647b1b46bf7b199ab5ccfa62",
+  "authorId": {
+    "$oid": "647b1b46bf7b199ab5ccfa62"
+  },
   "category": "Fantasy",
   "description": "Enter a world of magic, destiny, and ancient prophecies in Echoes of Eternity. Join our young hero as they embark on a perilous quest to save their realm from an impending darkness that threatens to consume everything they hold dear.",
   "rating": 0,
@@ -164,6 +170,9 @@
   "image": "/images/digital_destiny.png",
   "description": "Enter the futuristic world of Digital Destiny, where virtual reality becomes a gateway to infinite possibilities. Join our protagonist as they navigate a virtual realm filled with danger, mystery, and unexpected alliances",
   "author": "Aiden Brooks",
+  "authorId": {
+    "$oid": "647b1b46bf7b199ab5ccfa62"
+  },
   "category": "Science Fiction",
   "price": 3.99,
   "rating": 265,
@@ -238,7 +247,9 @@
   "image": "/images/love_in_shadows.png",
   "description": "Immerse yourself in the captivating world of Love in Shadows, a romantic tale of forbidden love, secret societies, and untold secrets. Follow the intertwined destinies of two souls as they navigate a world shrouded in darkness and intrigue.",
   "author": "Sophia Parker",
-  "authorId":"647b1b46bf7b199ab5ccfa62",
+  "authorId": {
+    "$oid": "647b1b46bf7b199ab5ccfa62"
+  },
   "category": "Romance",
   "price": 3.99,
   "countInStock": 11,
@@ -296,6 +307,9 @@
   "image": "/images/sound_of_silence.png",
   "description": "Experience The Sound of Silence, a poignant tale of love, loss, and the power of music. Follow the journey of a gifted musician as they navigate the complexities of relationships, find solace in their craft, and discover the healing power of sound.",
   "author": "Julia Hartman",
+  "authorId": {
+    "$oid": "647b1b46bf7b199ab5ccfa62"
+  },
   "category": "Drama",
   "price": 3.99,
   "rating": 5,
@@ -352,7 +366,9 @@
   "image": "/images/art_of_time.png",
   "description": "Immerse yourself in The Art of Time, a mesmerizing tale of time travel, destiny, and the power of choices. Join our protagonist as they navigate through different eras, encountering love, loss, and the timeless struggle between fate and free will.",
   "author": "Gabriel Wells",
-  "authorId":"647b1b46bf7b199ab5ccfa62",
+  "authorId": {
+    "$oid": "647b1b46bf7b199ab5ccfa62"
+  },
   "category": "Science Fiction",
   "price": 3.99,
   "rating": 4,
@@ -407,7 +423,9 @@
   "name": "Whispers in the Dark",
   "image": "/images/whispers_in_the_dark.png",
   "author": "Victoria Blackwood",
-  "authorId":"647b1b46bf7b199ab5ccfa62",
+  "authorId": {
+    "$oid": "647b1b46bf7b199ab5ccfa62"
+  },
   "category": "Horror",
   "description": "Delve into the haunting world of Whispers in the Dark, a spine-chilling horror novel that will send shivers down your spine. Brace yourself for a sinister journey as you uncover the terrifying secrets lurking within the shadows.",
   "rating": 275,

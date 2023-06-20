@@ -1,30 +1,41 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  books: [], // Initially empty array of books
+  books: [],
+  book: null,
   loading: false,
   error: null,
 };
 
-const authorBooksSlice = createSlice({
-  name: "authorBooks",
+const authorSlice = createSlice({
+  name: "author",
   initialState,
   reducers: {
-    getAuthorBooksRequest: (state) => {
+    setLoading: (state) => {
       state.loading = true;
+    },
+
+    setBooks: (state, { payload }) => {
       state.error = null;
-    },
-    getAuthorBooksSuccess: (state, action) => {
+      state.books = payload;
       state.loading = false;
-      state.books = action.payload;
     },
-    getAuthorBooksFailure: (state, action) => {
+
+    setBook: (state, { payload }) => {
+      state.error = null;
+      state.book = payload;
       state.loading = false;
-      state.error = action.payload;
+    },
+
+    setError: (state, { payload }) => {
+      state.error = payload;
+      state.loading = false;
     },
   },
 });
 
-export const { getAuthorBooksRequest, getAuthorBooksSuccess, getAuthorBooksFailure } = authorBooksSlice.actions;
+export const { setLoading, setBooks, setError } = authorSlice.actions;
 
-export default authorBooksSlice.reducer;
+export default authorSlice.reducer;
+
+export const authorSelector = (state) => state.author;

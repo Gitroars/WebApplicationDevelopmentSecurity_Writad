@@ -25,6 +25,7 @@ import { BiBookHeart } from "react-icons/bi";
 import { useState } from "react";
 import { CgProfile } from "react-icons/cg";
 import { MdLogout, MdOutlineAdminPanelSettings } from "react-icons/md";
+import { TbWriting } from "react-icons/tb";
 import { FaReceipt } from "react-icons/fa";
 import { RiShoppingBasket2Line } from "react-icons/ri";
 import { useDispatch, useSelector } from "react-redux";
@@ -137,16 +138,10 @@ const Navbar = () => {
                     <FaReceipt />
                     <Text ml='2'>Purchase history</Text>
                   </MenuItem>
-                  {userInfo.isAdmin && (
-                    <>
-                      <MenuDivider />
-                      <MenuItem as={ReactLink} to={"/admin-console"}>
-                        <MdOutlineAdminPanelSettings />
-                        <Text ml='2'>Admin Console</Text>
-                      </MenuItem>
-                    </>
-                  )}
-
+                  <MenuItem as={ReactLink} to='/author'>
+                    <TbWriting />
+                    <Text ml='2'>Author Dashboard</Text>
+                  </MenuItem>
                   <MenuDivider />
                   <MenuItem onClick={logoutHandler}>
                     <MdLogout />

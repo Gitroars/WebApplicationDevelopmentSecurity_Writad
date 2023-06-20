@@ -6,7 +6,7 @@ import user from "./slices/user";
 import order from "./slices/order";
 import admin from "./slices/admin";
 import library from "./slices/library";
-
+import author from "./slices/author";
 const reducer = combineReducers({
   books,
   basket,
@@ -14,6 +14,7 @@ const reducer = combineReducers({
   order,
   admin,
   library,
+  author,
 });
 
 export default configureStore({

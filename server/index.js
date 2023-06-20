@@ -10,6 +10,7 @@ import bookRoutes from "./routes/bookRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 import libraryRoutes from "./routes/libraryRoutes.js";
+import authorRoutes from "./routes/authorRoutes.js";
 
 connectToDatabase();
 const app = express();
@@ -20,6 +21,7 @@ app.use("/api/books", bookRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/library", libraryRoutes);
+app.use("/api/author", authorRoutes);
 app.get("/api/config/paypal", (req, res) => res.send(process.env.PAYPAL_CLIENT_ID));
 
 const port = process.env.PORT || 5000;
