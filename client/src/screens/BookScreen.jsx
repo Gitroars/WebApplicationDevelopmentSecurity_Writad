@@ -195,7 +195,7 @@ const BookScreen = () => {
 
             {hasUserPurchased() && <TableOfContents margin='10' id={id} chapters={book.chapters} />}
 
-            {userInfo && (
+            {userInfo && hasUserPurchased() && (
               <>
                 <Tooltip label={hasUserReviewed() ? "You have already reviewed this product." : ""} fontSize='md'>
                   <Button
