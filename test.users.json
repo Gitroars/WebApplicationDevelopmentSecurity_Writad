@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "647b1b46bf7b199ab5ccfa62"
+  },
+  "name": "admin",
+  "email": "admin@web.com",
+  "password": "$2a$10$l5kx0z.0NO5TbPewY9dvk.AVGiLL1xdSrK1JQYtqIgpkWKw07o0zO",
+  "isAdmin": true,
+  "createdAt": {
+    "$date": "2023-06-03T10:51:50.477Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-03T10:57:47.419Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "647b218631d435c24405ff86"
+  },
+  "name": "acott",
+  "email": "acott@web.com",
+  "password": "$2a$10$vL6oBrrKXnLD9YgvuIvwXeIIkMmmjE91mQuSaJW1gzBRHQyTc9nYC",
+  "isAdmin": false,
+  "createdAt": {
+    "$date": "2023-06-03T11:18:30.681Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-03T11:18:30.681Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "647b21bd31d435c24405ff93"
+  },
+  "name": "bernardi",
+  "email": "ben@web.com",
+  "password": "$2a$10$7HGAPytDR7N3bYp461HcT.87tY62t2hgbC9y1mCJTLnV7y5YqfPTi",
+  "isAdmin": false,
+  "createdAt": {
+    "$date": "2023-06-03T11:19:25.394Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-06T03:59:56.026Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "647b233ebf7b199ab5ccfa94"
+  },
+  "name": "General Kenobi",
+  "email": "kenobi@212st.com",
+  "password": "$2a$10$9PwCK2LRd4zXYVbr4gWWc.ypUvHdtAcsMhBahEq.OZ4y6ca7H.UOC",
+  "isAdmin": false,
+  "createdAt": {
+    "$date": "2023-06-03T11:25:50.883Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-03T11:25:50.883Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "647bd58944f2ff0fa9189899"
+  },
+  "name": "Arvin Y",
+  "email": "arvin.yuwono@binus.ac.id",
+  "password": "$2a$10$sk5IDp1rjyl3KNSjqRk9ReTKf59KDYVNgIjrJ6OcrIBLmPB2377nu",
+  "isAdmin": "false",
+  "createdAt": {
+    "$date": "2023-06-04T00:06:33.822Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-04T00:06:33.822Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "647d4e02c376e46f9a0a4a93"
+  },
+  "name": "DevKnight",
+  "email": "devknight@gmail.com",
+  "password": "$2a$10$/yMnaq76cDrbTPL4oZIaf.3wkDFyhGUE610KbX8gPHwxkplsGC13W",
+  "isAdmin": "false",
+  "createdAt": {
+    "$date": "2023-06-05T02:52:50.621Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-05T02:52:50.621Z"
+  },
+  "__v": 0
+}]
