@@ -1,166 +1,142 @@
 [{
   "_id": {
-    "$oid": "6369863c9540445b3c45e6b3"
+    "$oid": "6369860d9540445b3c45e6b1"
   },
-  "name": "The Lost Kingdom",
-  "image": "/images/lost_kingdom.png",
-  "description": "Step into The Lost Kingdom, a realm filled with ancient mysteries, hidden treasures, and powerful artifacts. Join our young protagonist on a quest to uncover the truth behind a long-forgotten civilization and protect the world from an impending darkness.",
-  "author": "Benjamin Anderson",
+  "name": "Love in Shadows",
+  "image": "/images/love_in_shadows.png",
+  "description": "Immerse yourself in the captivating world of Love in Shadows, a romantic tale of forbidden love, secret societies, and untold secrets. Follow the intertwined destinies of two souls as they navigate a world shrouded in darkness and intrigue.",
+  "author": "Sophia Parker",
   "authorId": {
-    "$oid": "647b1b46bf7b199ab5ccfa62"
+    "$oid": "647b21bd31d435c24405ff93"
   },
-  "category": "Adventure",
+  "category": "Romance",
   "price": 3.99,
-  "rating": 0,
-  "numberOfReviews": 0,
+  "countInStock": 11,
+  "rating": 40,
+  "numberOfReviews": "1",
   "productIsNew": false,
-  "__v": 5,
-  "reviews": [],
-  "updatedAt": {
-    "$date": "2022-12-01T06:08:45.863Z"
-  },
-  "stock": 7,
-  "chapters": [
-    {
-      "number": 1,
-      "title": "Chapter 1 Title",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis, purus at pretium pretium, nulla nulla tristique lacus, at bibendum sapien massa eget orci. Fusce nec ligula nulla. Suspendisse vel ornare nibh. Suspendisse maximus mattis viverra. Mauris dolor sem, mattis ac enim feugiat, lobortis rhoncus neque. Ut mauris felis, aliquet eget diam vitae, interdum pretium ipsum. Nam vulputate quis leo quis lobortis. Aliquam non ipsum non nulla iaculis ultrices ut nec lectus. Cras finibus lacus sem. Integer laoreet mattis felis, a efficitur elit lacinia non. Duis ornare non nisl ac maximus. Proin sit amet molestie metus, non ultricies orci. Ut ut pulvinar est, a varius orci. Nullam varius ultrices felis, sed auctor lectus aliquam suscipit.\n\nCras finibus elementum tincidunt. Mauris quis ullamcorper velit. Pellentesque euismod ex et dui gravida tempor. In hac habitasse platea dictumst. Sed ac volutpat sapien. Donec at mauris vel arcu suscipit sodales a sit amet eros. Aliquam id libero condimentum, dapibus augue in, posuere ipsum.\n\nAenean egestas augue nec urna vestibulum feugiat. Vestibulum id sagittis sem. Nullam dignissim est nunc, gravida dignissim augue aliquet ut. Quisque eget enim placerat, faucibus ante sed, tempus enim. Suspendisse dapibus dolor eu tempor porta. Mauris sed leo sapien. Aenean tempor sollicitudin ex vestibulum egestas. Suspendisse ullamcorper ipsum ut placerat egestas. Nullam sed massa sed felis porta feugiat sit amet sed metus. Vivamus commodo, lectus in luctus tristique, elit ante varius risus, in pellentesque elit justo ultrices est. Aliquam fringilla tincidunt enim ut finibus. Vivamus a lorem magna.\n\nNam a felis vel leo consectetur convallis et et enim. Nam consectetur lectus diam, at dictum neque iaculis sit amet. Quisque consequat id quam id finibus. Nullam a pellentesque est. Cras justo dolor, varius laoreet viverra ut, interdum ut risus. In hac habitasse platea dictumst. Sed ut gravida turpis. Integer consequat purus vel massa lobortis, at iaculis augue mattis. In euismod blandit risus, viverra viverra sapien dapibus sit amet.\n\nInterdum et malesuada fames ac ante ipsum primis in faucibus. Praesent massa magna, tempor vel sem non, semper convallis mauris. Nam non enim felis. Nullam dictum tincidunt blandit. Nullam non urna eleifend, posuere tortor rutrum, semper mi. Duis in risus eget lorem rutrum bibendum. Nam pulvinar lacinia augue, in sodales nulla ultricies eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed aliquet ante. Integer pellentesque non neque sed euismod. Sed et magna ullamcorper, semper leo nec, malesuada ipsum. Maecenas nibh tortor, luctus vitae mattis eget, rhoncus et dui.\n\nVestibulum rutrum ipsum et tempor sagittis. Praesent eleifend interdum nisl. Suspendisse et viverra risus. Suspendisse vitae diam eu quam luctus convallis malesuada vitae mauris. Nunc at nulla sed dolor pretium pretium. Duis tempor rutrum metus, a tempus sapien lobortis sed. Nulla in tempus ante. Nunc arcu metus, congue quis venenatis quis, finibus sed quam. Ut varius placerat urna, eget volutpat risus varius a. Integer vitae nunc nec dolor mattis porta. Integer porttitor ipsum mauris, non venenatis urna molestie lacinia. Praesent dapibus lectus a interdum commodo.\n\nDonec in volutpat tortor. Etiam sit amet nibh vel leo pretium condimentum ac egestas nunc. Donec elit metus, aliquet id varius non, dictum non augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras augue ex, laoreet et aliquam vitae, accumsan ut nunc. Aliquam fringilla nibh sed velit luctus, nec bibendum ex ullamcorper. Vivamus eleifend ultrices dolor, vitae malesuada tellus fermentum ut. In semper ac ante hendrerit ultrices. Cras blandit tincidunt eros, eget tempor erat faucibus sed. Etiam fringilla massa sit amet felis pretium tincidunt. Sed pretium vulputate tortor a aliquam. Quisque fermentum ligula nulla, semper mattis diam elementum eu. In vehicula velit vitae ligula condimentum, hendrerit luctus quam gravida. Curabitur ultricies sem quis justo fringilla, sed maximus dui efficitur.\n\nDonec dictum urna vel eros cursus facilisis. Vivamus ullamcorper iaculis mauris nec aliquet. Donec eu urna a ipsum dignissim porttitor vitae sed nisi. Integer at neque aliquam, lobortis ante quis, congue leo. Praesent neque lectus, laoreet sit amet magna vel, malesuada placerat libero. Aenean sed ipsum felis. Etiam et fringilla est. Maecenas id porta massa. Suspendisse potenti. Morbi sit amet interdum massa. Duis rhoncus accumsan libero, ac iaculis ipsum tincidunt et. Cras pharetra aliquet quam sed iaculis.\n\nMaecenas ornare velit eu venenatis ullamcorper. Fusce blandit lorem quis hendrerit consectetur. Vestibulum viverra eros in est dictum, vel iaculis lacus hendrerit. Vestibulum non leo felis. Nam pharetra velit non dui dapibus finibus. Ut ut turpis tempor purus fringilla consectetur in vitae turpis. Sed egestas lobortis nisl et consectetur. Maecenas imperdiet velit sed orci hendrerit viverra. Mauris quis orci non lectus sollicitudin elementum.\n\nCras tempus rutrum urna a interdum. Nunc maximus eleifend nisl et pulvinar. Curabitur consectetur feugiat felis egestas consectetur. Sed condimentum tristique risus, vitae aliquam nibh mattis vitae. Mauris viverra neque sit amet vestibulum dignissim. Mauris sagittis ipsum in maximus convallis. Fusce at efficitur dolor, eu iaculis ex. Duis rhoncus feugiat arcu, faucibus interdum arcu efficitur quis. Etiam scelerisque augue maximus faucibus rhoncus. Proin sapien sapien, finibus at tortor et, laoreet pulvinar neque. Praesent posuere maximus dolor. Vivamus id bibendum ex, vel rhoncus felis. Suspendisse lacus nibh, ullamcorper ac porttitor nec, commodo in nisl. Aliquam tincidunt ipsum erat, sit amet fermentum neque ultrices et. Suspendisse sagittis commodo nulla, eu eleifend risus porta vel.\n\nIn ullamcorper fringilla tortor, quis tristique augue congue eget. Praesent ac pretium felis. Nunc condimentum mattis dui at efficitur. Cras interdum nibh eget nunc tincidunt, et condimentum massa lobortis. Aliquam interdum, justo et viverra facilisis, elit ex porta leo, sed congue ex neque vitae mauris. Ut eu mi massa. In laoreet semper massa, vitae imperdiet leo volutpat sit amet. Ut congue libero sit amet diam interdum interdum vel sed ligula.\n\nPhasellus posuere turpis in diam sodales, et consectetur eros pulvinar. In in augue ut sapien commodo aliquam. Mauris ut sem in odio semper imperdiet non a sapien. Sed quis dapibus massa. Fusce suscipit condimentum tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eget odio ut ipsum pretium mollis. Curabitur quis nibh sit amet lectus vehicula euismod eu eget enim. Etiam sed accumsan ligula, et mattis neque. Integer sollicitudin nisi in euismod tincidunt. Proin elementum porta accumsan. Ut velit ante, faucibus et blandit sit amet, laoreet et eros. Morbi vel quam elementum, auctor erat quis, imperdiet ligula.\n\nNullam sed neque aliquet, ullamcorper mauris ac, auctor quam. Suspendisse posuere lorem luctus mi aliquam dignissim quis ut nulla. Nullam enim lorem, laoreet eget gravida at, tincidunt non libero. Donec sit amet eleifend nibh, id dapibus massa. Maecenas non tortor nisi. Integer feugiat urna a enim facilisis congue. Integer lobortis a nibh vitae ullamcorper. Mauris venenatis elit eget quam blandit, vitae porttitor risus porttitor. Suspendisse eget enim gravida, elementum dui eu, laoreet tortor. Nam vehicula eu ante quis efficitur. Praesent ullamcorper vel ante vitae cursus. Mauris sed eros vulputate, gravida augue eu, porta magna. Nulla lacinia placerat mattis. Aliquam vel eros libero.\n\nQuisque varius rutrum magna, nec sollicitudin tortor condimentum luctus. Duis mi tortor, consequat ac volutpat et, fermentum consequat ipsum. Nunc eget felis dignissim, eleifend ligula in, dignissim justo. Ut mattis pretium dolor, a ultricies tellus volutpat sed. Nam ac scelerisque diam. Phasellus varius semper mi, sit amet cursus nulla convallis et. Donec mattis enim id porta rutrum. Etiam massa leo, laoreet nec feugiat non, tincidunt et metus. Praesent sodales leo nec iaculis ultricies. Pellentesque finibus tortor et scelerisque gravida. Donec mattis porttitor nisl, eget pretium arcu eleifend in.\n\nMaecenas eleifend, neque et accumsan vulputate, nunc erat feugiat leo, non tempus leo metus ut velit. Curabitur efficitur pretium arcu, vel ornare tellus porttitor ut. Duis sed magna consectetur, sollicitudin magna ac, faucibus purus. Cras ipsum ipsum, vehicula sed nunc sit amet, accumsan cursus nibh. Quisque eu tortor bibendum, auctor nunc ac, bibendum libero. Mauris bibendum pretium ultrices. In justo felis, convallis sit amet risus quis, feugiat dignissim ipsum.\n\nIn id est dolor. Cras in velit semper, molestie augue sed, finibus purus. Vestibulum tristique aliquet eleifend. Nam ex ante, faucibus eu vehicula id, finibus facilisis dolor. Pellentesque ac odio nec nulla gravida tempor a vitae tellus. Suspendisse tincidunt, quam eget facilisis consequat, enim massa ultrices diam, a mollis ipsum risus et arcu. Pellentesque suscipit lectus nunc, sed aliquet nisi rhoncus nec. Vestibulum pretium id elit sit amet condimentum. Nulla facilisi. Vestibulum aliquet consectetur mi, sit amet molestie ipsum ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam eleifend, nulla vel pretium pellentesque, risus ex luctus lectus, et dignissim purus odio in odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ornare ut erat in tristique. Cras semper mattis nisi sed auctor. Fusce tempus diam sed diam aliquam, sed aliquet lectus bibendum.\n\nNunc iaculis lectus sit amet nibh placerat iaculis. Quisque scelerisque elementum justo, vel pretium est blandit nec. Proin posuere ut neque ut tempor. Vivamus non ligula id felis posuere feugiat. Nunc ut tellus id nulla varius aliquet. Ut mollis dolor et vehicula dictum. Ut at commodo eros. In at elit malesuada, mattis odio sit."
-    },
-    {
-      "number": 2,
-      "title": "Chapter 2 Title",
-      "content": "Chapter 2 Content"
-    },
-    {
-      "number": 3,
-      "title": "Chapter 3 Title",
-      "content": "Chapter 3 Content"
-    }
-  ]
-  
-},
-{
-  "_id": {
-    "$oid": "636985919540445b3c45e6ac"
-  },
-  "name": "The Enchanted Chronicles",
-  "image": "/images/the_enchanted_chronicles.png",
-  "description": " Embark on a magical journey through The Enchanted Chronicles. Discover a world of mythical creatures, epic quests, and breathtaking adventures that will capture your imagination.",
-  "author": "Evelyn Sinclair",
-  "authorId": {
-    "$oid": "647b1b46bf7b199ab5ccfa62"
-  },
-  "category": "Fantasy",
-  "price": 3.99,
-  "rating": 5,
-  "numberOfReviews": "2",
-  "productIsNew": true,
-  "__v": 16,
+  "__v": 8,
   "reviews": [
-    {
-      "name": "Benjamin Fischer",
-      "rating": 5,
-      "comment": "This product is great.\n",
-      "title": "Awesome Stuff",
-      "user": {
-        "$oid": "6389181f9cb2f071748ff7e1"
-      },
-      "_id": {
-        "$oid": "638919379cb2f071748ff7f3"
-      },
-      "createdAt": {
-        "$date": "2022-12-01T21:14:31.767Z"
-      },
-      "updatedAt": {
-        "$date": "2022-12-01T21:14:31.767Z"
-      }
-    },
     {
       "name": "ben",
       "rating": "4",
-      "comment": "great book!",
-      "title": "Awesome",
+      "comment": "interesting story",
+      "title": "great book",
       "user": {
         "$oid": "647b21bd31d435c24405ff93"
       },
       "_id": {
-        "$oid": "647e02715d0ccbe754cc2760"
+        "$oid": "647e05ca5d0ccbe754cc287f"
       },
       "createdAt": {
-        "$date": "2023-06-05T15:42:41.746Z"
+        "$date": "2023-06-05T15:56:58.596Z"
       },
       "updatedAt": {
-        "$date": "2023-06-05T15:42:41.746Z"
+        "$date": "2023-06-05T15:56:58.596Z"
       }
     }
   ],
   "updatedAt": {
-    "$date": "2023-06-05T15:42:41.747Z"
+    "$date": "2023-06-05T15:56:58.596Z"
   },
-  "stock": 7,
+  "stock": 0,
   "chapters": [
     {
       "number": 1,
-      "title": "Chapter 1 Title",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis, purus at pretium pretium, nulla nulla tristique lacus, at bibendum sapien massa eget orci. Fusce nec ligula nulla. Suspendisse vel ornare nibh. Suspendisse maximus mattis viverra. Mauris dolor sem, mattis ac enim feugiat, lobortis rhoncus neque. Ut mauris felis, aliquet eget diam vitae, interdum pretium ipsum. Nam vulputate quis leo quis lobortis. Aliquam non ipsum non nulla iaculis ultrices ut nec lectus. Cras finibus lacus sem. Integer laoreet mattis felis, a efficitur elit lacinia non. Duis ornare non nisl ac maximus. Proin sit amet molestie metus, non ultricies orci. Ut ut pulvinar est, a varius orci. Nullam varius ultrices felis, sed auctor lectus aliquam suscipit.\n\nCras finibus elementum tincidunt. Mauris quis ullamcorper velit. Pellentesque euismod ex et dui gravida tempor. In hac habitasse platea dictumst. Sed ac volutpat sapien. Donec at mauris vel arcu suscipit sodales a sit amet eros. Aliquam id libero condimentum, dapibus augue in, posuere ipsum.\n\nAenean egestas augue nec urna vestibulum feugiat. Vestibulum id sagittis sem. Nullam dignissim est nunc, gravida dignissim augue aliquet ut. Quisque eget enim placerat, faucibus ante sed, tempus enim. Suspendisse dapibus dolor eu tempor porta. Mauris sed leo sapien. Aenean tempor sollicitudin ex vestibulum egestas. Suspendisse ullamcorper ipsum ut placerat egestas. Nullam sed massa sed felis porta feugiat sit amet sed metus. Vivamus commodo, lectus in luctus tristique, elit ante varius risus, in pellentesque elit justo ultrices est. Aliquam fringilla tincidunt enim ut finibus. Vivamus a lorem magna.\n\nNam a felis vel leo consectetur convallis et et enim. Nam consectetur lectus diam, at dictum neque iaculis sit amet. Quisque consequat id quam id finibus. Nullam a pellentesque est. Cras justo dolor, varius laoreet viverra ut, interdum ut risus. In hac habitasse platea dictumst. Sed ut gravida turpis. Integer consequat purus vel massa lobortis, at iaculis augue mattis. In euismod blandit risus, viverra viverra sapien dapibus sit amet.\n\nInterdum et malesuada fames ac ante ipsum primis in faucibus. Praesent massa magna, tempor vel sem non, semper convallis mauris. Nam non enim felis. Nullam dictum tincidunt blandit. Nullam non urna eleifend, posuere tortor rutrum, semper mi. Duis in risus eget lorem rutrum bibendum. Nam pulvinar lacinia augue, in sodales nulla ultricies eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed aliquet ante. Integer pellentesque non neque sed euismod. Sed et magna ullamcorper, semper leo nec, malesuada ipsum. Maecenas nibh tortor, luctus vitae mattis eget, rhoncus et dui.\n\nVestibulum rutrum ipsum et tempor sagittis. Praesent eleifend interdum nisl. Suspendisse et viverra risus. Suspendisse vitae diam eu quam luctus convallis malesuada vitae mauris. Nunc at nulla sed dolor pretium pretium. Duis tempor rutrum metus, a tempus sapien lobortis sed. Nulla in tempus ante. Nunc arcu metus, congue quis venenatis quis, finibus sed quam. Ut varius placerat urna, eget volutpat risus varius a. Integer vitae nunc nec dolor mattis porta. Integer porttitor ipsum mauris, non venenatis urna molestie lacinia. Praesent dapibus lectus a interdum commodo.\n\nDonec in volutpat tortor. Etiam sit amet nibh vel leo pretium condimentum ac egestas nunc. Donec elit metus, aliquet id varius non, dictum non augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras augue ex, laoreet et aliquam vitae, accumsan ut nunc. Aliquam fringilla nibh sed velit luctus, nec bibendum ex ullamcorper. Vivamus eleifend ultrices dolor, vitae malesuada tellus fermentum ut. In semper ac ante hendrerit ultrices. Cras blandit tincidunt eros, eget tempor erat faucibus sed. Etiam fringilla massa sit amet felis pretium tincidunt. Sed pretium vulputate tortor a aliquam. Quisque fermentum ligula nulla, semper mattis diam elementum eu. In vehicula velit vitae ligula condimentum, hendrerit luctus quam gravida. Curabitur ultricies sem quis justo fringilla, sed maximus dui efficitur.\n\nDonec dictum urna vel eros cursus facilisis. Vivamus ullamcorper iaculis mauris nec aliquet. Donec eu urna a ipsum dignissim porttitor vitae sed nisi. Integer at neque aliquam, lobortis ante quis, congue leo. Praesent neque lectus, laoreet sit amet magna vel, malesuada placerat libero. Aenean sed ipsum felis. Etiam et fringilla est. Maecenas id porta massa. Suspendisse potenti. Morbi sit amet interdum massa. Duis rhoncus accumsan libero, ac iaculis ipsum tincidunt et. Cras pharetra aliquet quam sed iaculis.\n\nMaecenas ornare velit eu venenatis ullamcorper. Fusce blandit lorem quis hendrerit consectetur. Vestibulum viverra eros in est dictum, vel iaculis lacus hendrerit. Vestibulum non leo felis. Nam pharetra velit non dui dapibus finibus. Ut ut turpis tempor purus fringilla consectetur in vitae turpis. Sed egestas lobortis nisl et consectetur. Maecenas imperdiet velit sed orci hendrerit viverra. Mauris quis orci non lectus sollicitudin elementum.\n\nCras tempus rutrum urna a interdum. Nunc maximus eleifend nisl et pulvinar. Curabitur consectetur feugiat felis egestas consectetur. Sed condimentum tristique risus, vitae aliquam nibh mattis vitae. Mauris viverra neque sit amet vestibulum dignissim. Mauris sagittis ipsum in maximus convallis. Fusce at efficitur dolor, eu iaculis ex. Duis rhoncus feugiat arcu, faucibus interdum arcu efficitur quis. Etiam scelerisque augue maximus faucibus rhoncus. Proin sapien sapien, finibus at tortor et, laoreet pulvinar neque. Praesent posuere maximus dolor. Vivamus id bibendum ex, vel rhoncus felis. Suspendisse lacus nibh, ullamcorper ac porttitor nec, commodo in nisl. Aliquam tincidunt ipsum erat, sit amet fermentum neque ultrices et. Suspendisse sagittis commodo nulla, eu eleifend risus porta vel.\n\nIn ullamcorper fringilla tortor, quis tristique augue congue eget. Praesent ac pretium felis. Nunc condimentum mattis dui at efficitur. Cras interdum nibh eget nunc tincidunt, et condimentum massa lobortis. Aliquam interdum, justo et viverra facilisis, elit ex porta leo, sed congue ex neque vitae mauris. Ut eu mi massa. In laoreet semper massa, vitae imperdiet leo volutpat sit amet. Ut congue libero sit amet diam interdum interdum vel sed ligula.\n\nPhasellus posuere turpis in diam sodales, et consectetur eros pulvinar. In in augue ut sapien commodo aliquam. Mauris ut sem in odio semper imperdiet non a sapien. Sed quis dapibus massa. Fusce suscipit condimentum tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eget odio ut ipsum pretium mollis. Curabitur quis nibh sit amet lectus vehicula euismod eu eget enim. Etiam sed accumsan ligula, et mattis neque. Integer sollicitudin nisi in euismod tincidunt. Proin elementum porta accumsan. Ut velit ante, faucibus et blandit sit amet, laoreet et eros. Morbi vel quam elementum, auctor erat quis, imperdiet ligula.\n\nNullam sed neque aliquet, ullamcorper mauris ac, auctor quam. Suspendisse posuere lorem luctus mi aliquam dignissim quis ut nulla. Nullam enim lorem, laoreet eget gravida at, tincidunt non libero. Donec sit amet eleifend nibh, id dapibus massa. Maecenas non tortor nisi. Integer feugiat urna a enim facilisis congue. Integer lobortis a nibh vitae ullamcorper. Mauris venenatis elit eget quam blandit, vitae porttitor risus porttitor. Suspendisse eget enim gravida, elementum dui eu, laoreet tortor. Nam vehicula eu ante quis efficitur. Praesent ullamcorper vel ante vitae cursus. Mauris sed eros vulputate, gravida augue eu, porta magna. Nulla lacinia placerat mattis. Aliquam vel eros libero.\n\nQuisque varius rutrum magna, nec sollicitudin tortor condimentum luctus. Duis mi tortor, consequat ac volutpat et, fermentum consequat ipsum. Nunc eget felis dignissim, eleifend ligula in, dignissim justo. Ut mattis pretium dolor, a ultricies tellus volutpat sed. Nam ac scelerisque diam. Phasellus varius semper mi, sit amet cursus nulla convallis et. Donec mattis enim id porta rutrum. Etiam massa leo, laoreet nec feugiat non, tincidunt et metus. Praesent sodales leo nec iaculis ultricies. Pellentesque finibus tortor et scelerisque gravida. Donec mattis porttitor nisl, eget pretium arcu eleifend in.\n\nMaecenas eleifend, neque et accumsan vulputate, nunc erat feugiat leo, non tempus leo metus ut velit. Curabitur efficitur pretium arcu, vel ornare tellus porttitor ut. Duis sed magna consectetur, sollicitudin magna ac, faucibus purus. Cras ipsum ipsum, vehicula sed nunc sit amet, accumsan cursus nibh. Quisque eu tortor bibendum, auctor nunc ac, bibendum libero. Mauris bibendum pretium ultrices. In justo felis, convallis sit amet risus quis, feugiat dignissim ipsum.\n\nIn id est dolor. Cras in velit semper, molestie augue sed, finibus purus. Vestibulum tristique aliquet eleifend. Nam ex ante, faucibus eu vehicula id, finibus facilisis dolor. Pellentesque ac odio nec nulla gravida tempor a vitae tellus. Suspendisse tincidunt, quam eget facilisis consequat, enim massa ultrices diam, a mollis ipsum risus et arcu. Pellentesque suscipit lectus nunc, sed aliquet nisi rhoncus nec. Vestibulum pretium id elit sit amet condimentum. Nulla facilisi. Vestibulum aliquet consectetur mi, sit amet molestie ipsum ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam eleifend, nulla vel pretium pellentesque, risus ex luctus lectus, et dignissim purus odio in odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ornare ut erat in tristique. Cras semper mattis nisi sed auctor. Fusce tempus diam sed diam aliquam, sed aliquet lectus bibendum.\n\nNunc iaculis lectus sit amet nibh placerat iaculis. Quisque scelerisque elementum justo, vel pretium est blandit nec. Proin posuere ut neque ut tempor. Vivamus non ligula id felis posuere feugiat. Nunc ut tellus id nulla varius aliquet. Ut mollis dolor et vehicula dictum. Ut at commodo eros. In at elit malesuada, mattis odio sit."
+      "title": "The Veiled Encounter",
+      "content": "In a city cloaked in mystery and shadows, where secrets whispered through dimly lit alleyways, two souls found themselves drawn together in an unexpected encounter. Amelia, a talented artist haunted by her own demons, and Gabriel, a charismatic writer with a penchant for darkness, crossed paths in the most unassuming of places—a small café tucked away from prying eyes.\n\nAmelia, captivated by Gabriel's enigmatic allure, couldn't help but be drawn to his words and the raw emotions he effortlessly poured onto the pages of his stories. Gabriel, equally intrigued by Amelia's artistic spirit and the depth of her gaze, felt a flicker of something long dormant awaken within him.\n\nIn the shadows of their own lives, they discovered solace in each other's presence. Their connection was an ethereal dance, delicate and elusive, as they tiptoed through the fragile realm of their emotions."
     },
     {
       "number": 2,
-      "title": "Chapter 2 Title",
-      "content": "Chapter 2 Content"
+      "title": "The Dance of Light and Darkness",
+      "content": "As Amelia and Gabriel explored the complexities of their budding relationship, they encountered the inherent contradictions that dwelled within them. Amelia's vibrant spirit sought to bring light to Gabriel's darkness, while Gabriel's enigmatic persona threatened to swallow Amelia whole.\n\nTheir love was a dance, a delicate interplay of light and darkness. In their moments of tenderness, they found solace and shared dreams that transcended their individual struggles. But as shadows loomed, their insecurities and inner demons threatened to tear them apart.\n\nAmelia's art became a reflection of her emotions, a vivid portrayal of their shared love and the battles they faced. Gabriel, through his words, sought to capture the essence of their connection, weaving tales of passion and longing."
     },
     {
       "number": 3,
-      "title": "Chapter 3 Title",
-      "content": "Chapter 3 Content"
+      "title": "Embracing the Shadows",
+      "content": "In their journey through the labyrinth of love, Amelia and Gabriel realized that their shadows were not separate entities but intertwined threads that shaped their identities. They learned to embrace their flaws and vulnerabilities, finding strength in their shared experiences.\n\nAmelia's art became a testament to the beauty in imperfection, while Gabriel's words wove a tapestry of love that acknowledged both light and darkness. Together, they found solace in their shared vulnerabilities, forging a bond that transcended the constraints of conventional love.\n\nIn the depths of their connection, they discovered the power to heal and grow. The shadows that once threatened to tear them apart became the very fabric of their love, an integral part of their journey together.\n\nAnd so, their love bloomed amidst the shadows, a testament to the resilience of the human heart. Amelia and Gabriel became beacons of hope, inspiring others to embrace their own shadows and find love in the depths of their vulnerabilities.\n\nTheir story whispered through the city, painting the night with hues of passion and resilience, reminding all who heard it that love, even in the shadows, could illuminate the darkest corners of the soul."
     }
-  ],
-  "createdAt": {
-    "$date": "2022-11-26T03:02:35.845Z"
-  }
+  ]
 },
 {
   "_id": {
-    "$oid": "63804a5079636c2ced47757d"
+    "$oid": "63895d3b2a3e062504353022"
   },
-  "name": "Echoes of Eternity",
-  "image": "/images/echoes_of_eternity.png",
-  "author": "Jonathan Reed",
+  "name": "Whispers in the Dark",
+  "image": "/images/whispers_in_the_dark.png",
+  "author": "Victoria Blackwood",
   "authorId": {
-    "$oid": "647b1b46bf7b199ab5ccfa62"
+    "$oid": "647b21bd31d435c24405ff93"
   },
-  "category": "Fantasy",
-  "description": "Enter a world of magic, destiny, and ancient prophecies in Echoes of Eternity. Join our young hero as they embark on a perilous quest to save their realm from an impending darkness that threatens to consume everything they hold dear.",
-  "rating": 0,
-  "numberOfReviews": 0,
+  "category": "Horror",
+  "description": "Delve into the haunting world of Whispers in the Dark, a spine-chilling horror novel that will send shivers down your spine. Brace yourself for a sinister journey as you uncover the terrifying secrets lurking within the shadows.",
+  "rating": 275,
+  "numberOfReviews": "2",
   "price": 3.99,
-  "stock": 5,
+  "stock": 49,
+  "productIsNew": true,
+  "reviews": [
+    {
+      "name": "admin",
+      "rating": 5,
+      "comment": "asdfas",
+      "title": "asdfas",
+      "user": {
+        "$oid": "637ea4e9abbb513d7a9dfa1c"
+      },
+      "_id": {
+        "$oid": "63895d5c2a3e062504353038"
+      },
+      "createdAt": {
+        "$date": "2022-12-02T02:05:16.055Z"
+      },
+      "updatedAt": {
+        "$date": "2022-12-02T02:05:16.055Z"
+      }
+    },
+    {
+      "name": "bernardi",
+      "rating": "5",
+      "comment": "test",
+      "title": "TEST",
+      "user": {
+        "$oid": "647b21bd31d435c24405ff93"
+      },
+      "_id": {
+        "$oid": "647eb48a7999bf824e11e59c"
+      },
+      "createdAt": {
+        "$date": "2023-06-06T04:22:34.550Z"
+      },
+      "updatedAt": {
+        "$date": "2023-06-06T04:22:34.550Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-12-02T02:04:43.780Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-06T04:22:34.551Z"
+  },
+  "__v": 2,
   "chapters": [
     {
       "number": 1,
-      "title": "Chapter 1 Title",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis, purus at pretium pretium, nulla nulla tristique lacus, at bibendum sapien massa eget orci. Fusce nec ligula nulla. Suspendisse vel ornare nibh. Suspendisse maximus mattis viverra. Mauris dolor sem, mattis ac enim feugiat, lobortis rhoncus neque. Ut mauris felis, aliquet eget diam vitae, interdum pretium ipsum. Nam vulputate quis leo quis lobortis. Aliquam non ipsum non nulla iaculis ultrices ut nec lectus. Cras finibus lacus sem. Integer laoreet mattis felis, a efficitur elit lacinia non. Duis ornare non nisl ac maximus. Proin sit amet molestie metus, non ultricies orci. Ut ut pulvinar est, a varius orci. Nullam varius ultrices felis, sed auctor lectus aliquam suscipit.\n\nCras finibus elementum tincidunt. Mauris quis ullamcorper velit. Pellentesque euismod ex et dui gravida tempor. In hac habitasse platea dictumst. Sed ac volutpat sapien. Donec at mauris vel arcu suscipit sodales a sit amet eros. Aliquam id libero condimentum, dapibus augue in, posuere ipsum.\n\nAenean egestas augue nec urna vestibulum feugiat. Vestibulum id sagittis sem. Nullam dignissim est nunc, gravida dignissim augue aliquet ut. Quisque eget enim placerat, faucibus ante sed, tempus enim. Suspendisse dapibus dolor eu tempor porta. Mauris sed leo sapien. Aenean tempor sollicitudin ex vestibulum egestas. Suspendisse ullamcorper ipsum ut placerat egestas. Nullam sed massa sed felis porta feugiat sit amet sed metus. Vivamus commodo, lectus in luctus tristique, elit ante varius risus, in pellentesque elit justo ultrices est. Aliquam fringilla tincidunt enim ut finibus. Vivamus a lorem magna.\n\nNam a felis vel leo consectetur convallis et et enim. Nam consectetur lectus diam, at dictum neque iaculis sit amet. Quisque consequat id quam id finibus. Nullam a pellentesque est. Cras justo dolor, varius laoreet viverra ut, interdum ut risus. In hac habitasse platea dictumst. Sed ut gravida turpis. Integer consequat purus vel massa lobortis, at iaculis augue mattis. In euismod blandit risus, viverra viverra sapien dapibus sit amet.\n\nInterdum et malesuada fames ac ante ipsum primis in faucibus. Praesent massa magna, tempor vel sem non, semper convallis mauris. Nam non enim felis. Nullam dictum tincidunt blandit. Nullam non urna eleifend, posuere tortor rutrum, semper mi. Duis in risus eget lorem rutrum bibendum. Nam pulvinar lacinia augue, in sodales nulla ultricies eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed aliquet ante. Integer pellentesque non neque sed euismod. Sed et magna ullamcorper, semper leo nec, malesuada ipsum. Maecenas nibh tortor, luctus vitae mattis eget, rhoncus et dui.\n\nVestibulum rutrum ipsum et tempor sagittis. Praesent eleifend interdum nisl. Suspendisse et viverra risus. Suspendisse vitae diam eu quam luctus convallis malesuada vitae mauris. Nunc at nulla sed dolor pretium pretium. Duis tempor rutrum metus, a tempus sapien lobortis sed. Nulla in tempus ante. Nunc arcu metus, congue quis venenatis quis, finibus sed quam. Ut varius placerat urna, eget volutpat risus varius a. Integer vitae nunc nec dolor mattis porta. Integer porttitor ipsum mauris, non venenatis urna molestie lacinia. Praesent dapibus lectus a interdum commodo.\n\nDonec in volutpat tortor. Etiam sit amet nibh vel leo pretium condimentum ac egestas nunc. Donec elit metus, aliquet id varius non, dictum non augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras augue ex, laoreet et aliquam vitae, accumsan ut nunc. Aliquam fringilla nibh sed velit luctus, nec bibendum ex ullamcorper. Vivamus eleifend ultrices dolor, vitae malesuada tellus fermentum ut. In semper ac ante hendrerit ultrices. Cras blandit tincidunt eros, eget tempor erat faucibus sed. Etiam fringilla massa sit amet felis pretium tincidunt. Sed pretium vulputate tortor a aliquam. Quisque fermentum ligula nulla, semper mattis diam elementum eu. In vehicula velit vitae ligula condimentum, hendrerit luctus quam gravida. Curabitur ultricies sem quis justo fringilla, sed maximus dui efficitur.\n\nDonec dictum urna vel eros cursus facilisis. Vivamus ullamcorper iaculis mauris nec aliquet. Donec eu urna a ipsum dignissim porttitor vitae sed nisi. Integer at neque aliquam, lobortis ante quis, congue leo. Praesent neque lectus, laoreet sit amet magna vel, malesuada placerat libero. Aenean sed ipsum felis. Etiam et fringilla est. Maecenas id porta massa. Suspendisse potenti. Morbi sit amet interdum massa. Duis rhoncus accumsan libero, ac iaculis ipsum tincidunt et. Cras pharetra aliquet quam sed iaculis.\n\nMaecenas ornare velit eu venenatis ullamcorper. Fusce blandit lorem quis hendrerit consectetur. Vestibulum viverra eros in est dictum, vel iaculis lacus hendrerit. Vestibulum non leo felis. Nam pharetra velit non dui dapibus finibus. Ut ut turpis tempor purus fringilla consectetur in vitae turpis. Sed egestas lobortis nisl et consectetur. Maecenas imperdiet velit sed orci hendrerit viverra. Mauris quis orci non lectus sollicitudin elementum.\n\nCras tempus rutrum urna a interdum. Nunc maximus eleifend nisl et pulvinar. Curabitur consectetur feugiat felis egestas consectetur. Sed condimentum tristique risus, vitae aliquam nibh mattis vitae. Mauris viverra neque sit amet vestibulum dignissim. Mauris sagittis ipsum in maximus convallis. Fusce at efficitur dolor, eu iaculis ex. Duis rhoncus feugiat arcu, faucibus interdum arcu efficitur quis. Etiam scelerisque augue maximus faucibus rhoncus. Proin sapien sapien, finibus at tortor et, laoreet pulvinar neque. Praesent posuere maximus dolor. Vivamus id bibendum ex, vel rhoncus felis. Suspendisse lacus nibh, ullamcorper ac porttitor nec, commodo in nisl. Aliquam tincidunt ipsum erat, sit amet fermentum neque ultrices et. Suspendisse sagittis commodo nulla, eu eleifend risus porta vel.\n\nIn ullamcorper fringilla tortor, quis tristique augue congue eget. Praesent ac pretium felis. Nunc condimentum mattis dui at efficitur. Cras interdum nibh eget nunc tincidunt, et condimentum massa lobortis. Aliquam interdum, justo et viverra facilisis, elit ex porta leo, sed congue ex neque vitae mauris. Ut eu mi massa. In laoreet semper massa, vitae imperdiet leo volutpat sit amet. Ut congue libero sit amet diam interdum interdum vel sed ligula.\n\nPhasellus posuere turpis in diam sodales, et consectetur eros pulvinar. In in augue ut sapien commodo aliquam. Mauris ut sem in odio semper imperdiet non a sapien. Sed quis dapibus massa. Fusce suscipit condimentum tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eget odio ut ipsum pretium mollis. Curabitur quis nibh sit amet lectus vehicula euismod eu eget enim. Etiam sed accumsan ligula, et mattis neque. Integer sollicitudin nisi in euismod tincidunt. Proin elementum porta accumsan. Ut velit ante, faucibus et blandit sit amet, laoreet et eros. Morbi vel quam elementum, auctor erat quis, imperdiet ligula.\n\nNullam sed neque aliquet, ullamcorper mauris ac, auctor quam. Suspendisse posuere lorem luctus mi aliquam dignissim quis ut nulla. Nullam enim lorem, laoreet eget gravida at, tincidunt non libero. Donec sit amet eleifend nibh, id dapibus massa. Maecenas non tortor nisi. Integer feugiat urna a enim facilisis congue. Integer lobortis a nibh vitae ullamcorper. Mauris venenatis elit eget quam blandit, vitae porttitor risus porttitor. Suspendisse eget enim gravida, elementum dui eu, laoreet tortor. Nam vehicula eu ante quis efficitur. Praesent ullamcorper vel ante vitae cursus. Mauris sed eros vulputate, gravida augue eu, porta magna. Nulla lacinia placerat mattis. Aliquam vel eros libero.\n\nQuisque varius rutrum magna, nec sollicitudin tortor condimentum luctus. Duis mi tortor, consequat ac volutpat et, fermentum consequat ipsum. Nunc eget felis dignissim, eleifend ligula in, dignissim justo. Ut mattis pretium dolor, a ultricies tellus volutpat sed. Nam ac scelerisque diam. Phasellus varius semper mi, sit amet cursus nulla convallis et. Donec mattis enim id porta rutrum. Etiam massa leo, laoreet nec feugiat non, tincidunt et metus. Praesent sodales leo nec iaculis ultricies. Pellentesque finibus tortor et scelerisque gravida. Donec mattis porttitor nisl, eget pretium arcu eleifend in.\n\nMaecenas eleifend, neque et accumsan vulputate, nunc erat feugiat leo, non tempus leo metus ut velit. Curabitur efficitur pretium arcu, vel ornare tellus porttitor ut. Duis sed magna consectetur, sollicitudin magna ac, faucibus purus. Cras ipsum ipsum, vehicula sed nunc sit amet, accumsan cursus nibh. Quisque eu tortor bibendum, auctor nunc ac, bibendum libero. Mauris bibendum pretium ultrices. In justo felis, convallis sit amet risus quis, feugiat dignissim ipsum.\n\nIn id est dolor. Cras in velit semper, molestie augue sed, finibus purus. Vestibulum tristique aliquet eleifend. Nam ex ante, faucibus eu vehicula id, finibus facilisis dolor. Pellentesque ac odio nec nulla gravida tempor a vitae tellus. Suspendisse tincidunt, quam eget facilisis consequat, enim massa ultrices diam, a mollis ipsum risus et arcu. Pellentesque suscipit lectus nunc, sed aliquet nisi rhoncus nec. Vestibulum pretium id elit sit amet condimentum. Nulla facilisi. Vestibulum aliquet consectetur mi, sit amet molestie ipsum ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam eleifend, nulla vel pretium pellentesque, risus ex luctus lectus, et dignissim purus odio in odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ornare ut erat in tristique. Cras semper mattis nisi sed auctor. Fusce tempus diam sed diam aliquam, sed aliquet lectus bibendum.\n\nNunc iaculis lectus sit amet nibh placerat iaculis. Quisque scelerisque elementum justo, vel pretium est blandit nec. Proin posuere ut neque ut tempor. Vivamus non ligula id felis posuere feugiat. Nunc ut tellus id nulla varius aliquet. Ut mollis dolor et vehicula dictum. Ut at commodo eros. In at elit malesuada, mattis odio sit."
+      "title": "The Haunted House",
+      "content": "In a remote village on the outskirts of town, there stood an old abandoned house, shrouded in mystery and surrounded by a chilling aura. Locals spoke of whispers that echoed through its dark hallways, of voices that whispered secrets and tales of the supernatural.\n\nCuriosity got the better of a group of teenagers—Emma, Mark, and Sarah—who decided to venture into the house one moonlit night, fueled by their desire for an adrenaline rush. They brushed aside the warnings and legends, confident that there was nothing more than superstition behind the whispers.\n\nAs they stepped inside the decaying house, a sense of foreboding overwhelmed them. The air grew thick, and a sinister presence seemed to hang in the darkness. Ignoring their growing unease, they pressed on, determined to uncover the truth behind the whispers."
     },
     {
       "number": 2,
-      "title": "Chapter 2 Title",
-      "content": "Chapter 2 Content"
+      "title": "The Malevolent Entity",
+      "content": "As Emma, Mark, and Sarah explored the house, the whispers grew louder, wrapping around them like tendrils of darkness. Shadows danced in the corners, their movements accompanied by eerie laughter that sent shivers down their spines.\n\nUnbeknownst to the teenagers, their intrusion awakened a malevolent entity that had long been trapped within the house. It fed on fear and despair, and its sinister whispers were its way of ensnaring unsuspecting souls.\n\nAs the night wore on, the entity's presence grew stronger. Emma, Mark, and Sarah felt a malevolent force closing in on them, its whispers becoming more menacing and insidious. Paranoia gripped their hearts, and they realized they were trapped in a nightmare from which they couldn't escape."
     },
     {
       "number": 3,
-      "title": "Chapter 3 Title",
-      "content": "Chapter 3 Content"
+      "title": "Confronting the Darkness",
+      "content": "Emma, Mark, and Sarah huddled together, their nerves frayed and their minds clouded with fear. They knew they had to confront the darkness that surrounded them if they were to have any chance of survival.\n\nArming themselves with makeshift weapons, they delved deeper into the house, following the source of the whispers. The entity's whispers grew louder, taunting them with their deepest fears and insecurities, threatening to tear their minds apart.\n\nBut the three friends fought back, summoning their courage and refusing to succumb to the darkness. With each step they took, the whispers grew weaker, their power diminishing in the face of their resilience.\n\nFinally, they reached the heart of the house, where the entity lurked in its true form—a swirling mass of darkness and despair. With a collective effort, they confronted the entity head-on, banishing it back into the depths from which it had emerged.\n\nAs the whispers faded into silence, Emma, Mark, and Sarah emerged from the haunted house, forever changed by their harrowing experience. They had conquered the darkness, proving that courage and friendship could overcome even the most malevolent forces.\n\nThe house stood silent once again, its secrets buried deep within its walls. The village, relieved of the whispers that plagued their nights, could finally find solace in the darkness. And the three friends, forever bound by their shared ordeal, carried the memories of their encounter as a reminder of the indomitable strength of the human spirit."
     }
-  ],
-  "productIsNew": true,
-  "reviews": [],
-  "createdAt": {
-    "$date": "2022-11-25T04:53:36.956Z"
-  },
-  "updatedAt": {
-    "$date": "2022-11-25T04:53:36.956Z"
-  },
-  "__v": 0
+  ]
 },
 {
   "_id": {
@@ -224,78 +200,77 @@
   "chapters": [
     {
       "number": 1,
-      "title": "Chapter 1 Title",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis, purus at pretium pretium, nulla nulla tristique lacus, at bibendum sapien massa eget orci. Fusce nec ligula nulla. Suspendisse vel ornare nibh. Suspendisse maximus mattis viverra. Mauris dolor sem, mattis ac enim feugiat, lobortis rhoncus neque. Ut mauris felis, aliquet eget diam vitae, interdum pretium ipsum. Nam vulputate quis leo quis lobortis. Aliquam non ipsum non nulla iaculis ultrices ut nec lectus. Cras finibus lacus sem. Integer laoreet mattis felis, a efficitur elit lacinia non. Duis ornare non nisl ac maximus. Proin sit amet molestie metus, non ultricies orci. Ut ut pulvinar est, a varius orci. Nullam varius ultrices felis, sed auctor lectus aliquam suscipit.\n\nCras finibus elementum tincidunt. Mauris quis ullamcorper velit. Pellentesque euismod ex et dui gravida tempor. In hac habitasse platea dictumst. Sed ac volutpat sapien. Donec at mauris vel arcu suscipit sodales a sit amet eros. Aliquam id libero condimentum, dapibus augue in, posuere ipsum.\n\nAenean egestas augue nec urna vestibulum feugiat. Vestibulum id sagittis sem. Nullam dignissim est nunc, gravida dignissim augue aliquet ut. Quisque eget enim placerat, faucibus ante sed, tempus enim. Suspendisse dapibus dolor eu tempor porta. Mauris sed leo sapien. Aenean tempor sollicitudin ex vestibulum egestas. Suspendisse ullamcorper ipsum ut placerat egestas. Nullam sed massa sed felis porta feugiat sit amet sed metus. Vivamus commodo, lectus in luctus tristique, elit ante varius risus, in pellentesque elit justo ultrices est. Aliquam fringilla tincidunt enim ut finibus. Vivamus a lorem magna.\n\nNam a felis vel leo consectetur convallis et et enim. Nam consectetur lectus diam, at dictum neque iaculis sit amet. Quisque consequat id quam id finibus. Nullam a pellentesque est. Cras justo dolor, varius laoreet viverra ut, interdum ut risus. In hac habitasse platea dictumst. Sed ut gravida turpis. Integer consequat purus vel massa lobortis, at iaculis augue mattis. In euismod blandit risus, viverra viverra sapien dapibus sit amet.\n\nInterdum et malesuada fames ac ante ipsum primis in faucibus. Praesent massa magna, tempor vel sem non, semper convallis mauris. Nam non enim felis. Nullam dictum tincidunt blandit. Nullam non urna eleifend, posuere tortor rutrum, semper mi. Duis in risus eget lorem rutrum bibendum. Nam pulvinar lacinia augue, in sodales nulla ultricies eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed aliquet ante. Integer pellentesque non neque sed euismod. Sed et magna ullamcorper, semper leo nec, malesuada ipsum. Maecenas nibh tortor, luctus vitae mattis eget, rhoncus et dui.\n\nVestibulum rutrum ipsum et tempor sagittis. Praesent eleifend interdum nisl. Suspendisse et viverra risus. Suspendisse vitae diam eu quam luctus convallis malesuada vitae mauris. Nunc at nulla sed dolor pretium pretium. Duis tempor rutrum metus, a tempus sapien lobortis sed. Nulla in tempus ante. Nunc arcu metus, congue quis venenatis quis, finibus sed quam. Ut varius placerat urna, eget volutpat risus varius a. Integer vitae nunc nec dolor mattis porta. Integer porttitor ipsum mauris, non venenatis urna molestie lacinia. Praesent dapibus lectus a interdum commodo.\n\nDonec in volutpat tortor. Etiam sit amet nibh vel leo pretium condimentum ac egestas nunc. Donec elit metus, aliquet id varius non, dictum non augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras augue ex, laoreet et aliquam vitae, accumsan ut nunc. Aliquam fringilla nibh sed velit luctus, nec bibendum ex ullamcorper. Vivamus eleifend ultrices dolor, vitae malesuada tellus fermentum ut. In semper ac ante hendrerit ultrices. Cras blandit tincidunt eros, eget tempor erat faucibus sed. Etiam fringilla massa sit amet felis pretium tincidunt. Sed pretium vulputate tortor a aliquam. Quisque fermentum ligula nulla, semper mattis diam elementum eu. In vehicula velit vitae ligula condimentum, hendrerit luctus quam gravida. Curabitur ultricies sem quis justo fringilla, sed maximus dui efficitur.\n\nDonec dictum urna vel eros cursus facilisis. Vivamus ullamcorper iaculis mauris nec aliquet. Donec eu urna a ipsum dignissim porttitor vitae sed nisi. Integer at neque aliquam, lobortis ante quis, congue leo. Praesent neque lectus, laoreet sit amet magna vel, malesuada placerat libero. Aenean sed ipsum felis. Etiam et fringilla est. Maecenas id porta massa. Suspendisse potenti. Morbi sit amet interdum massa. Duis rhoncus accumsan libero, ac iaculis ipsum tincidunt et. Cras pharetra aliquet quam sed iaculis.\n\nMaecenas ornare velit eu venenatis ullamcorper. Fusce blandit lorem quis hendrerit consectetur. Vestibulum viverra eros in est dictum, vel iaculis lacus hendrerit. Vestibulum non leo felis. Nam pharetra velit non dui dapibus finibus. Ut ut turpis tempor purus fringilla consectetur in vitae turpis. Sed egestas lobortis nisl et consectetur. Maecenas imperdiet velit sed orci hendrerit viverra. Mauris quis orci non lectus sollicitudin elementum.\n\nCras tempus rutrum urna a interdum. Nunc maximus eleifend nisl et pulvinar. Curabitur consectetur feugiat felis egestas consectetur. Sed condimentum tristique risus, vitae aliquam nibh mattis vitae. Mauris viverra neque sit amet vestibulum dignissim. Mauris sagittis ipsum in maximus convallis. Fusce at efficitur dolor, eu iaculis ex. Duis rhoncus feugiat arcu, faucibus interdum arcu efficitur quis. Etiam scelerisque augue maximus faucibus rhoncus. Proin sapien sapien, finibus at tortor et, laoreet pulvinar neque. Praesent posuere maximus dolor. Vivamus id bibendum ex, vel rhoncus felis. Suspendisse lacus nibh, ullamcorper ac porttitor nec, commodo in nisl. Aliquam tincidunt ipsum erat, sit amet fermentum neque ultrices et. Suspendisse sagittis commodo nulla, eu eleifend risus porta vel.\n\nIn ullamcorper fringilla tortor, quis tristique augue congue eget. Praesent ac pretium felis. Nunc condimentum mattis dui at efficitur. Cras interdum nibh eget nunc tincidunt, et condimentum massa lobortis. Aliquam interdum, justo et viverra facilisis, elit ex porta leo, sed congue ex neque vitae mauris. Ut eu mi massa. In laoreet semper massa, vitae imperdiet leo volutpat sit amet. Ut congue libero sit amet diam interdum interdum vel sed ligula.\n\nPhasellus posuere turpis in diam sodales, et consectetur eros pulvinar. In in augue ut sapien commodo aliquam. Mauris ut sem in odio semper imperdiet non a sapien. Sed quis dapibus massa. Fusce suscipit condimentum tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eget odio ut ipsum pretium mollis. Curabitur quis nibh sit amet lectus vehicula euismod eu eget enim. Etiam sed accumsan ligula, et mattis neque. Integer sollicitudin nisi in euismod tincidunt. Proin elementum porta accumsan. Ut velit ante, faucibus et blandit sit amet, laoreet et eros. Morbi vel quam elementum, auctor erat quis, imperdiet ligula.\n\nNullam sed neque aliquet, ullamcorper mauris ac, auctor quam. Suspendisse posuere lorem luctus mi aliquam dignissim quis ut nulla. Nullam enim lorem, laoreet eget gravida at, tincidunt non libero. Donec sit amet eleifend nibh, id dapibus massa. Maecenas non tortor nisi. Integer feugiat urna a enim facilisis congue. Integer lobortis a nibh vitae ullamcorper. Mauris venenatis elit eget quam blandit, vitae porttitor risus porttitor. Suspendisse eget enim gravida, elementum dui eu, laoreet tortor. Nam vehicula eu ante quis efficitur. Praesent ullamcorper vel ante vitae cursus. Mauris sed eros vulputate, gravida augue eu, porta magna. Nulla lacinia placerat mattis. Aliquam vel eros libero.\n\nQuisque varius rutrum magna, nec sollicitudin tortor condimentum luctus. Duis mi tortor, consequat ac volutpat et, fermentum consequat ipsum. Nunc eget felis dignissim, eleifend ligula in, dignissim justo. Ut mattis pretium dolor, a ultricies tellus volutpat sed. Nam ac scelerisque diam. Phasellus varius semper mi, sit amet cursus nulla convallis et. Donec mattis enim id porta rutrum. Etiam massa leo, laoreet nec feugiat non, tincidunt et metus. Praesent sodales leo nec iaculis ultricies. Pellentesque finibus tortor et scelerisque gravida. Donec mattis porttitor nisl, eget pretium arcu eleifend in.\n\nMaecenas eleifend, neque et accumsan vulputate, nunc erat feugiat leo, non tempus leo metus ut velit. Curabitur efficitur pretium arcu, vel ornare tellus porttitor ut. Duis sed magna consectetur, sollicitudin magna ac, faucibus purus. Cras ipsum ipsum, vehicula sed nunc sit amet, accumsan cursus nibh. Quisque eu tortor bibendum, auctor nunc ac, bibendum libero. Mauris bibendum pretium ultrices. In justo felis, convallis sit amet risus quis, feugiat dignissim ipsum.\n\nIn id est dolor. Cras in velit semper, molestie augue sed, finibus purus. Vestibulum tristique aliquet eleifend. Nam ex ante, faucibus eu vehicula id, finibus facilisis dolor. Pellentesque ac odio nec nulla gravida tempor a vitae tellus. Suspendisse tincidunt, quam eget facilisis consequat, enim massa ultrices diam, a mollis ipsum risus et arcu. Pellentesque suscipit lectus nunc, sed aliquet nisi rhoncus nec. Vestibulum pretium id elit sit amet condimentum. Nulla facilisi. Vestibulum aliquet consectetur mi, sit amet molestie ipsum ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam eleifend, nulla vel pretium pellentesque, risus ex luctus lectus, et dignissim purus odio in odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ornare ut erat in tristique. Cras semper mattis nisi sed auctor. Fusce tempus diam sed diam aliquam, sed aliquet lectus bibendum.\n\nNunc iaculis lectus sit amet nibh placerat iaculis. Quisque scelerisque elementum justo, vel pretium est blandit nec. Proin posuere ut neque ut tempor. Vivamus non ligula id felis posuere feugiat. Nunc ut tellus id nulla varius aliquet. Ut mollis dolor et vehicula dictum. Ut at commodo eros. In at elit malesuada, mattis odio sit."
+      "title": " Emergence of the Virtual World",
+      "content": "In a future where technology had advanced to unimaginable heights, a groundbreaking invention known as the Digital Realm emerged. This virtual world, seamlessly integrated with reality, provided people with limitless possibilities and unprecedented connectivity. It became an extension of their lives, where dreams and aspirations took on a digital form.\n\nIn this era, a young prodigy named Alex discovered a hidden message within the code of the Digital Realm. The message spoke of a mysterious phenomenon called the \"Digital Destiny,\" a grand purpose that awaited those who dared to explore the depths of this virtual realm.\n\nDriven by curiosity and a desire to uncover the truth, Alex embarked on a quest to unravel the secrets of the Digital Destiny. Along the way, they encountered fellow adventurers, each with their own unique skills and motivations, forming an unlikely alliance."
     },
     {
       "number": 2,
-      "title": "Chapter 2 Title",
-      "content": "Chapter 2 Content"
+      "title": "Trials of the Virtual Journey",
+      "content": "As Alex and their companions delved deeper into the Digital Realm, they encountered a series of trials designed to test their mettle. These trials challenged their skills, pushed their limits, and questioned their understanding of reality. The Digital Realm seemed to possess a consciousness of its own, responding to their every move and shaping their path.\n\nTogether, they navigated intricate mazes, battled formidable adversaries, and solved enigmatic puzzles that concealed the true nature of the Digital Destiny. The journey brought them face to face with the allure of limitless power and the temptation to misuse it. Through these trials, they learned the importance of responsibility, compassion, and the balance between the digital and physical worlds."
     },
     {
       "number": 3,
-      "title": "Chapter 3 Title",
-      "content": "Chapter 3 Content"
+      "title": "Unleashing the Digital Destiny",
+      "content": "After enduring numerous trials, Alex and their companions stood at the precipice of the Digital Destiny. They discovered that the true purpose of their journey was not solely for personal gain but to unlock the potential of humanity as a whole. The Digital Destiny represented the fusion of technology and human consciousness, a harmonious coexistence that could reshape the world.\n\nAs they delved deeper into the heart of the Digital Realm, they uncovered an ancient artifact—the Codex of Connectivity—a source of immense power and wisdom. The Codex revealed that the Digital Destiny was not a predetermined fate but a choice that required empathy, creativity, and a shared vision of a better future.\n\nWith newfound understanding, Alex and their companions made a solemn vow to utilize the Digital Realm and its potential for the greater good. They worked tirelessly to connect people, bridge divides, and inspire positive change in the physical world through their digital endeavors.\n\nTheir efforts resonated, and gradually, the world embraced the Digital Destiny. Society evolved, and technology became a force for unity, creativity, and collective progress. The boundaries between the digital and physical worlds blurred, and the harmony between humanity and technology shaped a future where the potential of individuals and the power of connectivity merged seamlessly.\n\nAnd so, the story of Digital Destiny became a testament to the transformative power of technology when harnessed with wisdom and compassion. It reminded humanity of its capacity to shape its own destiny, both in the virtual realm and in the real world."
     }
   ]
 },
 {
   "_id": {
-    "$oid": "6369860d9540445b3c45e6b1"
+    "$oid": "636986579540445b3c45e6b5"
   },
-  "name": "Love in Shadows",
-  "image": "/images/love_in_shadows.png",
-  "description": "Immerse yourself in the captivating world of Love in Shadows, a romantic tale of forbidden love, secret societies, and untold secrets. Follow the intertwined destinies of two souls as they navigate a world shrouded in darkness and intrigue.",
-  "author": "Sophia Parker",
+  "name": "The Art of Time",
+  "image": "/images/art_of_time.png",
+  "description": "Immerse yourself in The Art of Time, a mesmerizing tale of time travel, destiny, and the power of choices. Join our protagonist as they navigate through different eras, encountering love, loss, and the timeless struggle between fate and free will.",
+  "author": "Gabriel Wells",
   "authorId": {
-    "$oid": "647b1b46bf7b199ab5ccfa62"
+    "$oid": "647b21bd31d435c24405ff93"
   },
-  "category": "Romance",
+  "category": "Science Fiction",
   "price": 3.99,
-  "countInStock": 11,
-  "rating": 40,
-  "numberOfReviews": "1",
+  "rating": 4,
+  "numberOfReviews": 1,
   "productIsNew": false,
-  "__v": 8,
+  "__v": 1,
   "reviews": [
     {
-      "name": "ben",
-      "rating": "4",
-      "comment": "interesting story",
-      "title": "great book",
+      "name": "bernie",
+      "rating": 4,
+      "comment": "asdfasfdas",
+      "title": "Highly rec 5",
       "user": {
-        "$oid": "647b21bd31d435c24405ff93"
+        "$oid": "637c1a2363ed71e16e4aab8a"
       },
       "_id": {
-        "$oid": "647e05ca5d0ccbe754cc287f"
+        "$oid": "637d2b3d7ae116b9cf56aac5"
       },
       "createdAt": {
-        "$date": "2023-06-05T15:56:58.596Z"
+        "$date": "2022-11-22T20:04:13.482Z"
       },
       "updatedAt": {
-        "$date": "2023-06-05T15:56:58.596Z"
+        "$date": "2022-11-22T20:04:13.482Z"
       }
     }
   ],
   "updatedAt": {
-    "$date": "2023-06-05T15:56:58.596Z"
+    "$date": "2022-11-22T20:04:13.482Z"
   },
-  "stock": 0,
+  "stock": 1,
   "chapters": [
     {
       "number": 1,
-      "title": "Chapter 1 Title",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis, purus at pretium pretium, nulla nulla tristique lacus, at bibendum sapien massa eget orci. Fusce nec ligula nulla. Suspendisse vel ornare nibh. Suspendisse maximus mattis viverra. Mauris dolor sem, mattis ac enim feugiat, lobortis rhoncus neque. Ut mauris felis, aliquet eget diam vitae, interdum pretium ipsum. Nam vulputate quis leo quis lobortis. Aliquam non ipsum non nulla iaculis ultrices ut nec lectus. Cras finibus lacus sem. Integer laoreet mattis felis, a efficitur elit lacinia non. Duis ornare non nisl ac maximus. Proin sit amet molestie metus, non ultricies orci. Ut ut pulvinar est, a varius orci. Nullam varius ultrices felis, sed auctor lectus aliquam suscipit.\n\nCras finibus elementum tincidunt. Mauris quis ullamcorper velit. Pellentesque euismod ex et dui gravida tempor. In hac habitasse platea dictumst. Sed ac volutpat sapien. Donec at mauris vel arcu suscipit sodales a sit amet eros. Aliquam id libero condimentum, dapibus augue in, posuere ipsum.\n\nAenean egestas augue nec urna vestibulum feugiat. Vestibulum id sagittis sem. Nullam dignissim est nunc, gravida dignissim augue aliquet ut. Quisque eget enim placerat, faucibus ante sed, tempus enim. Suspendisse dapibus dolor eu tempor porta. Mauris sed leo sapien. Aenean tempor sollicitudin ex vestibulum egestas. Suspendisse ullamcorper ipsum ut placerat egestas. Nullam sed massa sed felis porta feugiat sit amet sed metus. Vivamus commodo, lectus in luctus tristique, elit ante varius risus, in pellentesque elit justo ultrices est. Aliquam fringilla tincidunt enim ut finibus. Vivamus a lorem magna.\n\nNam a felis vel leo consectetur convallis et et enim. Nam consectetur lectus diam, at dictum neque iaculis sit amet. Quisque consequat id quam id finibus. Nullam a pellentesque est. Cras justo dolor, varius laoreet viverra ut, interdum ut risus. In hac habitasse platea dictumst. Sed ut gravida turpis. Integer consequat purus vel massa lobortis, at iaculis augue mattis. In euismod blandit risus, viverra viverra sapien dapibus sit amet.\n\nInterdum et malesuada fames ac ante ipsum primis in faucibus. Praesent massa magna, tempor vel sem non, semper convallis mauris. Nam non enim felis. Nullam dictum tincidunt blandit. Nullam non urna eleifend, posuere tortor rutrum, semper mi. Duis in risus eget lorem rutrum bibendum. Nam pulvinar lacinia augue, in sodales nulla ultricies eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed aliquet ante. Integer pellentesque non neque sed euismod. Sed et magna ullamcorper, semper leo nec, malesuada ipsum. Maecenas nibh tortor, luctus vitae mattis eget, rhoncus et dui.\n\nVestibulum rutrum ipsum et tempor sagittis. Praesent eleifend interdum nisl. Suspendisse et viverra risus. Suspendisse vitae diam eu quam luctus convallis malesuada vitae mauris. Nunc at nulla sed dolor pretium pretium. Duis tempor rutrum metus, a tempus sapien lobortis sed. Nulla in tempus ante. Nunc arcu metus, congue quis venenatis quis, finibus sed quam. Ut varius placerat urna, eget volutpat risus varius a. Integer vitae nunc nec dolor mattis porta. Integer porttitor ipsum mauris, non venenatis urna molestie lacinia. Praesent dapibus lectus a interdum commodo.\n\nDonec in volutpat tortor. Etiam sit amet nibh vel leo pretium condimentum ac egestas nunc. Donec elit metus, aliquet id varius non, dictum non augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras augue ex, laoreet et aliquam vitae, accumsan ut nunc. Aliquam fringilla nibh sed velit luctus, nec bibendum ex ullamcorper. Vivamus eleifend ultrices dolor, vitae malesuada tellus fermentum ut. In semper ac ante hendrerit ultrices. Cras blandit tincidunt eros, eget tempor erat faucibus sed. Etiam fringilla massa sit amet felis pretium tincidunt. Sed pretium vulputate tortor a aliquam. Quisque fermentum ligula nulla, semper mattis diam elementum eu. In vehicula velit vitae ligula condimentum, hendrerit luctus quam gravida. Curabitur ultricies sem quis justo fringilla, sed maximus dui efficitur.\n\nDonec dictum urna vel eros cursus facilisis. Vivamus ullamcorper iaculis mauris nec aliquet. Donec eu urna a ipsum dignissim porttitor vitae sed nisi. Integer at neque aliquam, lobortis ante quis, congue leo. Praesent neque lectus, laoreet sit amet magna vel, malesuada placerat libero. Aenean sed ipsum felis. Etiam et fringilla est. Maecenas id porta massa. Suspendisse potenti. Morbi sit amet interdum massa. Duis rhoncus accumsan libero, ac iaculis ipsum tincidunt et. Cras pharetra aliquet quam sed iaculis.\n\nMaecenas ornare velit eu venenatis ullamcorper. Fusce blandit lorem quis hendrerit consectetur. Vestibulum viverra eros in est dictum, vel iaculis lacus hendrerit. Vestibulum non leo felis. Nam pharetra velit non dui dapibus finibus. Ut ut turpis tempor purus fringilla consectetur in vitae turpis. Sed egestas lobortis nisl et consectetur. Maecenas imperdiet velit sed orci hendrerit viverra. Mauris quis orci non lectus sollicitudin elementum.\n\nCras tempus rutrum urna a interdum. Nunc maximus eleifend nisl et pulvinar. Curabitur consectetur feugiat felis egestas consectetur. Sed condimentum tristique risus, vitae aliquam nibh mattis vitae. Mauris viverra neque sit amet vestibulum dignissim. Mauris sagittis ipsum in maximus convallis. Fusce at efficitur dolor, eu iaculis ex. Duis rhoncus feugiat arcu, faucibus interdum arcu efficitur quis. Etiam scelerisque augue maximus faucibus rhoncus. Proin sapien sapien, finibus at tortor et, laoreet pulvinar neque. Praesent posuere maximus dolor. Vivamus id bibendum ex, vel rhoncus felis. Suspendisse lacus nibh, ullamcorper ac porttitor nec, commodo in nisl. Aliquam tincidunt ipsum erat, sit amet fermentum neque ultrices et. Suspendisse sagittis commodo nulla, eu eleifend risus porta vel.\n\nIn ullamcorper fringilla tortor, quis tristique augue congue eget. Praesent ac pretium felis. Nunc condimentum mattis dui at efficitur. Cras interdum nibh eget nunc tincidunt, et condimentum massa lobortis. Aliquam interdum, justo et viverra facilisis, elit ex porta leo, sed congue ex neque vitae mauris. Ut eu mi massa. In laoreet semper massa, vitae imperdiet leo volutpat sit amet. Ut congue libero sit amet diam interdum interdum vel sed ligula.\n\nPhasellus posuere turpis in diam sodales, et consectetur eros pulvinar. In in augue ut sapien commodo aliquam. Mauris ut sem in odio semper imperdiet non a sapien. Sed quis dapibus massa. Fusce suscipit condimentum tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eget odio ut ipsum pretium mollis. Curabitur quis nibh sit amet lectus vehicula euismod eu eget enim. Etiam sed accumsan ligula, et mattis neque. Integer sollicitudin nisi in euismod tincidunt. Proin elementum porta accumsan. Ut velit ante, faucibus et blandit sit amet, laoreet et eros. Morbi vel quam elementum, auctor erat quis, imperdiet ligula.\n\nNullam sed neque aliquet, ullamcorper mauris ac, auctor quam. Suspendisse posuere lorem luctus mi aliquam dignissim quis ut nulla. Nullam enim lorem, laoreet eget gravida at, tincidunt non libero. Donec sit amet eleifend nibh, id dapibus massa. Maecenas non tortor nisi. Integer feugiat urna a enim facilisis congue. Integer lobortis a nibh vitae ullamcorper. Mauris venenatis elit eget quam blandit, vitae porttitor risus porttitor. Suspendisse eget enim gravida, elementum dui eu, laoreet tortor. Nam vehicula eu ante quis efficitur. Praesent ullamcorper vel ante vitae cursus. Mauris sed eros vulputate, gravida augue eu, porta magna. Nulla lacinia placerat mattis. Aliquam vel eros libero.\n\nQuisque varius rutrum magna, nec sollicitudin tortor condimentum luctus. Duis mi tortor, consequat ac volutpat et, fermentum consequat ipsum. Nunc eget felis dignissim, eleifend ligula in, dignissim justo. Ut mattis pretium dolor, a ultricies tellus volutpat sed. Nam ac scelerisque diam. Phasellus varius semper mi, sit amet cursus nulla convallis et. Donec mattis enim id porta rutrum. Etiam massa leo, laoreet nec feugiat non, tincidunt et metus. Praesent sodales leo nec iaculis ultricies. Pellentesque finibus tortor et scelerisque gravida. Donec mattis porttitor nisl, eget pretium arcu eleifend in.\n\nMaecenas eleifend, neque et accumsan vulputate, nunc erat feugiat leo, non tempus leo metus ut velit. Curabitur efficitur pretium arcu, vel ornare tellus porttitor ut. Duis sed magna consectetur, sollicitudin magna ac, faucibus purus. Cras ipsum ipsum, vehicula sed nunc sit amet, accumsan cursus nibh. Quisque eu tortor bibendum, auctor nunc ac, bibendum libero. Mauris bibendum pretium ultrices. In justo felis, convallis sit amet risus quis, feugiat dignissim ipsum.\n\nIn id est dolor. Cras in velit semper, molestie augue sed, finibus purus. Vestibulum tristique aliquet eleifend. Nam ex ante, faucibus eu vehicula id, finibus facilisis dolor. Pellentesque ac odio nec nulla gravida tempor a vitae tellus. Suspendisse tincidunt, quam eget facilisis consequat, enim massa ultrices diam, a mollis ipsum risus et arcu. Pellentesque suscipit lectus nunc, sed aliquet nisi rhoncus nec. Vestibulum pretium id elit sit amet condimentum. Nulla facilisi. Vestibulum aliquet consectetur mi, sit amet molestie ipsum ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam eleifend, nulla vel pretium pellentesque, risus ex luctus lectus, et dignissim purus odio in odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ornare ut erat in tristique. Cras semper mattis nisi sed auctor. Fusce tempus diam sed diam aliquam, sed aliquet lectus bibendum.\n\nNunc iaculis lectus sit amet nibh placerat iaculis. Quisque scelerisque elementum justo, vel pretium est blandit nec. Proin posuere ut neque ut tempor. Vivamus non ligula id felis posuere feugiat. Nunc ut tellus id nulla varius aliquet. Ut mollis dolor et vehicula dictum. Ut at commodo eros. In at elit malesuada, mattis odio sit."
+      "title": "The Clockmaker's Apprentice",
+      "content": "In the bustling city of Melrose, renowned for its intricate timepieces and skilled clockmakers, there lived a young boy named Oliver. Fascinated by the artistry and precision of timekeeping, he dreamed of becoming a master clockmaker himself.\n\nOliver's passion caught the attention of Master Bennett, the most esteemed clockmaker in town. Impressed by the boy's dedication and innate talent, Master Bennett took Oliver under his wing as his apprentice. Under his guidance, Oliver learned the delicate craft of constructing and repairing timepieces, honing his skills day by day.\n\nBut as Oliver delved deeper into the world of clocks, he realized that there was more to time than gears and springs. He yearned to explore the philosophical and artistic aspects of time, eager to uncover its true essence."
     },
     {
       "number": 2,
-      "title": "Chapter 2 Title",
-      "content": "Chapter 2 Content"
+      "title": "The Magical Pocket Watch",
+      "content": "One day, while rummaging through the dusty shelves of Master Bennett's workshop, Oliver stumbled upon an extraordinary pocket watch tucked away in a forgotten drawer. The watch was unlike any he had ever seen before. Its face was adorned with intricate engravings depicting scenes of nature, and its ticking was a melodic whisper that seemed to transcend the bounds of time.\n\nIntrigued by its enchanting presence, Oliver began to investigate the origins of the pocket watch. Through his research, he discovered that it was crafted by a legendary clockmaker known as Arcturus, whose mastery went beyond mere mechanics—he believed in infusing timepieces with the essence of emotion and artistry.\n\nAs Oliver held the pocket watch in his hands, he felt a surge of inspiration. He realized that the true art of time was not only in the mechanics of the clock but also in the moments it captured and the emotions it evoked."
     },
     {
       "number": 3,
-      "title": "Chapter 3 Title",
-      "content": "Chapter 3 Content"
+      "title": "Time as an Expression",
+      "content": "Guided by the wisdom of the magical pocket watch, Oliver embarked on a journey to create his masterpiece—a clock that would encapsulate the myriad emotions and experiences of life. Day and night, he toiled in his workshop, pouring his heart and soul into every intricate detail.\n\nMonths turned into years, and finally, Oliver unveiled his creation—a magnificent clock that stood tall in the center of Melrose, capturing the attention and admiration of all who beheld it. Its face was a mesmerizing mosaic, painted with vibrant hues that mirrored the ever-changing seasons of life. Its chimes echoed with joy, sorrow, and hope, stirring emotions within the hearts of those who listened.\n\nThe clock became a symbol of the art of time, reminding the people of Melrose to savor each passing moment and appreciate the beauty in every tick and tock. It became a gathering place for the community, where stories were shared, friendships were forged, and memories were made.\n\nThrough his journey, Oliver learned that time was not merely a measure of seconds and minutes, but a canvas for human expression. It was a reminder that life's moments, whether joyous or challenging, were meant to be cherished and embraced.\n\nAnd so, Melrose became known as the city of time, where the artistry of clocks transcended the mundane and transformed into a testament to the human spirit. Oliver's legacy lived on, inspiring generations to come to embrace the art of time and find beauty in every passing moment."
     }
   ]
 },
@@ -308,7 +283,7 @@
   "description": "Experience The Sound of Silence, a poignant tale of love, loss, and the power of music. Follow the journey of a gifted musician as they navigate the complexities of relationships, find solace in their craft, and discover the healing power of sound.",
   "author": "Julia Hartman",
   "authorId": {
-    "$oid": "647b1b46bf7b199ab5ccfa62"
+    "$oid": "647b21bd31d435c24405ff93"
   },
   "category": "Drama",
   "price": 3.99,
@@ -343,156 +318,252 @@
   "chapters": [
     {
       "number": 1,
-      "title": "Chapter 1 Title",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis, purus at pretium pretium, nulla nulla tristique lacus, at bibendum sapien massa eget orci. Fusce nec ligula nulla. Suspendisse vel ornare nibh. Suspendisse maximus mattis viverra. Mauris dolor sem, mattis ac enim feugiat, lobortis rhoncus neque. Ut mauris felis, aliquet eget diam vitae, interdum pretium ipsum. Nam vulputate quis leo quis lobortis. Aliquam non ipsum non nulla iaculis ultrices ut nec lectus. Cras finibus lacus sem. Integer laoreet mattis felis, a efficitur elit lacinia non. Duis ornare non nisl ac maximus. Proin sit amet molestie metus, non ultricies orci. Ut ut pulvinar est, a varius orci. Nullam varius ultrices felis, sed auctor lectus aliquam suscipit.\n\nCras finibus elementum tincidunt. Mauris quis ullamcorper velit. Pellentesque euismod ex et dui gravida tempor. In hac habitasse platea dictumst. Sed ac volutpat sapien. Donec at mauris vel arcu suscipit sodales a sit amet eros. Aliquam id libero condimentum, dapibus augue in, posuere ipsum.\n\nAenean egestas augue nec urna vestibulum feugiat. Vestibulum id sagittis sem. Nullam dignissim est nunc, gravida dignissim augue aliquet ut. Quisque eget enim placerat, faucibus ante sed, tempus enim. Suspendisse dapibus dolor eu tempor porta. Mauris sed leo sapien. Aenean tempor sollicitudin ex vestibulum egestas. Suspendisse ullamcorper ipsum ut placerat egestas. Nullam sed massa sed felis porta feugiat sit amet sed metus. Vivamus commodo, lectus in luctus tristique, elit ante varius risus, in pellentesque elit justo ultrices est. Aliquam fringilla tincidunt enim ut finibus. Vivamus a lorem magna.\n\nNam a felis vel leo consectetur convallis et et enim. Nam consectetur lectus diam, at dictum neque iaculis sit amet. Quisque consequat id quam id finibus. Nullam a pellentesque est. Cras justo dolor, varius laoreet viverra ut, interdum ut risus. In hac habitasse platea dictumst. Sed ut gravida turpis. Integer consequat purus vel massa lobortis, at iaculis augue mattis. In euismod blandit risus, viverra viverra sapien dapibus sit amet.\n\nInterdum et malesuada fames ac ante ipsum primis in faucibus. Praesent massa magna, tempor vel sem non, semper convallis mauris. Nam non enim felis. Nullam dictum tincidunt blandit. Nullam non urna eleifend, posuere tortor rutrum, semper mi. Duis in risus eget lorem rutrum bibendum. Nam pulvinar lacinia augue, in sodales nulla ultricies eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed aliquet ante. Integer pellentesque non neque sed euismod. Sed et magna ullamcorper, semper leo nec, malesuada ipsum. Maecenas nibh tortor, luctus vitae mattis eget, rhoncus et dui.\n\nVestibulum rutrum ipsum et tempor sagittis. Praesent eleifend interdum nisl. Suspendisse et viverra risus. Suspendisse vitae diam eu quam luctus convallis malesuada vitae mauris. Nunc at nulla sed dolor pretium pretium. Duis tempor rutrum metus, a tempus sapien lobortis sed. Nulla in tempus ante. Nunc arcu metus, congue quis venenatis quis, finibus sed quam. Ut varius placerat urna, eget volutpat risus varius a. Integer vitae nunc nec dolor mattis porta. Integer porttitor ipsum mauris, non venenatis urna molestie lacinia. Praesent dapibus lectus a interdum commodo.\n\nDonec in volutpat tortor. Etiam sit amet nibh vel leo pretium condimentum ac egestas nunc. Donec elit metus, aliquet id varius non, dictum non augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras augue ex, laoreet et aliquam vitae, accumsan ut nunc. Aliquam fringilla nibh sed velit luctus, nec bibendum ex ullamcorper. Vivamus eleifend ultrices dolor, vitae malesuada tellus fermentum ut. In semper ac ante hendrerit ultrices. Cras blandit tincidunt eros, eget tempor erat faucibus sed. Etiam fringilla massa sit amet felis pretium tincidunt. Sed pretium vulputate tortor a aliquam. Quisque fermentum ligula nulla, semper mattis diam elementum eu. In vehicula velit vitae ligula condimentum, hendrerit luctus quam gravida. Curabitur ultricies sem quis justo fringilla, sed maximus dui efficitur.\n\nDonec dictum urna vel eros cursus facilisis. Vivamus ullamcorper iaculis mauris nec aliquet. Donec eu urna a ipsum dignissim porttitor vitae sed nisi. Integer at neque aliquam, lobortis ante quis, congue leo. Praesent neque lectus, laoreet sit amet magna vel, malesuada placerat libero. Aenean sed ipsum felis. Etiam et fringilla est. Maecenas id porta massa. Suspendisse potenti. Morbi sit amet interdum massa. Duis rhoncus accumsan libero, ac iaculis ipsum tincidunt et. Cras pharetra aliquet quam sed iaculis.\n\nMaecenas ornare velit eu venenatis ullamcorper. Fusce blandit lorem quis hendrerit consectetur. Vestibulum viverra eros in est dictum, vel iaculis lacus hendrerit. Vestibulum non leo felis. Nam pharetra velit non dui dapibus finibus. Ut ut turpis tempor purus fringilla consectetur in vitae turpis. Sed egestas lobortis nisl et consectetur. Maecenas imperdiet velit sed orci hendrerit viverra. Mauris quis orci non lectus sollicitudin elementum.\n\nCras tempus rutrum urna a interdum. Nunc maximus eleifend nisl et pulvinar. Curabitur consectetur feugiat felis egestas consectetur. Sed condimentum tristique risus, vitae aliquam nibh mattis vitae. Mauris viverra neque sit amet vestibulum dignissim. Mauris sagittis ipsum in maximus convallis. Fusce at efficitur dolor, eu iaculis ex. Duis rhoncus feugiat arcu, faucibus interdum arcu efficitur quis. Etiam scelerisque augue maximus faucibus rhoncus. Proin sapien sapien, finibus at tortor et, laoreet pulvinar neque. Praesent posuere maximus dolor. Vivamus id bibendum ex, vel rhoncus felis. Suspendisse lacus nibh, ullamcorper ac porttitor nec, commodo in nisl. Aliquam tincidunt ipsum erat, sit amet fermentum neque ultrices et. Suspendisse sagittis commodo nulla, eu eleifend risus porta vel.\n\nIn ullamcorper fringilla tortor, quis tristique augue congue eget. Praesent ac pretium felis. Nunc condimentum mattis dui at efficitur. Cras interdum nibh eget nunc tincidunt, et condimentum massa lobortis. Aliquam interdum, justo et viverra facilisis, elit ex porta leo, sed congue ex neque vitae mauris. Ut eu mi massa. In laoreet semper massa, vitae imperdiet leo volutpat sit amet. Ut congue libero sit amet diam interdum interdum vel sed ligula.\n\nPhasellus posuere turpis in diam sodales, et consectetur eros pulvinar. In in augue ut sapien commodo aliquam. Mauris ut sem in odio semper imperdiet non a sapien. Sed quis dapibus massa. Fusce suscipit condimentum tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eget odio ut ipsum pretium mollis. Curabitur quis nibh sit amet lectus vehicula euismod eu eget enim. Etiam sed accumsan ligula, et mattis neque. Integer sollicitudin nisi in euismod tincidunt. Proin elementum porta accumsan. Ut velit ante, faucibus et blandit sit amet, laoreet et eros. Morbi vel quam elementum, auctor erat quis, imperdiet ligula.\n\nNullam sed neque aliquet, ullamcorper mauris ac, auctor quam. Suspendisse posuere lorem luctus mi aliquam dignissim quis ut nulla. Nullam enim lorem, laoreet eget gravida at, tincidunt non libero. Donec sit amet eleifend nibh, id dapibus massa. Maecenas non tortor nisi. Integer feugiat urna a enim facilisis congue. Integer lobortis a nibh vitae ullamcorper. Mauris venenatis elit eget quam blandit, vitae porttitor risus porttitor. Suspendisse eget enim gravida, elementum dui eu, laoreet tortor. Nam vehicula eu ante quis efficitur. Praesent ullamcorper vel ante vitae cursus. Mauris sed eros vulputate, gravida augue eu, porta magna. Nulla lacinia placerat mattis. Aliquam vel eros libero.\n\nQuisque varius rutrum magna, nec sollicitudin tortor condimentum luctus. Duis mi tortor, consequat ac volutpat et, fermentum consequat ipsum. Nunc eget felis dignissim, eleifend ligula in, dignissim justo. Ut mattis pretium dolor, a ultricies tellus volutpat sed. Nam ac scelerisque diam. Phasellus varius semper mi, sit amet cursus nulla convallis et. Donec mattis enim id porta rutrum. Etiam massa leo, laoreet nec feugiat non, tincidunt et metus. Praesent sodales leo nec iaculis ultricies. Pellentesque finibus tortor et scelerisque gravida. Donec mattis porttitor nisl, eget pretium arcu eleifend in.\n\nMaecenas eleifend, neque et accumsan vulputate, nunc erat feugiat leo, non tempus leo metus ut velit. Curabitur efficitur pretium arcu, vel ornare tellus porttitor ut. Duis sed magna consectetur, sollicitudin magna ac, faucibus purus. Cras ipsum ipsum, vehicula sed nunc sit amet, accumsan cursus nibh. Quisque eu tortor bibendum, auctor nunc ac, bibendum libero. Mauris bibendum pretium ultrices. In justo felis, convallis sit amet risus quis, feugiat dignissim ipsum.\n\nIn id est dolor. Cras in velit semper, molestie augue sed, finibus purus. Vestibulum tristique aliquet eleifend. Nam ex ante, faucibus eu vehicula id, finibus facilisis dolor. Pellentesque ac odio nec nulla gravida tempor a vitae tellus. Suspendisse tincidunt, quam eget facilisis consequat, enim massa ultrices diam, a mollis ipsum risus et arcu. Pellentesque suscipit lectus nunc, sed aliquet nisi rhoncus nec. Vestibulum pretium id elit sit amet condimentum. Nulla facilisi. Vestibulum aliquet consectetur mi, sit amet molestie ipsum ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam eleifend, nulla vel pretium pellentesque, risus ex luctus lectus, et dignissim purus odio in odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ornare ut erat in tristique. Cras semper mattis nisi sed auctor. Fusce tempus diam sed diam aliquam, sed aliquet lectus bibendum.\n\nNunc iaculis lectus sit amet nibh placerat iaculis. Quisque scelerisque elementum justo, vel pretium est blandit nec. Proin posuere ut neque ut tempor. Vivamus non ligula id felis posuere feugiat. Nunc ut tellus id nulla varius aliquet. Ut mollis dolor et vehicula dictum. Ut at commodo eros. In at elit malesuada, mattis odio sit."
+      "title": "The Discovery",
+      "content": "Once upon a time, in a small village nestled deep in the mountains, there lived a young girl named Lily. She possessed an extraordinary ability to hear even the faintest of sounds. From the rustling of leaves to the chirping of birds, Lily found solace in the symphony of nature. But there was one sound she had never experienced—the sound of silence.\n\nOne fateful day, Lily embarked on a quest to unravel the mystery behind the sound of silence. Guided by an ancient legend passed down through generations, she ventured into the heart of the Enchanted Forest, a place where whispers of magic danced in the air.\n\nAs she journeyed deeper into the forest, the ambient sounds grew quieter, and an eerie stillness enveloped her. It was there, in a secluded clearing, that she stumbled upon a mystical creature—a wise old owl named Orion."
     },
     {
       "number": 2,
-      "title": "Chapter 2 Title",
-      "content": "Chapter 2 Content"
+      "title": "The Gift of Silence",
+      "content": "Orion, with his keen eyes and profound wisdom, had guarded the secret of silence for centuries. He explained to Lily that the sound of silence was not the absence of noise but rather a profound state of inner peace and tranquility that could only be attained through introspection and mindfulness.\n\nMoved by Lily's genuine desire to understand the sound of silence, Orion bestowed upon her a precious gift—a medallion with a glowing crystal at its center. This medallion held the power to quiet external noises and bring harmony to the soul.\n\nEager to explore the depths of her newfound gift, Lily returned to her village, where the hustle and bustle of everyday life drowned out the whispers of silence. With the medallion as her guide, she embarked on a personal journey of self-discovery."
     },
     {
       "number": 3,
-      "title": "Chapter 3 Title",
-      "content": "Chapter 3 Content"
+      "title": "The Symphony Within",
+      "content": "Lily discovered that true silence was not only an absence of external noise but also an awakening of the symphony within her own being. Through deep meditation and contemplation, she began to perceive the subtle melodies of her thoughts, emotions, and desires.\n\nAs she delved further into her inner world, Lily realized the transformative power of silence. She witnessed her fears and worries fade away, replaced by a sense of calm and clarity. The sound of silence became her sanctuary, a place where she could find solace and rediscover her true essence.\n\nWord of Lily's remarkable journey spread throughout the village, and soon her friends and neighbors sought her guidance in finding their own moments of silence. Together, they formed a community dedicated to embracing the beauty and wisdom of silence.\n\nAnd so, the sound of silence became a cherished companion in the lives of the villagers. It served as a reminder to pause, listen, and connect with the innermost parts of themselves. Through Lily's quest, the village learned that amidst the cacophony of life, the sound of silence had the power to heal, inspire, and ignite the harmony of the human spirit."
     }
   ]
 },
 {
   "_id": {
-    "$oid": "636986579540445b3c45e6b5"
+    "$oid": "636985919540445b3c45e6ac"
   },
-  "name": "The Art of Time",
-  "image": "/images/art_of_time.png",
-  "description": "Immerse yourself in The Art of Time, a mesmerizing tale of time travel, destiny, and the power of choices. Join our protagonist as they navigate through different eras, encountering love, loss, and the timeless struggle between fate and free will.",
-  "author": "Gabriel Wells",
+  "name": "The Enchanted Chronicles",
+  "image": "/images/the_enchanted_chronicles.png",
+  "description": " Embark on a magical journey through The Enchanted Chronicles. Discover a world of mythical creatures, epic quests, and breathtaking adventures that will capture your imagination.",
+  "author": "bernardi",
   "authorId": {
-    "$oid": "647b1b46bf7b199ab5ccfa62"
+    "$oid": "647b21bd31d435c24405ff93"
   },
-  "category": "Science Fiction",
+  "category": "Fantasy",
   "price": 3.99,
   "rating": 4,
-  "numberOfReviews": 1,
-  "productIsNew": false,
-  "__v": 1,
-  "reviews": [
-    {
-      "name": "bernie",
-      "rating": 4,
-      "comment": "asdfasfdas",
-      "title": "Highly rec 5",
-      "user": {
-        "$oid": "637c1a2363ed71e16e4aab8a"
-      },
-      "_id": {
-        "$oid": "637d2b3d7ae116b9cf56aac5"
-      },
-      "createdAt": {
-        "$date": "2022-11-22T20:04:13.482Z"
-      },
-      "updatedAt": {
-        "$date": "2022-11-22T20:04:13.482Z"
-      }
-    }
-  ],
-  "updatedAt": {
-    "$date": "2022-11-22T20:04:13.482Z"
-  },
-  "stock": 1,"chapters": [
-    {
-      "number": 1,
-      "title": "Chapter 1 Title",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis, purus at pretium pretium, nulla nulla tristique lacus, at bibendum sapien massa eget orci. Fusce nec ligula nulla. Suspendisse vel ornare nibh. Suspendisse maximus mattis viverra. Mauris dolor sem, mattis ac enim feugiat, lobortis rhoncus neque. Ut mauris felis, aliquet eget diam vitae, interdum pretium ipsum. Nam vulputate quis leo quis lobortis. Aliquam non ipsum non nulla iaculis ultrices ut nec lectus. Cras finibus lacus sem. Integer laoreet mattis felis, a efficitur elit lacinia non. Duis ornare non nisl ac maximus. Proin sit amet molestie metus, non ultricies orci. Ut ut pulvinar est, a varius orci. Nullam varius ultrices felis, sed auctor lectus aliquam suscipit.\n\nCras finibus elementum tincidunt. Mauris quis ullamcorper velit. Pellentesque euismod ex et dui gravida tempor. In hac habitasse platea dictumst. Sed ac volutpat sapien. Donec at mauris vel arcu suscipit sodales a sit amet eros. Aliquam id libero condimentum, dapibus augue in, posuere ipsum.\n\nAenean egestas augue nec urna vestibulum feugiat. Vestibulum id sagittis sem. Nullam dignissim est nunc, gravida dignissim augue aliquet ut. Quisque eget enim placerat, faucibus ante sed, tempus enim. Suspendisse dapibus dolor eu tempor porta. Mauris sed leo sapien. Aenean tempor sollicitudin ex vestibulum egestas. Suspendisse ullamcorper ipsum ut placerat egestas. Nullam sed massa sed felis porta feugiat sit amet sed metus. Vivamus commodo, lectus in luctus tristique, elit ante varius risus, in pellentesque elit justo ultrices est. Aliquam fringilla tincidunt enim ut finibus. Vivamus a lorem magna.\n\nNam a felis vel leo consectetur convallis et et enim. Nam consectetur lectus diam, at dictum neque iaculis sit amet. Quisque consequat id quam id finibus. Nullam a pellentesque est. Cras justo dolor, varius laoreet viverra ut, interdum ut risus. In hac habitasse platea dictumst. Sed ut gravida turpis. Integer consequat purus vel massa lobortis, at iaculis augue mattis. In euismod blandit risus, viverra viverra sapien dapibus sit amet.\n\nInterdum et malesuada fames ac ante ipsum primis in faucibus. Praesent massa magna, tempor vel sem non, semper convallis mauris. Nam non enim felis. Nullam dictum tincidunt blandit. Nullam non urna eleifend, posuere tortor rutrum, semper mi. Duis in risus eget lorem rutrum bibendum. Nam pulvinar lacinia augue, in sodales nulla ultricies eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed aliquet ante. Integer pellentesque non neque sed euismod. Sed et magna ullamcorper, semper leo nec, malesuada ipsum. Maecenas nibh tortor, luctus vitae mattis eget, rhoncus et dui.\n\nVestibulum rutrum ipsum et tempor sagittis. Praesent eleifend interdum nisl. Suspendisse et viverra risus. Suspendisse vitae diam eu quam luctus convallis malesuada vitae mauris. Nunc at nulla sed dolor pretium pretium. Duis tempor rutrum metus, a tempus sapien lobortis sed. Nulla in tempus ante. Nunc arcu metus, congue quis venenatis quis, finibus sed quam. Ut varius placerat urna, eget volutpat risus varius a. Integer vitae nunc nec dolor mattis porta. Integer porttitor ipsum mauris, non venenatis urna molestie lacinia. Praesent dapibus lectus a interdum commodo.\n\nDonec in volutpat tortor. Etiam sit amet nibh vel leo pretium condimentum ac egestas nunc. Donec elit metus, aliquet id varius non, dictum non augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras augue ex, laoreet et aliquam vitae, accumsan ut nunc. Aliquam fringilla nibh sed velit luctus, nec bibendum ex ullamcorper. Vivamus eleifend ultrices dolor, vitae malesuada tellus fermentum ut. In semper ac ante hendrerit ultrices. Cras blandit tincidunt eros, eget tempor erat faucibus sed. Etiam fringilla massa sit amet felis pretium tincidunt. Sed pretium vulputate tortor a aliquam. Quisque fermentum ligula nulla, semper mattis diam elementum eu. In vehicula velit vitae ligula condimentum, hendrerit luctus quam gravida. Curabitur ultricies sem quis justo fringilla, sed maximus dui efficitur.\n\nDonec dictum urna vel eros cursus facilisis. Vivamus ullamcorper iaculis mauris nec aliquet. Donec eu urna a ipsum dignissim porttitor vitae sed nisi. Integer at neque aliquam, lobortis ante quis, congue leo. Praesent neque lectus, laoreet sit amet magna vel, malesuada placerat libero. Aenean sed ipsum felis. Etiam et fringilla est. Maecenas id porta massa. Suspendisse potenti. Morbi sit amet interdum massa. Duis rhoncus accumsan libero, ac iaculis ipsum tincidunt et. Cras pharetra aliquet quam sed iaculis.\n\nMaecenas ornare velit eu venenatis ullamcorper. Fusce blandit lorem quis hendrerit consectetur. Vestibulum viverra eros in est dictum, vel iaculis lacus hendrerit. Vestibulum non leo felis. Nam pharetra velit non dui dapibus finibus. Ut ut turpis tempor purus fringilla consectetur in vitae turpis. Sed egestas lobortis nisl et consectetur. Maecenas imperdiet velit sed orci hendrerit viverra. Mauris quis orci non lectus sollicitudin elementum.\n\nCras tempus rutrum urna a interdum. Nunc maximus eleifend nisl et pulvinar. Curabitur consectetur feugiat felis egestas consectetur. Sed condimentum tristique risus, vitae aliquam nibh mattis vitae. Mauris viverra neque sit amet vestibulum dignissim. Mauris sagittis ipsum in maximus convallis. Fusce at efficitur dolor, eu iaculis ex. Duis rhoncus feugiat arcu, faucibus interdum arcu efficitur quis. Etiam scelerisque augue maximus faucibus rhoncus. Proin sapien sapien, finibus at tortor et, laoreet pulvinar neque. Praesent posuere maximus dolor. Vivamus id bibendum ex, vel rhoncus felis. Suspendisse lacus nibh, ullamcorper ac porttitor nec, commodo in nisl. Aliquam tincidunt ipsum erat, sit amet fermentum neque ultrices et. Suspendisse sagittis commodo nulla, eu eleifend risus porta vel.\n\nIn ullamcorper fringilla tortor, quis tristique augue congue eget. Praesent ac pretium felis. Nunc condimentum mattis dui at efficitur. Cras interdum nibh eget nunc tincidunt, et condimentum massa lobortis. Aliquam interdum, justo et viverra facilisis, elit ex porta leo, sed congue ex neque vitae mauris. Ut eu mi massa. In laoreet semper massa, vitae imperdiet leo volutpat sit amet. Ut congue libero sit amet diam interdum interdum vel sed ligula.\n\nPhasellus posuere turpis in diam sodales, et consectetur eros pulvinar. In in augue ut sapien commodo aliquam. Mauris ut sem in odio semper imperdiet non a sapien. Sed quis dapibus massa. Fusce suscipit condimentum tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eget odio ut ipsum pretium mollis. Curabitur quis nibh sit amet lectus vehicula euismod eu eget enim. Etiam sed accumsan ligula, et mattis neque. Integer sollicitudin nisi in euismod tincidunt. Proin elementum porta accumsan. Ut velit ante, faucibus et blandit sit amet, laoreet et eros. Morbi vel quam elementum, auctor erat quis, imperdiet ligula.\n\nNullam sed neque aliquet, ullamcorper mauris ac, auctor quam. Suspendisse posuere lorem luctus mi aliquam dignissim quis ut nulla. Nullam enim lorem, laoreet eget gravida at, tincidunt non libero. Donec sit amet eleifend nibh, id dapibus massa. Maecenas non tortor nisi. Integer feugiat urna a enim facilisis congue. Integer lobortis a nibh vitae ullamcorper. Mauris venenatis elit eget quam blandit, vitae porttitor risus porttitor. Suspendisse eget enim gravida, elementum dui eu, laoreet tortor. Nam vehicula eu ante quis efficitur. Praesent ullamcorper vel ante vitae cursus. Mauris sed eros vulputate, gravida augue eu, porta magna. Nulla lacinia placerat mattis. Aliquam vel eros libero.\n\nQuisque varius rutrum magna, nec sollicitudin tortor condimentum luctus. Duis mi tortor, consequat ac volutpat et, fermentum consequat ipsum. Nunc eget felis dignissim, eleifend ligula in, dignissim justo. Ut mattis pretium dolor, a ultricies tellus volutpat sed. Nam ac scelerisque diam. Phasellus varius semper mi, sit amet cursus nulla convallis et. Donec mattis enim id porta rutrum. Etiam massa leo, laoreet nec feugiat non, tincidunt et metus. Praesent sodales leo nec iaculis ultricies. Pellentesque finibus tortor et scelerisque gravida. Donec mattis porttitor nisl, eget pretium arcu eleifend in.\n\nMaecenas eleifend, neque et accumsan vulputate, nunc erat feugiat leo, non tempus leo metus ut velit. Curabitur efficitur pretium arcu, vel ornare tellus porttitor ut. Duis sed magna consectetur, sollicitudin magna ac, faucibus purus. Cras ipsum ipsum, vehicula sed nunc sit amet, accumsan cursus nibh. Quisque eu tortor bibendum, auctor nunc ac, bibendum libero. Mauris bibendum pretium ultrices. In justo felis, convallis sit amet risus quis, feugiat dignissim ipsum.\n\nIn id est dolor. Cras in velit semper, molestie augue sed, finibus purus. Vestibulum tristique aliquet eleifend. Nam ex ante, faucibus eu vehicula id, finibus facilisis dolor. Pellentesque ac odio nec nulla gravida tempor a vitae tellus. Suspendisse tincidunt, quam eget facilisis consequat, enim massa ultrices diam, a mollis ipsum risus et arcu. Pellentesque suscipit lectus nunc, sed aliquet nisi rhoncus nec. Vestibulum pretium id elit sit amet condimentum. Nulla facilisi. Vestibulum aliquet consectetur mi, sit amet molestie ipsum ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam eleifend, nulla vel pretium pellentesque, risus ex luctus lectus, et dignissim purus odio in odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ornare ut erat in tristique. Cras semper mattis nisi sed auctor. Fusce tempus diam sed diam aliquam, sed aliquet lectus bibendum.\n\nNunc iaculis lectus sit amet nibh placerat iaculis. Quisque scelerisque elementum justo, vel pretium est blandit nec. Proin posuere ut neque ut tempor. Vivamus non ligula id felis posuere feugiat. Nunc ut tellus id nulla varius aliquet. Ut mollis dolor et vehicula dictum. Ut at commodo eros. In at elit malesuada, mattis odio sit."
-    },
-    {
-      "number": 2,
-      "title": "Chapter 2 Title",
-      "content": "Chapter 2 Content"
-    },
-    {
-      "number": 3,
-      "title": "Chapter 3 Title",
-      "content": "Chapter 3 Content"
-    }
-  ]
-},
-{
-  "_id": {
-    "$oid": "63895d3b2a3e062504353022"
-  },
-  "name": "Whispers in the Dark",
-  "image": "/images/whispers_in_the_dark.png",
-  "author": "Victoria Blackwood",
-  "authorId": {
-    "$oid": "647b1b46bf7b199ab5ccfa62"
-  },
-  "category": "Horror",
-  "description": "Delve into the haunting world of Whispers in the Dark, a spine-chilling horror novel that will send shivers down your spine. Brace yourself for a sinister journey as you uncover the terrifying secrets lurking within the shadows.",
-  "rating": 275,
   "numberOfReviews": "2",
-  "price": 3.99,
-  "stock": 49,
   "productIsNew": true,
+  "__v": 16,
   "reviews": [
     {
-      "name": "admin",
+      "name": "Benjamin Fischer",
       "rating": 5,
-      "comment": "asdfas",
-      "title": "asdfas",
+      "comment": "This product is great.\n",
+      "title": "Awesome Stuff",
       "user": {
-        "$oid": "637ea4e9abbb513d7a9dfa1c"
+        "$oid": "6389181f9cb2f071748ff7e1"
       },
       "_id": {
-        "$oid": "63895d5c2a3e062504353038"
+        "$oid": "638919379cb2f071748ff7f3"
       },
       "createdAt": {
-        "$date": "2022-12-02T02:05:16.055Z"
+        "$date": "2022-12-01T21:14:31.767Z"
       },
       "updatedAt": {
-        "$date": "2022-12-02T02:05:16.055Z"
+        "$date": "2022-12-01T21:14:31.767Z"
       }
     },
     {
-      "name": "bernardi",
-      "rating": "5",
-      "comment": "test",
-      "title": "TEST",
+      "name": "ben",
+      "rating": "4",
+      "comment": "great book!",
+      "title": "Awesome",
       "user": {
         "$oid": "647b21bd31d435c24405ff93"
       },
       "_id": {
-        "$oid": "647eb48a7999bf824e11e59c"
+        "$oid": "647e02715d0ccbe754cc2760"
       },
       "createdAt": {
-        "$date": "2023-06-06T04:22:34.550Z"
+        "$date": "2023-06-05T15:42:41.746Z"
       },
       "updatedAt": {
-        "$date": "2023-06-06T04:22:34.550Z"
+        "$date": "2023-06-05T15:42:41.746Z"
       }
     }
   ],
-  "createdAt": {
-    "$date": "2022-12-02T02:04:43.780Z"
-  },
   "updatedAt": {
-    "$date": "2023-06-06T04:22:34.551Z"
+    "$date": "2023-06-05T15:42:41.747Z"
   },
-  "__v": 2,
+  "stock": 7,
   "chapters": [
     {
       "number": 1,
-      "title": "Chapter 1 Title",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis, purus at pretium pretium, nulla nulla tristique lacus, at bibendum sapien massa eget orci. Fusce nec ligula nulla. Suspendisse vel ornare nibh. Suspendisse maximus mattis viverra. Mauris dolor sem, mattis ac enim feugiat, lobortis rhoncus neque. Ut mauris felis, aliquet eget diam vitae, interdum pretium ipsum. Nam vulputate quis leo quis lobortis. Aliquam non ipsum non nulla iaculis ultrices ut nec lectus. Cras finibus lacus sem. Integer laoreet mattis felis, a efficitur elit lacinia non. Duis ornare non nisl ac maximus. Proin sit amet molestie metus, non ultricies orci. Ut ut pulvinar est, a varius orci. Nullam varius ultrices felis, sed auctor lectus aliquam suscipit.\n\nCras finibus elementum tincidunt. Mauris quis ullamcorper velit. Pellentesque euismod ex et dui gravida tempor. In hac habitasse platea dictumst. Sed ac volutpat sapien. Donec at mauris vel arcu suscipit sodales a sit amet eros. Aliquam id libero condimentum, dapibus augue in, posuere ipsum.\n\nAenean egestas augue nec urna vestibulum feugiat. Vestibulum id sagittis sem. Nullam dignissim est nunc, gravida dignissim augue aliquet ut. Quisque eget enim placerat, faucibus ante sed, tempus enim. Suspendisse dapibus dolor eu tempor porta. Mauris sed leo sapien. Aenean tempor sollicitudin ex vestibulum egestas. Suspendisse ullamcorper ipsum ut placerat egestas. Nullam sed massa sed felis porta feugiat sit amet sed metus. Vivamus commodo, lectus in luctus tristique, elit ante varius risus, in pellentesque elit justo ultrices est. Aliquam fringilla tincidunt enim ut finibus. Vivamus a lorem magna.\n\nNam a felis vel leo consectetur convallis et et enim. Nam consectetur lectus diam, at dictum neque iaculis sit amet. Quisque consequat id quam id finibus. Nullam a pellentesque est. Cras justo dolor, varius laoreet viverra ut, interdum ut risus. In hac habitasse platea dictumst. Sed ut gravida turpis. Integer consequat purus vel massa lobortis, at iaculis augue mattis. In euismod blandit risus, viverra viverra sapien dapibus sit amet.\n\nInterdum et malesuada fames ac ante ipsum primis in faucibus. Praesent massa magna, tempor vel sem non, semper convallis mauris. Nam non enim felis. Nullam dictum tincidunt blandit. Nullam non urna eleifend, posuere tortor rutrum, semper mi. Duis in risus eget lorem rutrum bibendum. Nam pulvinar lacinia augue, in sodales nulla ultricies eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed aliquet ante. Integer pellentesque non neque sed euismod. Sed et magna ullamcorper, semper leo nec, malesuada ipsum. Maecenas nibh tortor, luctus vitae mattis eget, rhoncus et dui.\n\nVestibulum rutrum ipsum et tempor sagittis. Praesent eleifend interdum nisl. Suspendisse et viverra risus. Suspendisse vitae diam eu quam luctus convallis malesuada vitae mauris. Nunc at nulla sed dolor pretium pretium. Duis tempor rutrum metus, a tempus sapien lobortis sed. Nulla in tempus ante. Nunc arcu metus, congue quis venenatis quis, finibus sed quam. Ut varius placerat urna, eget volutpat risus varius a. Integer vitae nunc nec dolor mattis porta. Integer porttitor ipsum mauris, non venenatis urna molestie lacinia. Praesent dapibus lectus a interdum commodo.\n\nDonec in volutpat tortor. Etiam sit amet nibh vel leo pretium condimentum ac egestas nunc. Donec elit metus, aliquet id varius non, dictum non augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras augue ex, laoreet et aliquam vitae, accumsan ut nunc. Aliquam fringilla nibh sed velit luctus, nec bibendum ex ullamcorper. Vivamus eleifend ultrices dolor, vitae malesuada tellus fermentum ut. In semper ac ante hendrerit ultrices. Cras blandit tincidunt eros, eget tempor erat faucibus sed. Etiam fringilla massa sit amet felis pretium tincidunt. Sed pretium vulputate tortor a aliquam. Quisque fermentum ligula nulla, semper mattis diam elementum eu. In vehicula velit vitae ligula condimentum, hendrerit luctus quam gravida. Curabitur ultricies sem quis justo fringilla, sed maximus dui efficitur.\n\nDonec dictum urna vel eros cursus facilisis. Vivamus ullamcorper iaculis mauris nec aliquet. Donec eu urna a ipsum dignissim porttitor vitae sed nisi. Integer at neque aliquam, lobortis ante quis, congue leo. Praesent neque lectus, laoreet sit amet magna vel, malesuada placerat libero. Aenean sed ipsum felis. Etiam et fringilla est. Maecenas id porta massa. Suspendisse potenti. Morbi sit amet interdum massa. Duis rhoncus accumsan libero, ac iaculis ipsum tincidunt et. Cras pharetra aliquet quam sed iaculis.\n\nMaecenas ornare velit eu venenatis ullamcorper. Fusce blandit lorem quis hendrerit consectetur. Vestibulum viverra eros in est dictum, vel iaculis lacus hendrerit. Vestibulum non leo felis. Nam pharetra velit non dui dapibus finibus. Ut ut turpis tempor purus fringilla consectetur in vitae turpis. Sed egestas lobortis nisl et consectetur. Maecenas imperdiet velit sed orci hendrerit viverra. Mauris quis orci non lectus sollicitudin elementum.\n\nCras tempus rutrum urna a interdum. Nunc maximus eleifend nisl et pulvinar. Curabitur consectetur feugiat felis egestas consectetur. Sed condimentum tristique risus, vitae aliquam nibh mattis vitae. Mauris viverra neque sit amet vestibulum dignissim. Mauris sagittis ipsum in maximus convallis. Fusce at efficitur dolor, eu iaculis ex. Duis rhoncus feugiat arcu, faucibus interdum arcu efficitur quis. Etiam scelerisque augue maximus faucibus rhoncus. Proin sapien sapien, finibus at tortor et, laoreet pulvinar neque. Praesent posuere maximus dolor. Vivamus id bibendum ex, vel rhoncus felis. Suspendisse lacus nibh, ullamcorper ac porttitor nec, commodo in nisl. Aliquam tincidunt ipsum erat, sit amet fermentum neque ultrices et. Suspendisse sagittis commodo nulla, eu eleifend risus porta vel.\n\nIn ullamcorper fringilla tortor, quis tristique augue congue eget. Praesent ac pretium felis. Nunc condimentum mattis dui at efficitur. Cras interdum nibh eget nunc tincidunt, et condimentum massa lobortis. Aliquam interdum, justo et viverra facilisis, elit ex porta leo, sed congue ex neque vitae mauris. Ut eu mi massa. In laoreet semper massa, vitae imperdiet leo volutpat sit amet. Ut congue libero sit amet diam interdum interdum vel sed ligula.\n\nPhasellus posuere turpis in diam sodales, et consectetur eros pulvinar. In in augue ut sapien commodo aliquam. Mauris ut sem in odio semper imperdiet non a sapien. Sed quis dapibus massa. Fusce suscipit condimentum tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eget odio ut ipsum pretium mollis. Curabitur quis nibh sit amet lectus vehicula euismod eu eget enim. Etiam sed accumsan ligula, et mattis neque. Integer sollicitudin nisi in euismod tincidunt. Proin elementum porta accumsan. Ut velit ante, faucibus et blandit sit amet, laoreet et eros. Morbi vel quam elementum, auctor erat quis, imperdiet ligula.\n\nNullam sed neque aliquet, ullamcorper mauris ac, auctor quam. Suspendisse posuere lorem luctus mi aliquam dignissim quis ut nulla. Nullam enim lorem, laoreet eget gravida at, tincidunt non libero. Donec sit amet eleifend nibh, id dapibus massa. Maecenas non tortor nisi. Integer feugiat urna a enim facilisis congue. Integer lobortis a nibh vitae ullamcorper. Mauris venenatis elit eget quam blandit, vitae porttitor risus porttitor. Suspendisse eget enim gravida, elementum dui eu, laoreet tortor. Nam vehicula eu ante quis efficitur. Praesent ullamcorper vel ante vitae cursus. Mauris sed eros vulputate, gravida augue eu, porta magna. Nulla lacinia placerat mattis. Aliquam vel eros libero.\n\nQuisque varius rutrum magna, nec sollicitudin tortor condimentum luctus. Duis mi tortor, consequat ac volutpat et, fermentum consequat ipsum. Nunc eget felis dignissim, eleifend ligula in, dignissim justo. Ut mattis pretium dolor, a ultricies tellus volutpat sed. Nam ac scelerisque diam. Phasellus varius semper mi, sit amet cursus nulla convallis et. Donec mattis enim id porta rutrum. Etiam massa leo, laoreet nec feugiat non, tincidunt et metus. Praesent sodales leo nec iaculis ultricies. Pellentesque finibus tortor et scelerisque gravida. Donec mattis porttitor nisl, eget pretium arcu eleifend in.\n\nMaecenas eleifend, neque et accumsan vulputate, nunc erat feugiat leo, non tempus leo metus ut velit. Curabitur efficitur pretium arcu, vel ornare tellus porttitor ut. Duis sed magna consectetur, sollicitudin magna ac, faucibus purus. Cras ipsum ipsum, vehicula sed nunc sit amet, accumsan cursus nibh. Quisque eu tortor bibendum, auctor nunc ac, bibendum libero. Mauris bibendum pretium ultrices. In justo felis, convallis sit amet risus quis, feugiat dignissim ipsum.\n\nIn id est dolor. Cras in velit semper, molestie augue sed, finibus purus. Vestibulum tristique aliquet eleifend. Nam ex ante, faucibus eu vehicula id, finibus facilisis dolor. Pellentesque ac odio nec nulla gravida tempor a vitae tellus. Suspendisse tincidunt, quam eget facilisis consequat, enim massa ultrices diam, a mollis ipsum risus et arcu. Pellentesque suscipit lectus nunc, sed aliquet nisi rhoncus nec. Vestibulum pretium id elit sit amet condimentum. Nulla facilisi. Vestibulum aliquet consectetur mi, sit amet molestie ipsum ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam eleifend, nulla vel pretium pellentesque, risus ex luctus lectus, et dignissim purus odio in odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ornare ut erat in tristique. Cras semper mattis nisi sed auctor. Fusce tempus diam sed diam aliquam, sed aliquet lectus bibendum.\n\nNunc iaculis lectus sit amet nibh placerat iaculis. Quisque scelerisque elementum justo, vel pretium est blandit nec. Proin posuere ut neque ut tempor. Vivamus non ligula id felis posuere feugiat. Nunc ut tellus id nulla varius aliquet. Ut mollis dolor et vehicula dictum. Ut at commodo eros. In at elit malesuada, mattis odio sit."
+      "title": "The Book of Legends",
+      "content": "In a quaint village nestled within a mystical forest, a young girl named Lily stumbled upon an old, weathered book hidden in the depths of her attic. Intrigued by its faded golden cover and the title \"The Enchanted Chronicles,\" Lily carefully opened the book to reveal pages filled with tales of magic, adventure, and extraordinary creatures.\n\nAs Lily delved into the first story, she discovered that the book was no ordinary collection of fairy tales. The words seemed to come alive, casting a spell that transported her into the fantastical worlds depicted within the pages. She met brave knights, mischievous fairies, and wise sorcerers on her incredible journey."
     },
     {
       "number": 2,
-      "title": "Chapter 2 Title",
-      "content": "Chapter 2 Content"
+      "title": "The Quest for the Lost Gem",
+      "content": "Within the pages of The Enchanted Chronicles, Lily discovered a prophecy that foretold the existence of a legendary gem hidden deep within the heart of an enchanted forest. This gem, it was said, possessed the power to restore balance to the realms and preserve the magic that held them together.\n\nDriven by a sense of destiny, Lily embarked on a quest to find the Lost Gem. Along her journey, she encountered mythical creatures and faced formidable challenges. She formed unlikely alliances with a talking fox and a kind-hearted elf who became her loyal companions. Together, they braved treacherous terrain, deciphered riddles, and confronted dark forces that sought to seize the gem's power for themselves."
     },
     {
       "number": 3,
-      "title": "Chapter 3 Title",
-      "content": "Chapter 3 Content"
+      "title": "The Triumph of Magic",
+      "content": "As Lily and her companions drew closer to their goal, they encountered the treacherous Forest of Shadows, where darkness threatened to snuff out the light. But armed with bravery, love, and the wisdom imparted by the enchanted book, they pressed on.\n\nIn the heart of the forest, they discovered the long-lost temple where the Lost Gem was said to be hidden. Guarded by an ancient spirit, the gem awaited its rightful guardian. Lily, recognizing her destiny, stepped forward and touched the gem. A surge of magic coursed through her, illuminating the temple and dispelling the shadows.\n\nWith the gem in her possession, Lily's powers grew, and she used them to restore harmony and magic to the realms. The enchanted creatures, once oppressed, danced with joy, and nature bloomed with renewed vigor. The Enchanted Chronicles, now complete with Lily's tale, closed itself, leaving behind a legacy of wonder and hope.\n\nAs the years passed, Lily became a guardian of magic, sharing the stories of The Enchanted Chronicles with future generations. The book remained a cherished relic, passing down the gift of imagination and reminding all who read its pages that the power of magic lies within the hearts of those who believe.\n\nAnd so, the tale of The Enchanted Chronicles continued to enchant and inspire, weaving its magic into the lives of those who dared to dream and believe in the extraordinary."
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-11-26T03:02:35.845Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6369863c9540445b3c45e6b3"
+  },
+  "name": "The Lost Kingdom",
+  "image": "/images/lost_kingdom.png",
+  "description": "Step into The Lost Kingdom, a realm filled with ancient mysteries, hidden treasures, and powerful artifacts. Join our young protagonist on a quest to uncover the truth behind a long-forgotten civilization and protect the world from an impending darkness.",
+  "author": "Benjamin Anderson",
+  "authorId": {
+    "$oid": "647b1b46bf7b199ab5ccfa62"
+  },
+  "category": "Adventure",
+  "price": 3.99,
+  "rating": 0,
+  "numberOfReviews": 0,
+  "productIsNew": false,
+  "__v": 5,
+  "reviews": [],
+  "updatedAt": {
+    "$date": "2022-12-01T06:08:45.863Z"
+  },
+  "stock": 7,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Part 1: The Discovery",
+      "content": "In a land of ancient legends and forgotten tales, nestled amidst towering mountains and lush valleys, lay the realm of Serendora. This kingdom, known for its magnificent palaces and breathtaking landscapes, had become the stuff of myths over time. The Lost Kingdom, as it came to be called, was rumored to hold treasures beyond imagination and secrets that could alter the course of history.\n\nOne fateful day, a young and adventurous archaeologist named Amelia stumbled upon an old parchment tucked away in the archives of a forgotten library. The parchment contained a cryptic map, believed to lead to the Lost Kingdom of Serendora. The thrill of uncovering this forgotten tale ignited a fire within her heart, and Amelia knew she had to embark on an expedition to unveil the kingdom's mysteries.\n\nGathering a team of seasoned explorers, Amelia set off on an arduous journey, braving treacherous terrains and dense forests. Weeks turned into months, but the unwavering spirit of the expedition kept them going. Finally, guided by the map's enigmatic clues, they arrived at the outskirts of the Lost Kingdom."
+    },
+    {
+      "number": 2,
+      "title": "The Trials",
+      "content": "As Amelia and her team ventured deeper into the Lost Kingdom, they encountered numerous obstacles and trials. The ancient ruins were shrouded in an eerie silence, and the air held an otherworldly aura. In their quest for the kingdom's secrets, they discovered intricate puzzles and booby traps left behind by its enigmatic rulers.\n\nAmidst crumbling temples and overgrown paths, the team unraveled the stories of Serendora's past. Legends spoke of a powerful artifact, said to possess the ability to control the elements themselves. It was believed that whoever possessed this relic could wield unimaginable power. Aware of the potential consequences, Amelia and her team sought to ensure that such power would not fall into the wrong hands.\n\nNavigating through dark chambers and deciphering ancient scripts, they faced perilous encounters with mythical creatures guarding the secrets of the Lost Kingdom. The team's unity and resourcefulness proved essential in overcoming these challenges. Each trial they conquered brought them one step closer to the fabled artifact and the ultimate truth behind the kingdom's demise."
+    },
+    {
+      "number": 3,
+      "title": "The revelation",
+      "content": "In the heart of the Lost Kingdom, amidst the ruins of a grand citadel, Amelia and her team discovered the sacred chamber housing the legendary artifact. The room pulsated with an otherworldly energy, as if the very essence of Serendora's lost glory still lingered. With bated breath, they approached the artifact, its radiance casting an ethereal glow.\n\nAs Amelia reached out to grasp the relic, a vision engulfed her mind. She saw the rise and fall of Serendora, a once-prosperous kingdom torn apart by greed and thirst for power. The artifact, meant to bring balance and prosperity, had been misused, leading to the kingdom's downfall.\n\nRealizing the significance of their discovery, Amelia vowed to protect the artifact and the knowledge she had gained. The Lost Kingdom would remain hidden, its secrets safeguarded from those who sought to exploit its power. With newfound wisdom, Amelia and her team made their way back, leaving the Lost Kingdom behind, but forever changed by its enigmatic allure.\n\nAnd so, the story of the Lost Kingdom would continue to captivate the hearts of dreamers and adventurers, a reminder of the fragility of power and the resilience of those who dared to uncover the truth hidden within the realms of legend."
     }
   ]
+},
+{
+  "_id": {
+    "$oid": "63804a5079636c2ced47757d"
+  },
+  "name": "Echoes of Eternity",
+  "image": "/images/echoes_of_eternity.png",
+  "author": "Jonathan Reed",
+  "authorId": {
+    "$oid": "647b1b46bf7b199ab5ccfa62"
+  },
+  "category": "Fantasy",
+  "description": "Enter a world of magic, destiny, and ancient prophecies in Echoes of Eternity. Join our young hero as they embark on a perilous quest to save their realm from an impending darkness that threatens to consume everything they hold dear.",
+  "rating": 0,
+  "numberOfReviews": 0,
+  "price": 3.99,
+  "stock": 5,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "The Forgotten Melody",
+      "content": "In a world known as Aria, where music held the power to shape reality, a young musician named Rhapsody found herself drawn to a mysterious melody that seemed to echo through the ages. The haunting notes resonated deep within her soul, stirring a longing she couldn't explain.\n\nDriven by curiosity and a thirst for discovery, Rhapsody embarked on a journey to unravel the origins of the melody. Guided by legends and ancient scrolls, she traveled to forgotten temples, seeking answers from wise seers and guardians of ancient knowledge.\n\nAs Rhapsody delved deeper into her quest, she discovered that the melody held a profound secret—a key to unlock the realm of Eternity, a dimension beyond time and space. In this ethereal realm, the echoes of past, present, and future intertwined, and the power to shape destiny resided."
+    },
+    {
+      "number": 2,
+      "title": "Harmonies of Time",
+      "content": "Upon entering the realm of Eternity, Rhapsody was enveloped in a kaleidoscope of sights and sounds. Harmonies of time echoed through the air, guiding her through a labyrinth of swirling mists and shimmering portals. Each portal revealed glimpses of past civilizations, future possibilities, and forgotten realms.\n\nAs Rhapsody navigated the ethereal landscapes, she encountered echoes of great heroes and wise sages who had left their mark on history. She witnessed momentous events, both tragic and triumphant, and learned that every choice and action reverberated through time, leaving indelible imprints on the fabric of reality."
+    },
+    {
+      "number": 3,
+      "title": "The Symphony of Destiny",
+      "content": "In her journey through Eternity, Rhapsody discovered that the melody she had followed was not just a song but a symphony—a symphony of destiny. She realized that her own music, her compositions and performances, held the power to resonate throughout time, shaping the echoes of the future.\n\nWith newfound understanding, Rhapsody returned to Aria, her heart ablaze with inspiration. She composed a symphony that transcended the boundaries of conventional music, weaving together melodies from different eras and cultures. Each note was imbued with the echoes of Eternity, a testament to the interconnectedness of all things.\n\nAs Rhapsody performed her symphony, the world of Aria vibrated with a newfound harmony. Hearts were touched, spirits uplifted, and the power of music brought people together, transcending differences and healing old wounds.\n\nThe echoes of Eternity continued to resound through the ages, carried by the voices and instruments of countless musicians inspired by Rhapsody's journey. The symphony of destiny echoed in the hearts of all who listened, reminding them that their actions and choices held the power to shape the world and leave an everlasting imprint on the tapestry of time.\n\nAnd so, the story of Echoes of Eternity became a legend—a reminder that within the vastness of the universe, the melodies of our lives intertwine, creating a symphony that resonates throughout eternity."
+    }
+  ],
+  "productIsNew": true,
+  "reviews": [],
+  "createdAt": {
+    "$date": "2022-11-25T04:53:36.956Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-25T04:53:36.956Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6491c5d8b16b9ac912bf3da8"
+  },
+  "name": "The Binus Life",
+  "image": "C:\\fakepath\\binus.png",
+  "author": "bernardi",
+  "authorId": {
+    "$oid": "647b21bd31d435c24405ff93"
+  },
+  "category": "Drama",
+  "description": "Experience the daily life of a university student\nBenardi is preparing for his first day of university.",
+  "rating": 0,
+  "price": 2,
+  "productIsNew": false,
+  "stock": 1,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "First Day ",
+      "content": "Experience the daily life of a university student\nBenardi is preparing for his first day of university.",
+      "_id": {
+        "$oid": "6491c5d8b16b9ac912bf3da9"
+      }
+    }
+  ],
+  "reviews": [],
+  "createdAt": {
+    "$date": "2023-06-20T15:29:28.291Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-20T15:29:28.291Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6491d2bcdaddf4339eb5e260"
+  },
+  "name": "Not A Trooper",
+  "image": "C:\\fakepath\\eaa-164_star_wars_stormtrooper_storm_trooper-01.jpg",
+  "author": "bernardi",
+  "authorId": {
+    "$oid": "647b21bd31d435c24405ff93"
+  },
+  "category": "Fantasy",
+  "description": "Neil is struggling to survive on an apocalyptic world",
+  "rating": 0,
+  "numberOfReviews": "0",
+  "price": 1,
+  "productIsNew": true,
+  "stock": 1,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Easy Simulation",
+      "content": "Neil is currently standing before the Military Academy, gazing towards the endless blue sky.",
+      "_id": {
+        "$oid": "6491d2bcdaddf4339eb5e261"
+      }
+    }
+  ],
+  "reviews": [],
+  "createdAt": {
+    "$date": "2023-06-20T16:24:28.479Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-20T16:24:28.479Z"
+  },
+  "__v": 0
 }]
