@@ -112,10 +112,59 @@ const createBook = asyncHandler(async (req, res) => {
   res.status(201).json(createdBook);
 });
 
+const updateBookDetails = asyncHandler(async (req, res) => {
+  const user = await User.findById(req.body._id);
+  const { bookId, image, title, description, price, category } = req.body;
+  const book = await Book.findById(bookId);
+  if (book && book.authorId === user._id) {
+    book.image = image;
+    book.title = title;
+    book.description = description;
+    book.price = price;
+    book.category = category;
+
+    const updatedBook = await book.save();
+    res.json(updatedBook);
+  } else {
+    res.status(404);
+    throw new Error("Book not found");
+  }
+});
+
+const addBookChapter = asyncHandler(async (req, res) => {
+  const user = await User.findById(req.body._id);
+  const { bookId, chapterNumber, chapterTitle, chapterContent } = req.body;
+  const book = await Book.findById(bookId);
+  if (book && book.authorId === user._id) {
+    book.chapters.push(chapterNumber, chapterTitle, chapterContent);
+    const updatedBook = await book.save();
+    res.json(updatedBook);
+  } else {
+    res.status(404);
+    throw new Error(`Book not found`);
+  }
+});
+
+const updateBookChapter = asyncHandler(async (req, res) => {
+  const user = await User.findById(req.body._id);
+  const { bookId, chapterNumber, chapterTitle, chapterContent } = req.body;
+  const book = await Book.findById(bookId);
+  if (book && book.authorId === user._id) {
+    book.chapters[chapterNumber] = new Array(chapterNumber, chapterTitle, chapterContent);
+    const updatedBook = await book.save();
+    res.json(updatedBook);
+  } else {
+    res.status(404);
+    throw new Error(`Book not found`);
+  }
+});
+
 bookRoutes.route("/").get(getBooks);
 bookRoutes.route("/:id").get(getBook);
 bookRoutes.route("/:id/:ch").get(getBook);
 bookRoutes.route("/reviews/chapter:id").post(protectRoute, createBookReview);
 bookRoutes.route("/create").post(protectRoute, createBook);
-
+bookRoutes.route("/updateDetail").put(protectRoute, updateBookDetails);
+bookRoutes.route("/addChapter").post(protectRoute, addBookChapter);
+bookRoutes.route("/updateChapter").post(protectRoute, updateBookChapter);
 export default bookRoutes;
