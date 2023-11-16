@@ -12,5 +12,3 @@ React.js, Javascript, NodeJS, ExpressJS, MongoDDB </br>
 ## Running the Application</br>
 [CLOSED] Open https://writad.onrender.com/ at your browser</br>
 
-## License</br>
-This project is licensed under the [MIT License](LICENSE).</br>
